@@ -4,6 +4,11 @@ body{
     background:white;
 }
 
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
 /* Página */
 
 .page{
@@ -84,7 +89,8 @@ body{
 /* Arte */
 .card-image {
     height: 42mm;
-    width: 100%;
+    width: 98%;
+    padding: 1%;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
@@ -146,6 +152,12 @@ body{
     border-top:1px solid #ddd;
 }
 
+.card-ability-usage{
+    font-size:9px;
+    color:#333;
+    margin-top:4px;
+}
+
 /* Troféu / recompensa */
 
 .card-trophy{
@@ -184,21 +196,4 @@ body{
     page-break-after:always;
 }
 
-body:not(.loaded) #pages-container{
-    display:none !important;
-}
-
-}
-
-body:not(.loaded) #pages-container{
-    display:none;
-}
-
-body:not(.loaded):before{
-    content:'Carregando...';
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-size:24px;
 }

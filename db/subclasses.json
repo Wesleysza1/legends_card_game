@@ -1,0 +1,153 @@
+{
+  "subclasses": [
+    {
+      "id": 1,
+      "name": "Cavaleiro",
+      "class": "Guerreiro",
+      "description": "Um combatente disciplinado treinado para proteger aliados.",
+      "image": "images/subclasses/cavaleiro.png",
+
+      "subclass_ability": {
+        "name": "Proteção Honrada",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Reduza em 2 o dano recebido por você ou um aliado."
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "Berserker",
+      "class": "Bárbaro",
+      "description": "Um guerreiro que entra em frenesi durante o combate.",
+      "image": "images/subclasses/berserker.png",
+
+      "subclass_ability": {
+        "name": "Frenesi",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Ganhe +2 poder neste ataque, mas receba 1 de dano."
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "Arcanista",
+      "class": "Mago",
+      "description": "Especialista em manipular energias mágicas puras.",
+      "image": "images/subclasses/arcanista.png",
+
+      "subclass_ability": {
+        "name": "Conjuração Rápida",
+        "type": "combat",
+        "usage": "1 vez por turno",
+        "effect": "Adicione +1 dano mágico a um ataque."
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "Ilusionista",
+      "class": "Mago",
+      "description": "Manipula ilusões para confundir inimigos.",
+      "image": "images/subclasses/ilusionista.png",
+
+      "subclass_ability": {
+        "name": "Imagem Espelhada",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Ignore totalmente um ataque recebido."
+      }
+    },
+
+    {
+      "id": 5,
+      "name": "Assassino",
+      "class": "Ladino",
+      "description": "Especialista em eliminar alvos rapidamente.",
+      "image": "images/subclasses/assassino.png",
+
+      "subclass_ability": {
+        "name": "Golpe Mortal",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Cause +2 dano se atacar primeiro."
+      }
+    },
+
+    {
+      "id": 6,
+      "name": "Trapaceiro",
+      "class": "Ladino",
+      "description": "Prefere truques e manipulação ao combate direto.",
+      "image": "images/subclasses/trapaceiro.png",
+
+      "subclass_ability": {
+        "name": "Truque Sujo",
+        "type": "intrigue",
+        "usage": "1 vez por turno",
+        "effect": "Force um jogador a descartar 1 carta."
+      }
+    },
+
+    {
+      "id": 7,
+      "name": "Batedor",
+      "class": "Caçador",
+      "description": "Explorador veloz especializado em reconhecimento.",
+      "image": "images/subclasses/batedor.png",
+
+      "subclass_ability": {
+        "name": "Reconhecimento",
+        "type": "exploration",
+        "usage": "1 vez por turno",
+        "effect": "Olhe as 2 próximas cartas do baralho e coloque-as de volta na ordem que desejar."
+      }
+    },
+
+    {
+      "id": 8,
+      "name": "Domador de Bestas",
+      "class": "Caçador",
+      "description": "Luta ao lado de criaturas selvagens.",
+      "image": "images/subclasses/domador_bestas.png",
+
+      "subclass_ability": {
+        "name": "Companheiro Animal",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Adicione +1 poder e +1 defesa neste combate."
+      }
+    },
+
+    {
+      "id": 9,
+      "name": "Templário",
+      "class": "Paladino",
+      "description": "Um defensor sagrado que combate as trevas.",
+      "image": "images/subclasses/templario.png",
+
+      "subclass_ability": {
+        "name": "Golpe Sagrado",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Cause +2 dano contra criaturas demoníacas ou sombrias."
+      }
+    },
+
+    {
+      "id": 10,
+      "name": "Guardião",
+      "class": "Paladino",
+      "description": "Protetor incansável de seus aliados.",
+      "image": "images/subclasses/guardiao.png",
+
+      "subclass_ability": {
+        "name": "Escudo da Fé",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Você ou um aliado recebe +2 defesa neste combate."
+      }
+    }
+  ]
+}

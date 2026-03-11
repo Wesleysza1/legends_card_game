@@ -11,19 +11,31 @@ const MODELS = {
     load: fetchHeroes,
     render: renderHeroPages,
   },
+  classes: {
+    label: 'Classes',
+    description: 'Classes básicas com modificadores de stat e habilidade.',
+    load: fetchClasses,
+    render: renderClassPages,
+  },
+  backs: {
+    label: 'Versos',
+    description: 'Impressão dos versos oficial com o logo Legends.',
+    load: () => Promise.resolve(9),
+    render: (totalCards, container) => renderBackPages(totalCards, container),
+  },
 }
 
 const pagesContainer = document.getElementById('pages-container')
 const statusMessage = document.getElementById('status-message')
 const modelTitle = document.getElementById('model-title')
 const modelDescription = document.getElementById('model-description')
-const printButton = document.getElementById('print-button')
+const previewButton = document.getElementById('preview-button')
 const menuButtons = Array.from(document.querySelectorAll('.menu-button'))
 const deckStructureGrid = document.getElementById('deck-structure-grid')
 
 const DECK_STRUCTURE = [
   { key: 'heroes', label: 'Heróis', quantity: 6, description: 'Personagens jogáveis com identidade narrativa distinta.', status: 'pronto' },
-  { key: 'classes', label: 'Classes', quantity: 6, description: 'Bases de combate que definem o estilo inicial.', status: 'em breve' },
+  { key: 'classes', label: 'Classes', quantity: 6, description: 'Bases de combate que definem o estilo inicial.', status: 'pronto' },
   { key: 'subclasses', label: 'Subclasses', quantity: 18, description: 'Três especializações por classe para variação tática.', status: 'em breve' },
   { key: 'monsters', label: 'Monstros', quantity: 24, description: 'Inimigos com níveis, habilidades e troféus.', status: 'pronto' },
   { key: 'equipments', label: 'Equipamentos', quantity: 24, description: 'Armas e armaduras que aumentam atributos.', status: 'em breve' },
@@ -31,6 +43,7 @@ const DECK_STRUCTURE = [
   { key: 'intrigues', label: 'Cartas de Intriga', quantity: 18, description: 'Efeitos inesperados que bagunçam a partida.', status: 'em breve' },
   { key: 'events', label: 'Eventos', quantity: 12, description: 'Situações especiais que mudam o cenário.', status: 'em breve' },
   { key: 'relics', label: 'Relíquias', quantity: 12, description: 'Artefatos lendários com benefícios permanentes.', status: 'em breve' },
+  { key: 'backs', label: 'Versos', quantity: 9, description: 'Impressão dos versos Legends para colar na parte traseira.', status: 'pronto' },
 ]
 
 function renderDeckStructure() {
@@ -103,7 +116,11 @@ menuButtons.forEach((button) => {
   })
 })
 
-printButton?.addEventListener('click', () => {
+previewButton?.addEventListener('click', () => {
+  if (!pagesContainer?.innerHTML) {
+    return
+  }
+
   window.print()
 })
 

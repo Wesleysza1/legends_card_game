@@ -191,3 +191,91 @@ window.loadMonsters = loadMonsters
 window.fetchHeroes = fetchHeroes
 window.renderHeroPages = renderHeroPages
 window.loadHeroes = loadHeroes
+async function fetchClasses() {
+    const response = await fetch('db/classes.json')
+    const data = await response.json()
+    return data.classes ?? []
+}
+
+function formatModifier(value) {
+    if (value === undefined || value === null) {
+        return '0'
+    }
+
+    return value >= 0 ? `+${value}` : `${value}`
+}
+
+function buildClassCardHtml(entry) {
+    const abilityName = entry.class_ability?.name || 'Habilidade'
+    const abilityEffect = entry.class_ability?.effect || '-'
+    const abilityUsage = entry.class_ability?.usage ? `Uso: ${entry.class_ability.usage}` : ''
+    const playstyle = entry.playstyle || '-'
+    const description = entry.description || '-'
+
+    return `
+        <div class="card-header">
+            <div class="card-name">${entry.name}</div>
+            <div class="card-level">Classe</div>
+        </div>
+        <div class="card-image">
+            <img src="${entry.image}" alt="${entry.name}">
+        </div>
+        <div class="card-stats hero-stats">
+            <div>❤️ ${formatModifier(entry.stat_modifiers?.hp)}</div>
+            <div>⚔ ${formatModifier(entry.stat_modifiers?.power)}</div>
+            <div>🛡 ${formatModifier(entry.stat_modifiers?.defense)}</div>
+            <div>⚡ ${formatModifier(entry.stat_modifiers?.speed)}</div>
+        </div>
+        <div class="card-text">
+            <b>Descrição</b><br>
+            ${description}
+        </div>
+        <div class="card-trophy hero-preferences">
+            <b>${abilityName}</b><br>
+            ${abilityEffect}
+            ${abilityUsage ? `<div class="card-ability-usage">${abilityUsage}</div>` : ''}
+            <small>${playstyle}</small>
+        </div>
+    `
+}
+
+function renderClassPages(entries, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    entries.forEach((entry) => {
+        if (renderedCount % cardsPerPage === 0) {
+            const page = document.createElement('div')
+            page.classList.add('page')
+            container.appendChild(page)
+        }
+
+        const currentPage = container.lastElementChild
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML = buildClassCardHtml(entry)
+        currentPage.appendChild(card)
+        renderedCount += 1
+    })
+
+    return renderedCount
+}
+
+async function loadClasses() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const entries = await fetchClasses()
+    renderClassPages(entries, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchClasses = fetchClasses
+window.renderClassPages = renderClassPages
+window.loadClasses = loadClasses

@@ -34,7 +34,7 @@ body {
 .hero-title {
   font-size: 2.25rem;
   margin: 0.25rem 0;
-  font-family: 'Warrior', serif;
+  font-family: 'Lucida Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -209,6 +209,16 @@ body {
   cursor: pointer;
 }
 
+.primary-solid {
+  border: none;
+  background: #111;
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .status-message {
   margin: 1rem 0;
   font-size: 0.9rem;
@@ -232,12 +242,28 @@ body {
     display: none;
   }
 
+  .deck-structure {
+    display: none;
+  }
+
   .generator-panel {
     padding: 0;
     box-shadow: none;
+    margin: 0;
+    background: transparent;
+    position: relative;
   }
 
   .generator-main {
     padding: 0;
+  }
+
+  #pages-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
   }
 }

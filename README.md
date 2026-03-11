@@ -50,8 +50,9 @@ Monstros raros e extremamente poderosos que concedem múltiplos níveis:
 ## 🖨️ Como Usar
 
 1. Abra `generator.html` para carregar o gerador principal, selecione um modelo e prepare as páginas prontas para impressão.
-2. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
-3. Abra `backs.html` para imprimir os versos das cartas.
+2. Abra `classes.html` para visualizar e imprimir as cartas de classes.
+3. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
+4. Abra `backs.html` para imprimir os versos das cartas.
 4. Imprima em papel adequado (recomendado: papel fotográfico ou cartolina).
 5. Recorte as cartas e divirta-se!
 
@@ -117,6 +118,7 @@ legends_card_game/
 ├── generator.html   # Página principal (menu de modelos e exportação em PDF)
 ├── monsters.html    # Gerador de cartas de monstros
 ├── heroes.html      # Gerador de cartas de heróis
+├── classes.html     # Gerador de cartas de classes
 ├── backs.html       # Gerador de versos das cartas
 └── about.md         # Documentação completa do jogo
 ```
