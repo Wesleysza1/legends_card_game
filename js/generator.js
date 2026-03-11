@@ -17,6 +17,12 @@ const MODELS = {
     load: fetchClasses,
     render: renderClassPages,
   },
+  subclasses: {
+    label: 'Subclasses',
+    description: 'Subclasses com habilidades específicas e ligação ao classe base.',
+    load: fetchSubclasses,
+    render: renderSubclassPages,
+  },
   backs: {
     label: 'Versos',
     description: 'Impressão dos versos oficial com o logo Legends.',
@@ -31,42 +37,9 @@ const modelTitle = document.getElementById('model-title')
 const modelDescription = document.getElementById('model-description')
 const previewButton = document.getElementById('preview-button')
 const menuButtons = Array.from(document.querySelectorAll('.menu-button'))
-const deckStructureGrid = document.getElementById('deck-structure-grid')
-
-const DECK_STRUCTURE = [
-  { key: 'heroes', label: 'Heróis', quantity: 6, description: 'Personagens jogáveis com identidade narrativa distinta.', status: 'pronto' },
-  { key: 'classes', label: 'Classes', quantity: 6, description: 'Bases de combate que definem o estilo inicial.', status: 'pronto' },
-  { key: 'subclasses', label: 'Subclasses', quantity: 18, description: 'Três especializações por classe para variação tática.', status: 'em breve' },
-  { key: 'monsters', label: 'Monstros', quantity: 24, description: 'Inimigos com níveis, habilidades e troféus.', status: 'pronto' },
-  { key: 'equipments', label: 'Equipamentos', quantity: 24, description: 'Armas e armaduras que aumentam atributos.', status: 'em breve' },
-  { key: 'items', label: 'Itens Utilizáveis', quantity: 12, description: 'Consumíveis com efeitos únicos.', status: 'em breve' },
-  { key: 'intrigues', label: 'Cartas de Intriga', quantity: 18, description: 'Efeitos inesperados que bagunçam a partida.', status: 'em breve' },
-  { key: 'events', label: 'Eventos', quantity: 12, description: 'Situações especiais que mudam o cenário.', status: 'em breve' },
-  { key: 'relics', label: 'Relíquias', quantity: 12, description: 'Artefatos lendários com benefícios permanentes.', status: 'em breve' },
-  { key: 'backs', label: 'Versos', quantity: 9, description: 'Impressão dos versos Legends para colar na parte traseira.', status: 'pronto' },
-]
-
-function renderDeckStructure() {
-  if (!deckStructureGrid) {
-    return
-  }
-
-  deckStructureGrid.innerHTML = ''
-
-  DECK_STRUCTURE.forEach((entry) => {
-    const card = document.createElement('article')
-    card.className = 'deck-card'
-
-    card.innerHTML = `
-      <span class="deck-badge ${entry.status === 'pronto' ? 'ready' : ''}">${entry.status}</span>
-      <h3>${entry.label}</h3>
-      <p class="deck-count">${entry.quantity}</p>
-      <p>${entry.description}</p>
-    `
-
-    deckStructureGrid.appendChild(card)
-  })
-}
+const setTabs = Array.from(document.querySelectorAll('.set-tab'))
+const menuSections = Array.from(document.querySelectorAll('.generator-menu'))
+let activeSet = 'official'
 
 function highlightButtonFor(modelKey) {
   menuButtons.forEach((button) => {
@@ -74,6 +47,21 @@ function highlightButtonFor(modelKey) {
       button.classList.add('active')
     } else {
       button.classList.remove('active')
+    }
+  })
+}
+
+function setActiveSet(setKey) {
+  activeSet = setKey
+  setTabs.forEach((tab) => {
+    tab.classList.toggle('active', tab.dataset.set === setKey)
+  })
+
+  menuSections.forEach((section) => {
+    if (section.dataset.set === setKey) {
+      section.classList.remove('hidden')
+    } else {
+      section.classList.add('hidden')
     }
   })
 }
@@ -112,7 +100,16 @@ menuButtons.forEach((button) => {
     if (button.disabled) {
       return
     }
+    const targetSet = button.dataset.set || 'official'
+    setActiveSet(targetSet)
     activateModel(modelKey)
+  })
+})
+
+setTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const setKey = tab.dataset.set || 'official'
+    setActiveSet(setKey)
   })
 })
 
@@ -124,6 +121,20 @@ previewButton?.addEventListener('click', () => {
   window.print()
 })
 
-renderDeckStructure()
+const structureToggle = document.getElementById('structure-toggle')
+const structureToggleButton = document.getElementById('structure-toggle-button')
+
+structureToggleButton?.addEventListener('click', (event) => {
+  event.stopPropagation()
+  structureToggle?.classList.toggle('open')
+})
+
+document.addEventListener('click', (event) => {
+  if (structureToggle && !structureToggle.contains(event.target)) {
+    structureToggle.classList.remove('open')
+  }
+})
+
+setActiveSet('official')
 
 activateModel('monsters')

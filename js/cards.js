@@ -279,3 +279,79 @@ async function loadClasses() {
 window.fetchClasses = fetchClasses
 window.renderClassPages = renderClassPages
 window.loadClasses = loadClasses
+
+async function fetchSubclasses() {
+    const response = await fetch('db/subclasses.json')
+    const data = await response.json()
+    return data.subclasses ?? []
+}
+
+function buildSubclassCardHtml(subclass) {
+    const abilityName = subclass.subclass_ability?.name || 'Habilidade'
+    const abilityEffect = subclass.subclass_ability?.effect || '-'
+    const abilityUsage = subclass.subclass_ability?.usage ? `Uso: ${subclass.subclass_ability.usage}` : ''
+    const description = subclass.description || '-'
+
+    return `
+        <div class="card-header">
+            <div>
+                <div class="card-name">${subclass.name}</div>
+                <div class="card-title">${subclass.class}</div>
+            </div>
+            <div class="card-level">Subclasse</div>
+        </div>
+        <div class="card-image">
+            <img src="${subclass.image}" alt="${subclass.name}">
+        </div>
+        <div class="card-text">
+            <b>Descrição</b><br>
+            ${description}
+        </div>
+        <div class="card-trophy hero-preferences">
+            <b>${abilityName}</b><br>
+            ${abilityEffect}
+            ${abilityUsage ? `<div class="card-ability-usage">${abilityUsage}</div>` : ''}
+        </div>
+    `
+}
+
+function renderSubclassPages(subclasses, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    subclasses.forEach((subclass) => {
+        if (renderedCount % cardsPerPage === 0) {
+            const page = document.createElement('div')
+            page.classList.add('page')
+            container.appendChild(page)
+        }
+
+        const currentPage = container.lastElementChild
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML = buildSubclassCardHtml(subclass)
+        currentPage.appendChild(card)
+        renderedCount += 1
+    })
+
+    return renderedCount
+}
+
+async function loadSubclasses() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const data = await fetchSubclasses()
+    renderSubclassPages(data, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchSubclasses = fetchSubclasses
+window.renderSubclassPages = renderSubclassPages
+window.loadSubclasses = loadSubclasses

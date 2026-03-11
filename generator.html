@@ -21,24 +21,32 @@
     </div>
   </header>
 
-  <nav class="generator-menu" id="model-menu">
-    <button class="menu-button active" data-model="monsters">Gerar cards de monstros</button>
-    <button class="menu-button" data-model="heroes">Gerar cards de heróis</button>
-    <button class="menu-button" data-model="classes">Gerar cards de classes</button>
-    <button class="menu-button" data-model="backs">Gerar versos</button>
-  </nav>
+  <div class="set-tabs">
+    <button class="set-tab active" data-set="official">Jogo Base</button>
+    <button class="set-tab" data-set="expansion">Expansões</button>
+  </div>
+
+  <div class="menu-wrapper">
+    <nav class="generator-menu" data-set="official">
+      <button class="menu-button active" data-model="monsters" data-set="official">Cards de monstros</button>
+      <button class="menu-button" data-model="heroes" data-set="official">Cards de heróis</button>
+      <button class="menu-button" data-model="classes" data-set="official">Cards de classes</button>
+      <button class="menu-button" data-model="subclasses" data-set="official">Cards de subclasses</button>
+      <button class="menu-button" data-model="backs" data-set="official">Versos dos Cards</button>
+    </nav>
+    <nav class="generator-menu hidden" data-set="expansion">
+      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Reinos Celestiais</button>
+    </nav>
+  </div>
 
   <main class="generator-main">
-    <section class="deck-structure">
-      <div class="section-header">
-        <div>
-          <p class="panel-label">Estrutura do baralho</p>
-          <h2>Evolução e diversidade</h2>
-          <p class="panel-description">Cada categoria de cartas terá seu modelo e estará disponível como uma aba no gerador quando pronta.</p>
-        </div>
+    <div class="structure-toggle" id="structure-toggle">
+      <button id="structure-toggle-button">Estrutura do Deck</button>
+      <div class="structure-options" id="structure-options">
+        <a href="structure-official.html">Jogo Base</a>
+        <a href="structure-reinos.html">Reinos Celestiais</a>
       </div>
-      <div class="deck-grid" id="deck-structure-grid"></div>
-    </section>
+    </div>
 
     <section class="generator-panel">
       <div class="panel-header">

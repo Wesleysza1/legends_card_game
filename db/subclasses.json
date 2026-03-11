@@ -2,66 +2,92 @@
   "subclasses": [
     {
       "id": 1,
-      "name": "Cavaleiro",
+      "name": "Campeão",
       "class": "Guerreiro",
-      "description": "Um combatente disciplinado treinado para proteger aliados.",
-      "image": "images/subclasses/cavaleiro.png",
+      "description": "Um combatente lendário que domina o campo de batalha.",
+      "image": "images/subclasses/campeao.png",
 
       "subclass_ability": {
-        "name": "Proteção Honrada",
+        "name": "Golpe Heroico",
         "type": "combat",
         "usage": "1 vez por combate",
-        "effect": "Reduza em 2 o dano recebido por você ou um aliado."
+        "effect": "+3 de dano em um ataque."
       }
     },
-
     {
       "id": 2,
-      "name": "Berserker",
-      "class": "Bárbaro",
-      "description": "Um guerreiro que entra em frenesi durante o combate.",
-      "image": "images/subclasses/berserker.png",
+      "name": "Guardião",
+      "class": "Guerreiro",
+      "description": "Especialista em proteger aliados e resistir a ataques.",
+      "image": "images/subclasses/guardiao.png",
 
       "subclass_ability": {
-        "name": "Frenesi",
+        "name": "Muralha de Aço",
         "type": "combat",
         "usage": "1 vez por combate",
-        "effect": "Ganhe +2 poder neste ataque, mas receba 1 de dano."
+        "effect": "Reduza em 2 o dano recebido neste combate."
       }
     },
-
     {
       "id": 3,
-      "name": "Arcanista",
-      "class": "Mago",
-      "description": "Especialista em manipular energias mágicas puras.",
-      "image": "images/subclasses/arcanista.png",
+      "name": "Duelista",
+      "class": "Guerreiro",
+      "description": "Mestre em combates rápidos e precisos.",
+      "image": "images/subclasses/duelista.png",
 
       "subclass_ability": {
-        "name": "Conjuração Rápida",
+        "name": "Estocada Rápida",
         "type": "combat",
-        "usage": "1 vez por turno",
-        "effect": "Adicione +1 dano mágico a um ataque."
+        "usage": "1 vez por combate",
+        "effect": "Cause 2 de dano no começo do combate."
       }
     },
 
     {
       "id": 4,
-      "name": "Ilusionista",
+      "name": "Piromante",
       "class": "Mago",
-      "description": "Manipula ilusões para confundir inimigos.",
-      "image": "images/subclasses/ilusionista.png",
+      "description": "Domina as chamas destrutivas da magia.",
+      "image": "images/subclasses/piromante.png",
 
       "subclass_ability": {
-        "name": "Imagem Espelhada",
+        "name": "Chamas Devastadoras",
         "type": "combat",
         "usage": "1 vez por combate",
-        "effect": "Ignore totalmente um ataque recebido."
+        "effect": "Cause 3 de dano mágico em um inimigo."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Arcanista",
+      "class": "Mago",
+      "description": "Estudioso profundo das energias arcanas.",
+      "image": "images/subclasses/arcanista.png",
+
+      "subclass_ability": {
+        "name": "Surto Arcano",
+        "type": "utility",
+        "usage": "1 vez por turno",
+        "effect": "Compre 1 carta adicional."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Cronomante",
+      "class": "Mago",
+      "description": "Manipula o fluxo do tempo em combate.",
+      "image": "images/subclasses/cronomante.png",
+
+      "subclass_ability": {
+        "name": "Controle do Tempo",
+        "type": "utility",
+        "usage": "1 vez por combate",
+        "effect": "Ataque duas vezes no primeiro turno do combate."
       }
     },
 
     {
-      "id": 5,
+      "id": 7,
       "name": "Assassino",
       "class": "Ladino",
       "description": "Especialista em eliminar alvos rapidamente.",
@@ -71,15 +97,14 @@
         "name": "Golpe Mortal",
         "type": "combat",
         "usage": "1 vez por combate",
-        "effect": "Cause +2 dano se atacar primeiro."
+        "effect": "+3 no primeiro ataque."
       }
     },
-
     {
-      "id": 6,
+      "id": 8,
       "name": "Trapaceiro",
       "class": "Ladino",
-      "description": "Prefere truques e manipulação ao combate direto.",
+      "description": "Manipula o jogo com truques e blefes.",
       "image": "images/subclasses/trapaceiro.png",
 
       "subclass_ability": {
@@ -89,64 +114,147 @@
         "effect": "Force um jogador a descartar 1 carta."
       }
     },
-
-    {
-      "id": 7,
-      "name": "Batedor",
-      "class": "Caçador",
-      "description": "Explorador veloz especializado em reconhecimento.",
-      "image": "images/subclasses/batedor.png",
-
-      "subclass_ability": {
-        "name": "Reconhecimento",
-        "type": "exploration",
-        "usage": "1 vez por turno",
-        "effect": "Olhe as 2 próximas cartas do baralho e coloque-as de volta na ordem que desejar."
-      }
-    },
-
-    {
-      "id": 8,
-      "name": "Domador de Bestas",
-      "class": "Caçador",
-      "description": "Luta ao lado de criaturas selvagens.",
-      "image": "images/subclasses/domador_bestas.png",
-
-      "subclass_ability": {
-        "name": "Companheiro Animal",
-        "type": "combat",
-        "usage": "1 vez por combate",
-        "effect": "Adicione +1 poder e +1 defesa neste combate."
-      }
-    },
-
     {
       "id": 9,
-      "name": "Templário",
-      "class": "Paladino",
-      "description": "Um defensor sagrado que combate as trevas.",
-      "image": "images/subclasses/templario.png",
+      "name": "Espião",
+      "class": "Ladino",
+      "description": "Mestre em coleta de informação.",
+      "image": "images/subclasses/espiao.png",
 
       "subclass_ability": {
-        "name": "Golpe Sagrado",
-        "type": "combat",
-        "usage": "1 vez por combate",
-        "effect": "Cause +2 dano contra criaturas demoníacas ou sombrias."
+        "name": "Informante",
+        "type": "exploration",
+        "usage": "1 vez por turno",
+        "effect": "Olhe as 2 próximas cartas do baralho."
       }
     },
 
     {
       "id": 10,
-      "name": "Guardião",
-      "class": "Paladino",
-      "description": "Protetor incansável de seus aliados.",
-      "image": "images/subclasses/guardiao.png",
+      "name": "Atirador",
+      "class": "Caçador",
+      "description": "Especialista em ataques de longa distância.",
+      "image": "images/subclasses/atirador.png",
 
       "subclass_ability": {
-        "name": "Escudo da Fé",
+        "name": "Disparo Perfeito",
         "type": "combat",
         "usage": "1 vez por combate",
-        "effect": "Você ou um aliado recebe +2 defesa neste combate."
+        "effect": "Cause +2 dano ignorando defesa."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Domador de Feras",
+      "class": "Caçador",
+      "description": "Luta ao lado de criaturas leais.",
+      "image": "images/subclasses/domador_feras.png",
+
+      "subclass_ability": {
+        "name": "Companheiro Selvagem",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Após vencer um monstro de nível 1-3, dome-o e o use em combate"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Explorador",
+      "class": "Caçador",
+      "description": "Especialista em atravessar territórios perigosos.",
+      "image": "images/subclasses/explorador.png",
+
+      "subclass_ability": {
+        "name": "Caminhos Secretos",
+        "type": "exploration",
+        "usage": "1 vez a cada dois turnos",
+        "effect": "Ignore o efeito negativo de uma carta de exploração."
+      }
+    },
+
+    {
+      "id": 13,
+      "name": "Templário",
+      "class": "Paladino",
+      "description": "Cavaleiro sagrado defensor da fé.",
+      "image": "images/subclasses/templario.png",
+
+      "subclass_ability": {
+        "name": "Escudo Sagrado",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Bloqueie completamente um ataque."
+      }
+    },
+    {
+      "id": 14,
+      "name": "Exorcista",
+      "class": "Paladino",
+      "description": "Especialista em destruir criaturas malignas.",
+      "image": "images/subclasses/exorcista.png",
+
+      "subclass_ability": {
+        "name": "Banimento",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "+3 dano contra mortos-vivos ou demônios."
+      }
+    },
+    {
+      "id": 15,
+      "name": "Arauto da Luz",
+      "class": "Paladino",
+      "description": "Portador do poder restaurador da luz.",
+      "image": "images/subclasses/arauto_luz.png",
+
+      "subclass_ability": {
+        "name": "Luz Restauradora",
+        "type": "utility",
+        "usage": "1 vez por turno",
+        "effect": "Cure 2 HP de um aliado."
+      }
+    },
+
+    {
+      "id": 16,
+      "name": "Berserker",
+      "class": "Bárbaro",
+      "description": "Canaliza pura fúria no combate.",
+      "image": "images/subclasses/berserker.png",
+
+      "subclass_ability": {
+        "name": "Frenesi",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "+3 poder neste turno."
+      }
+    },
+    {
+      "id": 17,
+      "name": "Xamã de Guerra",
+      "class": "Bárbaro",
+      "description": "Mistura espiritualidade tribal e brutalidade.",
+      "image": "images/subclasses/xama_guerra.png",
+
+      "subclass_ability": {
+        "name": "Totem Espiritual",
+        "type": "utility",
+        "usage": "1 vez por combate",
+        "effect": "Em caso de dano fatal, fique com 1 de vida."
+      }
+    },
+    {
+      "id": 18,
+      "name": "Senhor da Tempestade",
+      "class": "Bárbaro",
+      "description": "Um guerreiro que canaliza o poder das tempestades.",
+      "image": "images/subclasses/senhor_tempestade.png",
+
+      "subclass_ability": {
+        "name": "Golpe do Trovão",
+        "type": "combat",
+        "usage": "1 vez por combate",
+        "effect": "Cause 2 dano a todos os aliados."
       }
     }
   ]

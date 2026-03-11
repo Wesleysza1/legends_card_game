@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends - Estrutura Oficial</title>
+  <link rel="stylesheet" href="css/generator.css">
+  <style>
+    :root {
+      --card-bg: #fefefe;
+      --card-border: rgba(0, 0, 0, 0.05);
+      --hero-gradient: linear-gradient(135deg, #2b1d2a, #2f3648);
+    }
+    body {
+      margin: 0;
+      background: #f9f6ef;
+      font-family: 'Lucida Sans', 'Segoe UI', sans-serif;
+      color: #1a1a1a;
+    }
+    header {
+      background: var(--hero-gradient);
+      color: white;
+      padding: 3rem 5vw;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0.25rem 0 0.5rem;
+      font-family: 'Warrior', serif;
+      letter-spacing: 0.1em;
+    }
+    header p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 3rem 5vw 4rem;
+    }
+    .lead-card {
+      background: var(--card-bg);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      box-shadow: 0 20px 45px rgba(20, 20, 20, 0.1);
+      margin-bottom: 2rem;
+    }
+    .lead-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .deck-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    .deck-table th,
+    .deck-table td {
+      padding: 0.75rem 0.5rem;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+      font-size: 0.95rem;
+    }
+    .deck-table th {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+    .badge-ready {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background: var(--highlight);
+      color: white;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    .info-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .info-grid article {
+      border: 1px solid var(--card-border);
+      border-radius: 0.85rem;
+      padding: 1rem;
+      background: #fff;
+    }
+    .info-grid h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1.1rem;
+    }
+    .info-grid p {
+      margin: 0;
+      color: #444;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="deck-badge ready">Oficial</span>
+    <h1>Estrutura do Deck - Jogo Base</h1>
+    <p>O jogo oficial foi desenhado para oferecer ritmo de aventura equilibrado. Abaixo está a lista completa das categorias que compõem o baralho base, permitindo imprimir, montar e jogar sem dependências externas.</p>
+  </header>
+
+  <main>
+    <section class="lead-card">
+      <h2>Componentes oficiais (132 cards)</h2>
+      <table class="deck-table">
+        <thead>
+          <tr>
+            <th>Tipo de Carta</th>
+            <th>Quantidade</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heróis</td>
+            <td>6</td>
+            <td>Personagens jogáveis com habilidades únicas.</td>
+          </tr>
+          <tr>
+            <td>Classes</td>
+            <td>6</td>
+            <td>Fundamentos de combate e modificadores de estatísticas.</td>
+          </tr>
+          <tr>
+            <td>Subclasses</td>
+            <td>18</td>
+            <td>Especializações específicas para cada classe.</td>
+          </tr>
+          <tr>
+            <td>Monstros</td>
+            <td>24</td>
+            <td>Inimigos variados, incluindo chefes e criaturas lendárias.</td>
+          </tr>
+          <tr>
+            <td>Equipamentos</td>
+            <td>24</td>
+            <td>Armas e armaduras que melhoram atributos dos heróis.</td>
+          </tr>
+          <tr>
+            <td>Itens Utilizáveis</td>
+            <td>12</td>
+            <td>Consumíveis com efeitos pontuais durante a exploração.</td>
+          </tr>
+          <tr>
+            <td>Cartas de Intriga</td>
+            <td>18</td>
+            <td>Efeitos surpresa que impactam o combate e o tabuleiro.</td>
+          </tr>
+          <tr>
+            <td>Eventos</td>
+            <td>12</td>
+            <td>Situações especiais que alteram o cenário da partida.</td>
+          </tr>
+          <tr>
+            <td>Relíquias</td>
+            <td>12</td>
+            <td>Artefatos eternos que conferem bônus permanentes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="back-link" href="generator.html">← Voltar ao gerador</a>
+    </section>
+
+    <section class="info-grid">
+      <article>
+        <h3>Design para impressão</h3>
+        <p>Cartas preparadas para A4, 9 por página, com fontes legíveis e economia de tinta. Todas as artes ficam em `images/` e são servidas localmente.</p>
+      </article>
+      <article>
+        <h3>Expansões futuras</h3>
+        <p>Novos arquivos JSON (como `classes.json` e futuros `eventos.json`) podem ser adicionados à pasta `db/` e amarrados ao gerador.</p>
+      </article>
+      <article>
+        <h3>Uso</h3>
+        <p>Escolha o modelo no gerador, visualize a página completa e imprima em casa. A lista acima resume as categorias do jogo base atual.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>Legends • Projeto caseiro não comercial • Estrutura oficial validada em <span id="year"></span>.</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>

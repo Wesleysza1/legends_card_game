@@ -50,9 +50,11 @@ Monstros raros e extremamente poderosos que concedem múltiplos níveis:
 ## 🖨️ Como Usar
 
 1. Abra `generator.html` para carregar o gerador principal, selecione um modelo e prepare as páginas prontas para impressão.
-2. Abra `classes.html` para visualizar e imprimir as cartas de classes.
-3. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
-4. Abra `backs.html` para imprimir os versos das cartas.
+2. Use o botão “Estrutura do Deck” dentro do gerador para abrir um menu com os links do jogo base (`structure-official.html`) e da expansão “Reinos Celestiais” (`structure-reinos.html`), assim você vê tudo que pertence a cada versão sem lotar o gerador principal.
+3. Abra `classes.html` para visualizar e imprimir as cartas de classes.
+4. Abra `subclasses.html` para visualizar e imprimir as subclasses com o mesmo layout.
+5. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
+6. Abra `backs.html` para imprimir os versos das cartas.
 4. Imprima em papel adequado (recomendado: papel fotográfico ou cartolina).
 5. Recorte as cartas e divirta-se!
 
