@@ -1,0 +1,152 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Guerreiro Errante",
+      "title": "Veterano das Estradas",
+      "description": "Um combatente experiente que já lutou em centenas de batalhas.",
+      "image": "images/heroes/guerreiro.png",
+
+      "stats": {
+        "hp": 12,
+        "power": 3,
+        "defense": 2,
+        "speed": 1
+      },
+
+      "ability": {
+        "name": "Instinto de Batalha",
+        "effect": "+1 poder em todos os combates contra monstros."
+      },
+
+      "preferred_classes": [
+        "Guerreiro",
+        "Paladino"
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Ladra das Sombras",
+      "title": "Mestre da Furtividade",
+      "description": "Especialista em ataques rápidos e truques inesperados.",
+      "image": "images/heroes/ladra.png",
+
+      "stats": {
+        "hp": 9,
+        "power": 2,
+        "defense": 1,
+        "speed": 3
+      },
+
+      "ability": {
+        "name": "Golpe Furtivo",
+        "effect": "Uma vez por combate, pode ignorar 1 ponto de defesa do inimigo."
+      },
+
+      "preferred_classes": [
+        "Ladino",
+        "Caçador"
+      ]
+    },
+
+    {
+      "id": 3,
+      "name": "Maga Arcana",
+      "title": "Discípula do Véu Arcano",
+      "description": "Controla energias mágicas capazes de alterar o destino do combate.",
+      "image": "images/heroes/maga_arcana.png",
+
+      "stats": {
+        "hp": 8,
+        "power": 3,
+        "defense": 1,
+        "speed": 2
+      },
+
+      "ability": {
+        "name": "Véu Arcano",
+        "effect": "Uma vez por batalha, pode defender recebendo -1 de dano."
+      },
+
+      "preferred_classes": [
+        "Mago"
+      ]
+    },
+
+    {
+      "id": 4,
+      "name": "Caçador da Fronteira",
+      "title": "Guardião das Terras Selvagens",
+      "description": "Rastreador habilidoso acostumado a sobreviver em territórios perigosos.",
+      "image": "images/heroes/cacador_fronteira.png",
+
+      "stats": {
+        "hp": 10,
+        "power": 2,
+        "defense": 2,
+        "speed": 2
+      },
+
+      "ability": {
+        "name": "Olhos de Águia",
+        "effect": "Pode revelar a próxima carta do baralho antes de explorar."
+      },
+
+      "preferred_classes": [
+        "Caçador",
+        "Ladino"
+      ]
+    },
+
+    {
+      "id": 5,
+      "name": "Paladina da Aurora",
+      "title": "Campeã da Luz",
+      "description": "Uma guerreira sagrada que luta em nome da justiça.",
+      "image": "images/heroes/paladina_aurora.png",
+
+      "stats": {
+        "hp": 11,
+        "power": 2,
+        "defense": 3,
+        "speed": 1
+      },
+
+      "ability": {
+        "name": "Luz Purificadora",
+        "effect": "Recebe +1 defesa contra criaturas sombrias ou demoníacas."
+      },
+
+      "preferred_classes": [
+        "Paladino",
+        "Guerreiro"
+      ]
+    },
+
+    {
+      "id": 6,
+      "name": "Bárbaro das Terras Altas",
+      "title": "Fúria Indomável",
+      "description": "Um guerreiro brutal que transforma dor em força.",
+      "image": "images/heroes/barbaro.png",
+
+      "stats": {
+        "hp": 13,
+        "power": 3,
+        "defense": 1,
+        "speed": 2
+      },
+
+      "ability": {
+        "name": "Fúria de Batalha",
+        "effect": "Quando sofre dano, ganha +1 poder no próximo ataque."
+      },
+
+      "preferred_classes": [
+        "Bárbaro",
+        "Guerreiro"
+      ]
+    }
+  ]
+}

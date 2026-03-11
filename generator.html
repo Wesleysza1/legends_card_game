@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legends Card Generator</title>
+  <link rel="stylesheet" href="css/generator.css">
+  <link rel="stylesheet" href="css/cards.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Legends</p>
+      <h1 class="hero-title">Gerador de cards imprimíveis</h1>
+      <p class="hero-subtitle">Escolha um modelo, carregue os dados e imprima cada página com nove cartas por folha A4.</p>
+    </div>
+    <div class="hero-actions">
+      <button class="hero-action" onclick="document.getElementById('model-menu').scrollIntoView({ behavior: 'smooth' })">Ver modelos</button>
+    </div>
+  </header>
+
+  <nav class="generator-menu" id="model-menu">
+    <button class="menu-button active" data-model="monsters">Gerar cards de monstros</button>
+    <button class="menu-button" data-model="heroes">Gerar cards de heróis</button>
+    <button class="menu-button" disabled>Gerar cards de classes (em breve)</button>
+  </nav>
+
+  <main class="generator-main">
+    <section class="deck-structure">
+      <div class="section-header">
+        <div>
+          <p class="panel-label">Estrutura do baralho</p>
+          <h2>Evolução e diversidade</h2>
+          <p class="panel-description">Cada categoria de cartas terá seu modelo e estará disponível como uma aba no gerador quando pronta.</p>
+        </div>
+      </div>
+      <div class="deck-grid" id="deck-structure-grid"></div>
+    </section>
+
+    <section class="generator-panel">
+      <div class="panel-header">
+        <div>
+          <p class="panel-label">Modelo ativo</p>
+          <h2 id="model-title">Monstros</h2>
+          <p id="model-description" class="panel-description">Cards de monstros com level, habilidades e troféus.</p>
+        </div>
+        <div class="panel-actions">
+          <button id="print-button" class="primary-outline">Imprimir / gerar PDF</button>
+        </div>
+      </div>
+      <p id="status-message" class="status-message">Selecione um modelo para carregar os cards.</p>
+      <div id="pages-container"></div>
+    </section>
+  </main>
+
+  <script src="js/cards.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html>
