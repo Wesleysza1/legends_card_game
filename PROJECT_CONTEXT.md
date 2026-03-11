@@ -4,7 +4,7 @@
 
 The project contains tools to render printable cards using **HTML, CSS and JavaScript**, using a **JSON database** as the source of truth for game content.
 
-The current implementation focuses on **monster cards** and **card backs**.
+The current implementation focuses on **monster cards**, **heroes**, **classes**, **subclasses**, **card backs**, and a unified generator hub that stitches those models together while staying print-friendly. Structure docs (`structure-official.html`, `structure-reinos.html`) describe the official deck breakdown as a reference for future expansions.
 
 Cards are designed to be printed on **A4 paper**, with **9 cards per page**, optimized for home printers (low ink usage, white backgrounds).
 
@@ -74,18 +74,32 @@ images/monsters/
 .
 ├── ABOUT.md
 ├── backs.html
+├── classes.html
+├── generator.html
+├── heroes.html
+├── subclasses.html
+├── structure-official.html
+├── structure-reinos.html
 ├── css
 │   ├── backs.css
-│   └── cards.css
+│   ├── cards.css
+│   └── generator.css
 ├── db
-│   └── monsters.json
+│   ├── classes.json
+│   ├── heroes.json
+│   ├── monsters.json
+│   └── subclasses.json
 ├── fonts
 │   └── warrior.ttf
 ├── images
-│   └── monsters
+│   ├── classes
+│   ├── heroes
+│   ├── monsters
+│   └── subclasses
 ├── js
 │   ├── backs.js
-│   └── cards.js
+│   ├── cards.js
+│   └── generator.js
 ├── LICENSE
 ├── monsters.html
 ├── PROJECT_CONTEXT.md
@@ -96,27 +110,9 @@ images/monsters/
 
 # Current Card Rendering System
 
-Cards are rendered using **HTML templates + JavaScript**.
+The generator hub at `generator.html` orchestrates all models through `js/generator.js`, renders cards with `js/cards.js` (monsters, heroes, classes, subclasses) or `js/backs.js`, and enforces the printable layout defined in `css/generator.css`. Standalone pages (monsters, heroes, classes, subclasses, backs) still exist for focused preview/print runs.
 
-There is currently **one page per card type**.
-
-Implemented pages:
-
-```
-monsters.html
-backs.html
-```
-
-Each page loads a corresponding script.
-
-```
-cards.js
-backs.js
-```
-
-These scripts read the JSON database and dynamically render the cards.
-
-Cards are laid out for **printable A4 pages**.
+Cards still follow the original **A4 / 9 cards per page / ink-efficient** constraints and source their data from the JSON database.
 
 ---
 
@@ -308,6 +304,14 @@ These produce printable card back templates using the **Legends branding**.
 
 ---
 
+# Recent Work Log
+
+1. Built the generator hub (`generator.html`, `js/generator.js`, `css/generator.css`) that groups base-game models and hides the deck controls while printing.
+2. Added heroes, classes, subclasses, and backs renderers plus preview pages that reuse `js/cards.js` / `js/backs.js`.
+3. Created dedicated structure pages for the official deck and the Reinos Celestiais expansion plus README updates.
+
+---
+
 # Future Expansion Plans
 
 The game was designed to support additional card types.
@@ -323,6 +327,12 @@ Exploration cards
 PvP duel mechanics
 
 The JSON-based system allows easy expansion.
+
+# Next Steps
+
+1. Keep growing the JSON catalog (items, events, relics) and wire them into the generator with new models.
+2. Refine the generator’s UI filters so expansions can be toggled while keeping the base hub lightweight.
+3. Explore automating PDF exports after layouts stay stable.
 
 ---
 
