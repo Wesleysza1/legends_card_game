@@ -1,0 +1,460 @@
+{
+  "monsters": [
+    {
+      "id": 1,
+      "name": "Goblin das Ruínas",
+      "level": 2,
+      "unique": false,
+      "image": "images/monsters/goblin_ruinas.png",
+      "stats": {
+        "hp": 2,
+        "damage": 1,
+        "glory": 1
+      },
+      "ability": "Ao ser revelado, o jogador descarta 1 carta da mão.",
+      "reward": {
+        "trophy": "Orelhas de Goblin",
+        "effect": "+1 poder em duelos"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 2,
+      "name": "Lobo Sombrio",
+      "level": 2,
+      "unique": false,
+      "image": "images/monsters/lobo_sombrio.png",
+      "stats": {
+        "hp": 2,
+        "damage": 1,
+        "glory": 1
+      },
+      "ability": "Ao ser derrotado, morde o jogador causando 1 de dano.",
+      "reward": {
+        "trophy": "Presa Sombria",
+        "effect": "+1 poder contra monstros"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 3,
+      "name": "Esqueleto Guardião",
+      "level": 3,
+      "unique": false,
+      "image": "images/monsters/esqueleto_guardiao.png",
+      "stats": {
+        "hp": 3,
+        "damage": 1,
+        "glory": 1
+      },
+      "ability": "Recebe +1 vida neste combate.",
+      "reward": {
+        "trophy": "Elmo Antigo",
+        "effect": "+1 defesa"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 4,
+      "name": "Slime Ácido",
+      "level": 3,
+      "unique": false,
+      "image": "images/monsters/slime_acido.png",
+      "stats": {
+        "hp": 3,
+        "damage": 1,
+        "glory": 1
+      },
+      "ability": "O jogador perde 1 item equipado se perder o combate.",
+      "reward": {
+        "trophy": "Núcleo Ácido",
+        "effect": "+1 dano contra monstros"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 5,
+      "name": "Bandido das Estradas",
+      "level": 2,
+      "unique": false,
+      "image": "images/monsters/bandido_estradas.png",
+      "stats": {
+        "hp": 2,
+        "damage": 1,
+        "glory": 1
+      },
+      "ability": "Rouba 1 carta aleatória da mão do jogador.",
+      "reward": {
+        "trophy": "Adaga Roubada",
+        "effect": "+1 poder em duelos"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 6,
+      "name": "Mímico Faminto",
+      "level": 3,
+      "unique": false,
+      "image": "images/monsters/mimico_faminto.png",
+      "stats": {
+        "hp": 3,
+        "damage": 2,
+        "glory": 1
+      },
+      "ability": "Ao ser revelado, o jogador perde 1 item equipado.",
+      "reward": {
+        "trophy": "Dente de Mímico",
+        "effect": "+1 poder ao explorar"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 7,
+      "name": "Orc Brutamontes",
+      "level": 4,
+      "unique": false,
+      "image": "images/monsters/orc_brutamontes.png",
+      "stats": {
+        "hp": 4,
+        "damage": 2,
+        "glory": 2
+      },
+      "ability": "Causa +1 dano neste combate.",
+      "reward": {
+        "trophy": "Machado Orc",
+        "effect": "+2 poder contra monstros"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 8,
+      "name": "Gárgula de Pedra",
+      "level": 4,
+      "unique": false,
+      "image": "images/monsters/gargula_pedra.png",
+      "stats": {
+        "hp": 5,
+        "damage": 1,
+        "glory": 2
+      },
+      "ability": "-1 dano recebido.",
+      "reward": {
+        "trophy": "Fragmento de Pedra",
+        "effect": "+1 defesa"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 9,
+      "name": "Aranha Gigante",
+      "level": 4,
+      "unique": false,
+      "image": "images/monsters/aranha_gigante.png",
+      "stats": {
+        "hp": 4,
+        "damage": 2,
+        "glory": 2
+      },
+      "ability": "O jogador descarta 1 carta ao iniciar o combate.",
+      "reward": {
+        "trophy": "Veneno de Aranha",
+        "effect": "+1 dano extra"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 10,
+      "name": "Cavaleiro Espectral",
+      "level": 5,
+      "unique": false,
+      "image": "images/monsters/cavaleiro_espectral.png",
+      "stats": {
+        "hp": 5,
+        "damage": 2,
+        "glory": 2
+      },
+      "ability": "Ignora bônus de troféus.",
+      "reward": {
+        "trophy": "Espada Fantasma",
+        "effect": "+2 poder em duelos"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 11,
+      "name": "Ogro das Cavernas",
+      "level": 5,
+      "unique": false,
+      "image": "images/monsters/ogro_cavernas.png",
+      "stats": {
+        "hp": 6,
+        "damage": 2,
+        "glory": 2
+      },
+      "ability": "Rouba 1 equipamento se vencer.",
+      "reward": {
+        "trophy": "Clava Ogra",
+        "effect": "+2 poder contra monstros"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 12,
+      "name": "Cultista Sombrio",
+      "level": 5,
+      "unique": false,
+      "image": "images/monsters/cultista_sombrio.png",
+      "stats": {
+        "hp": 4,
+        "damage": 2,
+        "glory": 2
+      },
+      "ability": "O jogador descarta 2 cartas.",
+      "reward": {
+        "trophy": "Símbolo Profano",
+        "effect": "+1 poder mágico"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 13,
+      "name": "Troll Regenerador",
+      "level": 6,
+      "unique": false,
+      "image": "images/monsters/troll_regenerador.png",
+      "stats": {
+        "hp": 6,
+        "damage": 2,
+        "glory": 3
+      },
+      "ability": "Recupera 1 vida por rodada.",
+      "reward": {
+        "trophy": "Pele de Troll",
+        "effect": "+2 defesa"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 14,
+      "name": "Serpente das Profundezas",
+      "level": 6,
+      "unique": false,
+      "image": "images/monsters/serpente_profundezas.png",
+      "stats": {
+        "hp": 5,
+        "damage": 3,
+        "glory": 3
+      },
+      "ability": "Causa +1 dano se atacar primeiro.",
+      "reward": {
+        "trophy": "Escama Abissal",
+        "effect": "+1 poder contra chefes"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 15,
+      "name": "Quimera Jovem",
+      "level": 7,
+      "unique": false,
+      "image": "images/monsters/quimera_jovem.png",
+      "stats": {
+        "hp": 6,
+        "damage": 3,
+        "glory": 3
+      },
+      "ability": "Pode causar dano duas vezes. O segundo ataque causa 1 de dano.",
+      "reward": {
+        "trophy": "Garra de Quimera",
+        "effect": "+2 poder"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 16,
+      "name": "Necromante Caído",
+      "level": 7,
+      "unique": false,
+      "image": "images/monsters/necromante_caido.png",
+      "stats": {
+        "hp": 5,
+        "damage": 3,
+        "glory": 3
+      },
+      "ability": "Invoca um Esqueleto Guardião.",
+      "reward": {
+        "trophy": "Grimório Negro",
+        "effect": "+1 poder mágico"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 17,
+      "name": "Gigante de Ferro",
+      "level": 7,
+      "unique": false,
+      "image": "images/monsters/gigante_ferro.png",
+      "stats": {
+        "hp": 7,
+        "damage": 3,
+        "glory": 3
+      },
+      "ability": "Recebe -1 de dano.",
+      "reward": {
+        "trophy": "Núcleo de Ferro",
+        "effect": "+2 defesa"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 18,
+      "name": "Guardião Ancestral",
+      "level": 7,
+      "unique": true,
+      "image": "images/monsters/guardiao_ancestral.png",
+      "stats": {
+        "hp": 7,
+        "damage": 3,
+        "glory": 4
+      },
+      "ability": "Ignora todos os troféus do jogador.",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +1 nível"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 19,
+      "boss": true,
+      "name": "Dragão das Ruínas",
+      "level": 9,
+      "unique": true,
+      "image": "images/monsters/dragao_ruinas.png",
+      "stats": {
+        "hp": 8,
+        "damage": 4,
+        "glory": 5
+      },
+      "ability": "Causa 2 dano imediato ao ser revelado.",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +2 níveis"
+      },
+      "copies": 1
+    },
+    {
+      "id": 20,
+      "name": "Demônio Menor",
+      "level": 8,
+      "unique": false,
+      "image": "images/monsters/demonio_menor.png",
+      "stats": {
+        "hp": 7,
+        "damage": 4,
+        "glory": 4
+      },
+      "ability": "O jogador descarta toda a mão.",
+      "reward": {
+        "trophy": "Chifre Demoníaco",
+        "effect": "+2 poder"
+      },
+      "boss": false,
+      "copies": 1
+    },
+    {
+      "id": 21,
+      "boss": true,
+      "name": "Hidra Selvagem",
+      "level": 9,
+      "unique": true,
+      "image": "images/monsters/hidra_selvagem.png",
+      "stats": {
+        "hp": 9,
+        "damage": 4,
+        "glory": 5
+      },
+      "ability": "Recupera 2 vida por rodada.",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +2 níveis"
+      },
+      "copies": 1
+    },
+    {
+      "id": 22,
+      "boss": true,
+      "name": "Titã Adormecido",
+      "level": 9,
+      "unique": true,
+      "image": "images/monsters/tita_adormecido.png",
+      "stats": {
+        "hp": 10,
+        "damage": 4,
+        "glory": 5
+      },
+      "ability": "Ignora todo dano menor que 2.",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +2 níveis"
+      },
+      "copies": 1
+    },
+    {
+      "id": 23,
+      "boss": true,
+      "name": "Lich Antigo",
+      "level": 9,
+      "unique": true,
+      "image": "images/monsters/lich_antigo.png",
+      "stats": {
+        "hp": 8,
+        "damage": 4,
+        "glory": 5
+      },
+      "ability": "Quando derrotado, revive uma vez com metade da vida.",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +2 níveis"
+      },
+      "copies": 1
+    },
+    {
+      "id": 24,
+      "boss": true,
+      "name": "Behemoth Abissal",
+      "level": 9,
+      "unique": true,
+      "image": "images/monsters/behemoth_abissal.png",
+      "stats": {
+        "hp": 10,
+        "damage": 5,
+        "glory": 5
+      },
+      "ability": "Recebe -2 de dano",
+      "reward": {
+        "trophy": null,
+        "effect": "Ganhe +3 níveis"
+      },
+      "copies": 1
+    }
+  ]
+}
