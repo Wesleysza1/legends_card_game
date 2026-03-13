@@ -1,1 +1,0 @@
-[] Expansão "Reinos Celestiais"

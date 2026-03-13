@@ -1,148 +1,84 @@
-# LEGENDS
+# Assets Branch
 
-### A Homemade Adventure Card Game
+Esta branch contém apenas os **assets estáticos** do projeto Legends Card Game (imagens das cartas).
 
-Legends é um jogo de cartas autoral focado em **aventura, exploração de monstros e progressão de heróis**. O jogo foi projetado para ser **impresso em casa**, jogado com amigos ou família e expandido com novas cartas.
+## Propósito
 
-Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criaturas perigosas. Ao derrotar monstros, o herói ganha **glória, troféus e níveis**, tornando-se cada vez mais poderoso.
+Separar as imagens do código-fonte principal para:
+- Reduzir o tamanho do repositório principal
+- Facilitar versionamento independente dos assets
+- Servir as imagens via GitHub Pages como CDN gratuito
 
-**O primeiro jogador a alcançar o nível máximo se torna uma lenda.**
-
----
-
-## 🎯 Visão do Jogo
-
-Legends combina três pilares de design:
-
-- **Exploração** - Cada carta revelada pode trazer perigo, recompensa ou surpresa
-- **Progressão** - Jogadores evoluem de aventureiros iniciantes para heróis lendários
-- **Interação leve** - Duelos, efeitos e habilidades criam momentos imprevisíveis
-
-O jogo foi projetado para ser simples de aprender, rápido de jogar e profundo o suficiente para decisões táticas.
-
----
-
-## 🎮 Componentes Atuais
-
-### Cartas de Monstro (24 cartas)
-Representam inimigos encontrados durante a exploração. Cada monstro possui:
-- Nome, Nível, Vida, Dano, Glória
-- Habilidade especial única
-- Recompensa (troféu ou níveis diretos)
-
-### Cartas de Troféu
-Obtidas ao derrotar certos monstros. Concedem bônus permanentes como:
-- +1 poder em duelos
-- +1 dano contra monstros
-- +2 defesa
-- Bônus mágicos
-
-### Chefes (6 cartas)
-Monstros raros e extremamente poderosos que concedem múltiplos níveis:
-- Dragão das Ruínas
-- Hidra Selvagem
-- Titã Adormecido
-- Lich Antigo
-- Behemoth Abissal
-
----
-
-## 🖨️ Como Usar
-
-1. Abra `generator.html` para carregar o gerador principal, selecione um modelo e prepare as páginas prontas para impressão.
-2. Use o botão “Estrutura do Deck” dentro do gerador para abrir um menu com os links do jogo base (`structure-official.html`) e da expansão “Reinos Celestiais” (`structure-reinos.html`), assim você vê tudo que pertence a cada versão sem lotar o gerador principal.
-3. Abra `classes.html` para visualizar e imprimir as cartas de classes.
-4. Abra `subclasses.html` para visualizar e imprimir as subclasses com o mesmo layout.
-5. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
-6. Abra `backs.html` para imprimir os versos das cartas.
-4. Imprima em papel adequado (recomendado: papel fotográfico ou cartolina).
-5. Recorte as cartas e divirta-se!
-
-Para regras completas e detalhes do jogo, consulte [about.md](about.md).
-
----
-
-## 🎲 Progressão de Monstros
-
-### Iniciantes (Nível 2–3)
-Goblin das Ruínas • Lobo Sombrio • Esqueleto Guardião • Slime Ácido • Bandido das Estradas • Mímico Faminto
-
-### Intermediários (Nível 4–5)
-Orc Brutamontes • Gárgula de Pedra • Aranha Gigante • Cavaleiro Espectral • Ogro das Cavernas • Cultista Sombrio
-
-### Avançados (Nível 6–7)
-Troll Regenerador • Serpente das Profundezas • Quimera Jovem • Necromante Caído • Gigante de Ferro • Guardião Ancestral
-
-### Lendários (Nível 8–9)
-Demônio Menor • Dragão das Ruínas • Hidra Selvagem • Titã Adormecido • Lich Antigo • Behemoth Abissal
-
----
-
-## 🎨 Identidade Visual
-
-Legends utiliza uma identidade visual inspirada em **fantasia caricata e aventura leve**:
-- Arte estilo cartoon
-- Monstros expressivos
-- Cores vibrantes
-- Fundo simples para impressão econômica
-- Proporção de imagem 3:2
-
-O objetivo visual é transmitir **aventura divertida**, não terror ou realismo pesado.
-
-**Nota:** As imagens foram geradas com auxílio de IA (Gemini).
-
----
-
-## 🚀 Futuro do Jogo
-
-Legends foi projetado para crescer. Expansões planejadas incluem:
-- Itens e equipamentos
-- Eventos de exploração
-- Armadilhas
-- Heróis jogáveis
-- Cartas de magia
-- Duelos entre jogadores
-- Campanhas cooperativas
-
-O sistema modular permite adicionar novos conteúdos facilmente.
-
----
-
-## 📁 Estrutura do Projeto
+## Estrutura
 
 ```
-legends_card_game/
-├── db/              # Dados dos monstros e cartas (JSON)
-├── css/             # Estilos
-├── js/              # Scripts
-├── images/          # Imagens e assets
-├── fonts/           # Fontes customizadas
-├── generator.html   # Página principal (menu de modelos e exportação em PDF)
-├── monsters.html    # Gerador de cartas de monstros
-├── heroes.html      # Gerador de cartas de heróis
-├── classes.html     # Gerador de cartas de classes
-├── backs.html       # Gerador de versos das cartas
-└── about.md         # Documentação completa do jogo
+images/
+├── monsters/       # Imagens dos monstros
+├── heroes/         # Imagens dos heróis
+├── classes/        # Imagens das classes
+├── subclasses/     # Imagens das subclasses
+└── equipments/     # Imagens dos equipamentos
 ```
 
----
+## Como usar
 
-## 📜 Licença
+### 1. Ativar GitHub Pages
 
-Este projeto está sob uma licença proprietária não comercial. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+1. Acesse: `https://github.com/Wesleysza1/legends_card_game/settings/pages`
+2. Em **Source**, selecione:
+   - Branch: `assets`
+   - Folder: `/ (root)`
+3. Clique em **Save**
 
-**Resumo:**
-- ✅ Uso pessoal e educacional livre
-- ✅ Modificação e estudo do código
-- ❌ Uso comercial requer autorização
-- ❌ Venda ou monetização sem permissão
+Após alguns minutos, as imagens estarão disponíveis em:
+```
+https://wesleysza1.github.io/legends_card_game/images/monsters/goblin_ruinas.png
+https://wesleysza1.github.io/legends_card_game/images/heroes/guerreiro_errante.png
+...
+```
 
----
+### 2. Atualizar os JSONs na branch principal
 
-## 👤 Autor
+Na branch `main` (ou `master`), os arquivos JSON devem apontar para as URLs do GitHub Pages:
 
-Wesley Souza (wesleysza1@gmail.com)
+```json
+{
+  "id": 1,
+  "name": "Goblin das Ruínas",
+  "image": "https://wesleysza1.github.io/legends_card_game/images/monsters/goblin_ruinas.png"
+}
+```
 
-## 🤝 Contribuições
+### 3. Adicionar novas imagens
 
-Contribuições são bem-vindas para uso não comercial. Sinta-se livre para abrir issues ou pull requests.
+Para adicionar novas imagens:
+
+```bash
+# Mudar para a branch assets
+git checkout assets
+
+# Adicionar as novas imagens na pasta correta
+cp nova_imagem.png images/monsters/
+
+# Commit e push
+git add images/
+git commit -m "Add: nova imagem de monstro"
+git push origin assets
+```
+
+As imagens estarão disponíveis automaticamente via GitHub Pages em alguns segundos.
+
+## Vantagens
+
+- ✅ Hospedagem gratuita e ilimitada
+- ✅ CDN global (Fastly)
+- ✅ URLs permanentes e estáveis
+- ✅ Versionamento independente
+- ✅ Não polui o histórico do código principal
+- ✅ Fácil de atualizar
+
+## Notas
+
+- Esta branch contém **apenas** a pasta `images/` e este README
+- Não adicione código-fonte nesta branch
+- O código principal permanece na branch `main`/`master`
