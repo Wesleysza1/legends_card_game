@@ -9,7 +9,8 @@
       "stats": {
         "hp": 2,
         "damage": 1,
-        "glory": 1
+        "glory": 1,
+        "speed": 3
       },
       "ability": "Ao ser revelado, o jogador descarta 1 carta da mão.",
       "reward": {
@@ -28,7 +29,8 @@
       "stats": {
         "hp": 2,
         "damage": 1,
-        "glory": 1
+        "glory": 1,
+        "speed": 4
       },
       "ability": "Ao ser derrotado, morde o jogador causando 1 de dano.",
       "reward": {
@@ -47,7 +49,8 @@
       "stats": {
         "hp": 3,
         "damage": 1,
-        "glory": 1
+        "glory": 1,
+        "speed": 2
       },
       "ability": "Recebe +1 vida neste combate.",
       "reward": {
@@ -66,7 +69,8 @@
       "stats": {
         "hp": 3,
         "damage": 1,
-        "glory": 1
+        "glory": 1,
+        "speed": 1
       },
       "ability": "O jogador perde 1 item equipado se perder o combate.",
       "reward": {
@@ -85,7 +89,8 @@
       "stats": {
         "hp": 2,
         "damage": 1,
-        "glory": 1
+        "glory": 1,
+        "speed": 3
       },
       "ability": "Rouba 1 carta aleatória da mão do jogador.",
       "reward": {
@@ -104,7 +109,8 @@
       "stats": {
         "hp": 3,
         "damage": 2,
-        "glory": 1
+        "glory": 1,
+        "speed": 2
       },
       "ability": "Ao ser revelado, o jogador perde 1 item equipado.",
       "reward": {
@@ -123,7 +129,8 @@
       "stats": {
         "hp": 4,
         "damage": 2,
-        "glory": 2
+        "glory": 2,
+        "speed": 2
       },
       "ability": "Causa +1 dano neste combate.",
       "reward": {
@@ -142,7 +149,8 @@
       "stats": {
         "hp": 5,
         "damage": 1,
-        "glory": 2
+        "glory": 2,
+        "speed": 1
       },
       "ability": "-1 dano recebido.",
       "reward": {
@@ -161,7 +169,8 @@
       "stats": {
         "hp": 4,
         "damage": 2,
-        "glory": 2
+        "glory": 2,
+        "speed": 4
       },
       "ability": "O jogador descarta 1 carta ao iniciar o combate.",
       "reward": {
@@ -180,7 +189,8 @@
       "stats": {
         "hp": 5,
         "damage": 2,
-        "glory": 2
+        "glory": 2,
+        "speed": 3
       },
       "ability": "Ignora bônus de troféus.",
       "reward": {
@@ -199,7 +209,8 @@
       "stats": {
         "hp": 6,
         "damage": 2,
-        "glory": 2
+        "glory": 2,
+        "speed": 1
       },
       "ability": "Rouba 1 equipamento se vencer.",
       "reward": {
@@ -218,7 +229,8 @@
       "stats": {
         "hp": 4,
         "damage": 2,
-        "glory": 2
+        "glory": 2,
+        "speed": 2
       },
       "ability": "O jogador descarta 2 cartas.",
       "reward": {
@@ -237,7 +249,8 @@
       "stats": {
         "hp": 6,
         "damage": 2,
-        "glory": 3
+        "glory": 3,
+        "speed": 1
       },
       "ability": "Recupera 1 vida por rodada.",
       "reward": {
@@ -256,7 +269,8 @@
       "stats": {
         "hp": 5,
         "damage": 3,
-        "glory": 3
+        "glory": 3,
+        "speed": 4
       },
       "ability": "Causa +1 dano se atacar primeiro.",
       "reward": {
@@ -275,7 +289,8 @@
       "stats": {
         "hp": 6,
         "damage": 3,
-        "glory": 3
+        "glory": 3,
+        "speed": 3
       },
       "ability": "Pode causar dano duas vezes. O segundo ataque causa 1 de dano.",
       "reward": {
@@ -294,7 +309,8 @@
       "stats": {
         "hp": 5,
         "damage": 3,
-        "glory": 3
+        "glory": 3,
+        "speed": 2
       },
       "ability": "Invoca um Esqueleto Guardião.",
       "reward": {
@@ -313,7 +329,8 @@
       "stats": {
         "hp": 7,
         "damage": 3,
-        "glory": 3
+        "glory": 3,
+        "speed": 1
       },
       "ability": "Recebe -1 de dano.",
       "reward": {
@@ -332,7 +349,8 @@
       "stats": {
         "hp": 7,
         "damage": 3,
-        "glory": 4
+        "glory": 4,
+        "speed": 2
       },
       "ability": "Ignora todos os troféus do jogador.",
       "reward": {
@@ -352,7 +370,8 @@
       "stats": {
         "hp": 8,
         "damage": 4,
-        "glory": 5
+        "glory": 5,
+        "speed": 3
       },
       "ability": "Causa 2 dano imediato ao ser revelado.",
       "reward": {
@@ -370,7 +389,8 @@
       "stats": {
         "hp": 7,
         "damage": 4,
-        "glory": 4
+        "glory": 4,
+        "speed": 3
       },
       "ability": "O jogador descarta toda a mão.",
       "reward": {
@@ -390,7 +410,8 @@
       "stats": {
         "hp": 9,
         "damage": 4,
-        "glory": 5
+        "glory": 5,
+        "speed": 2
       },
       "ability": "Recupera 2 vida por rodada.",
       "reward": {
@@ -409,7 +430,8 @@
       "stats": {
         "hp": 10,
         "damage": 4,
-        "glory": 5
+        "glory": 5,
+        "speed": 1
       },
       "ability": "Ignora todo dano menor que 2.",
       "reward": {
@@ -428,7 +450,8 @@
       "stats": {
         "hp": 8,
         "damage": 4,
-        "glory": 5
+        "glory": 5,
+        "speed": 2
       },
       "ability": "Quando derrotado, revive uma vez com metade da vida.",
       "reward": {
@@ -447,7 +470,8 @@
       "stats": {
         "hp": 10,
         "damage": 5,
-        "glory": 5
+        "glory": 5,
+        "speed": 2
       },
       "ability": "Recebe -2 de dano",
       "reward": {

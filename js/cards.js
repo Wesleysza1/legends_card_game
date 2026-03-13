@@ -29,6 +29,7 @@ function buildMonsterCardHtml(monster) {
         <div class="card-stats">
             <div>❤️ ${monster.stats?.hp ?? 0}</div>
             <div>⚔ ${monster.stats?.damage ?? 0}</div>
+            <div>⚡ ${monster.stats?.speed ?? 0}</div>
             <div>🏆 ${monster.stats?.glory ?? 0}</div>
         </div>
         <div class="card-text">
@@ -355,3 +356,112 @@ async function loadSubclasses() {
 window.fetchSubclasses = fetchSubclasses
 window.renderSubclassPages = renderSubclassPages
 window.loadSubclasses = loadSubclasses
+
+const EQUIPMENT_STAT_ORDER = ['power', 'defense', 'hp', 'speed']
+const EQUIPMENT_STAT_LABELS = {
+    power: '⚔',
+    defense: '🛡',
+    speed: '⚡',
+    hp: '❤️',
+}
+const EQUIPMENT_RARITY_LABELS = {
+    common: 'Comum',
+    rare: 'Raro',
+    epic: 'Épico',
+}
+
+async function fetchEquipments() {
+    const response = await fetch('db/equipments.json')
+    const data = await response.json()
+    return data.equipment ?? []
+}
+
+function buildEquipmentCardHtml(equipment) {
+    const typeLabel = equipment.type
+        ? equipment.type.charAt(0).toUpperCase() + equipment.type.slice(1)
+        : 'Equipamento'
+    const rarityKey = (equipment.rarity || 'common').toLowerCase()
+    const rarityLabel = EQUIPMENT_RARITY_LABELS[rarityKey] || rarityKey
+    const statBonus = equipment.stat_bonus || {}
+
+    const statEntries = EQUIPMENT_STAT_ORDER.filter((statKey) => statKey in statBonus)
+        .map((statKey) => ({
+            key: statKey,
+            label: EQUIPMENT_STAT_LABELS[statKey] || statKey,
+            value: statBonus[statKey],
+        }))
+
+    const statHtml = statEntries.length
+        ? statEntries
+              .map((entry) => `<div><span class="icon">${entry.label}</span> ${formatModifier(entry.value)}</div>`)
+              .join('')
+        : '<div>—</div>'
+
+    const effectText = equipment.effect || '-'
+    const synergyText = (equipment.synergy || []).length ? equipment.synergy.join(', ') : '—'
+
+    return `
+        <div class="card-header">
+            <div>
+                <div class="card-name">${equipment.name}</div>
+                <div class="card-title">${typeLabel}</div>
+            </div>
+            <div class="card-level equipment-rarity">${rarityLabel}</div>
+        </div>
+        <div class="card-image">
+            <img src="${equipment.image}" alt="${equipment.name}">
+        </div>
+        <div class="card-stats equipment-stats">
+            ${statHtml}
+        </div>
+        <div class="card-text">
+            <b>Efeito</b><br>
+            ${effectText}
+        </div>
+        <div class="card-trophy equipment-synergy">
+            <b>Sinergia</b><br>
+            ${synergyText}
+        </div>
+    `
+}
+
+function renderEquipmentPages(equipments, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    equipments.forEach((equipment) => {
+        if (renderedCount % cardsPerPage === 0) {
+            const page = document.createElement('div')
+            page.classList.add('page')
+            container.appendChild(page)
+        }
+
+        const currentPage = container.lastElementChild
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML = buildEquipmentCardHtml(equipment)
+        currentPage.appendChild(card)
+        renderedCount += 1
+    })
+
+    return renderedCount
+}
+
+async function loadEquipments() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const data = await fetchEquipments()
+    renderEquipmentPages(data, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchEquipments = fetchEquipments
+window.renderEquipmentPages = renderEquipmentPages
+window.loadEquipments = loadEquipments

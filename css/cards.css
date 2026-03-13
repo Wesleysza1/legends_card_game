@@ -84,6 +84,12 @@ body{
     color:#444;
 }
 
+.card-level.equipment-rarity{
+    font-size:10px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+
 /* Arte */
 
 /* Arte */
@@ -102,6 +108,21 @@ body{
     object-position: center
 }
 
+.card-image.equipment-image {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f7f7f7;
+}
+
+.equipment-image-label{
+    font-size:14px;
+    font-weight:bold;
+    color:#333;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
 /* Stats */
 
 .card-stats{
@@ -113,6 +134,16 @@ body{
 
     padding:4px;
     border-bottom:1px solid #ccc;
+}
+
+.equipment-stats {
+    gap:4px;
+    flex-wrap:wrap;
+}
+
+.equipment-stats div{
+    flex:1;
+    text-align:center;
 }
 
 /* Texto */
@@ -164,6 +195,12 @@ body{
     font-size:10px;
     padding:4px;
     border-top:1px solid #999;
+}
+
+.equipment-synergy{
+    font-size:9px;
+    line-height:1.2;
+    text-transform:capitalize;
 }
 
 /* Ícones */

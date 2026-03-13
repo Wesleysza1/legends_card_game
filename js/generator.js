@@ -23,6 +23,12 @@ const MODELS = {
     load: fetchSubclasses,
     render: renderSubclassPages,
   },
+  equipments: {
+    label: 'Equipamentos',
+    description: 'Equipamentos com bônus de atributos, efeitos e sinergias.',
+    load: fetchEquipments,
+    render: renderEquipmentPages,
+  },
   backs: {
     label: 'Versos',
     description: 'Impressão dos versos oficial com o logo Legends.',
