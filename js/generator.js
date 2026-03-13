@@ -144,3 +144,43 @@ document.addEventListener('click', (event) => {
 setActiveSet('official')
 
 activateModel('monsters')
+
+
+// Preload de todas as imagens em background
+async function preloadAllImages() {
+  try {
+    const [monsters, heroes, classes, subclasses, equipments] = await Promise.all([
+      fetchMonsters(),
+      fetchHeroes(),
+      fetchClasses(),
+      fetchSubclasses(),
+      fetchEquipments()
+    ])
+
+    const allImages = [
+      ...monsters.map(m => m.image),
+      ...heroes.map(h => h.image),
+      ...classes.map(c => c.image),
+      ...subclasses.map(s => s.image),
+      ...equipments.map(e => e.image)
+    ].filter(Boolean)
+
+    console.log(`🔄 Precarregando ${allImages.length} imagens...`)
+
+    allImages.forEach(imagePath => {
+      const img = new Image()
+      img.src = getImageUrl(imagePath)
+    })
+
+    console.log('✅ Preload iniciado')
+  } catch (error) {
+    console.warn('⚠️ Erro no preload:', error)
+  }
+}
+
+// Inicia o preload após a página carregar
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', preloadAllImages)
+} else {
+  preloadAllImages()
+}

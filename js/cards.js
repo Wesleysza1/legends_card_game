@@ -1,4 +1,9 @@
 const CARDS_PER_PAGE = 9
+const IMAGES_BASE_URL = 'https://wesleysza1.github.io/legends_card_game/images'
+
+function getImageUrl(path) {
+    return `${IMAGES_BASE_URL}/${path}`
+}
 
 async function fetchMonsters() {
     const response = await fetch('db/monsters.json')
@@ -24,7 +29,7 @@ function buildMonsterCardHtml(monster) {
             </div>
         </div>
         <div class="card-image">
-            <img src="${monster.image}" alt="${monster.name}">
+            <img src="${getImageUrl(monster.image)}" alt="${monster.name}">
         </div>
         <div class="card-stats">
             <div>❤️ ${monster.stats?.hp ?? 0}</div>
@@ -124,7 +129,7 @@ function buildHeroCardHtml(hero) {
             <div class="card-level">Herói</div>
         </div>
         <div class="card-image">
-            <img src="${hero.image}" alt="${hero.name}">
+            <img src="${getImageUrl(hero.image)}" alt="${hero.name}">
         </div>
         <div class="card-stats hero-stats">
             <div>❤️ ${hero.stats?.hp ?? 0}</div>
@@ -219,7 +224,7 @@ function buildClassCardHtml(entry) {
             <div class="card-level">Classe</div>
         </div>
         <div class="card-image">
-            <img src="${entry.image}" alt="${entry.name}">
+            <img src="${getImageUrl(entry.image)}" alt="${entry.name}">
         </div>
         <div class="card-stats hero-stats">
             <div>❤️ ${formatModifier(entry.stat_modifiers?.hp)}</div>
@@ -302,7 +307,7 @@ function buildSubclassCardHtml(subclass) {
             <div class="card-level">Subclasse</div>
         </div>
         <div class="card-image">
-            <img src="${subclass.image}" alt="${subclass.name}">
+            <img src="${getImageUrl(subclass.image)}" alt="${subclass.name}">
         </div>
         <div class="card-text">
             <b>Descrição</b><br>
@@ -409,7 +414,7 @@ function buildEquipmentCardHtml(equipment) {
             <div class="card-level equipment-rarity">${rarityLabel}</div>
         </div>
         <div class="card-image">
-            <img src="${equipment.image}" alt="${equipment.name}">
+            <img src="${getImageUrl(equipment.image)}" alt="${equipment.name}">
         </div>
         <div class="card-stats equipment-stats">
             ${statHtml}

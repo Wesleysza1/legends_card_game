@@ -5,8 +5,7 @@
       "name": "Campeão",
       "class": "Guerreiro",
       "description": "Um combatente lendário que domina o campo de batalha.",
-      "image": "images/subclasses/campeao.png",
-
+      "image": "subclasses/campeao.png",
       "subclass_ability": {
         "name": "Golpe Heroico",
         "type": "combat",
@@ -19,8 +18,7 @@
       "name": "Guardião",
       "class": "Guerreiro",
       "description": "Especialista em proteger aliados e resistir a ataques.",
-      "image": "images/subclasses/guardiao.png",
-
+      "image": "subclasses/guardiao.png",
       "subclass_ability": {
         "name": "Muralha de Aço",
         "type": "combat",
@@ -33,8 +31,7 @@
       "name": "Duelista",
       "class": "Guerreiro",
       "description": "Mestre em combates rápidos e precisos.",
-      "image": "images/subclasses/duelista.png",
-
+      "image": "subclasses/duelista.png",
       "subclass_ability": {
         "name": "Estocada Rápida",
         "type": "combat",
@@ -42,14 +39,12 @@
         "effect": "Cause 2 de dano no começo do combate."
       }
     },
-
     {
       "id": 4,
       "name": "Piromante",
       "class": "Mago",
       "description": "Domina as chamas destrutivas da magia.",
-      "image": "images/subclasses/piromante.png",
-
+      "image": "subclasses/piromante.png",
       "subclass_ability": {
         "name": "Chamas Devastadoras",
         "type": "combat",
@@ -62,8 +57,7 @@
       "name": "Arcanista",
       "class": "Mago",
       "description": "Estudioso profundo das energias arcanas.",
-      "image": "images/subclasses/arcanista.png",
-
+      "image": "subclasses/arcanista.png",
       "subclass_ability": {
         "name": "Surto Arcano",
         "type": "utility",
@@ -76,8 +70,7 @@
       "name": "Cronomante",
       "class": "Mago",
       "description": "Manipula o fluxo do tempo em combate.",
-      "image": "images/subclasses/cronomante.png",
-
+      "image": "subclasses/cronomante.png",
       "subclass_ability": {
         "name": "Controle do Tempo",
         "type": "utility",
@@ -85,14 +78,12 @@
         "effect": "Ataque duas vezes no primeiro turno do combate."
       }
     },
-
     {
       "id": 7,
       "name": "Assassino",
       "class": "Ladino",
       "description": "Especialista em eliminar alvos rapidamente.",
-      "image": "images/subclasses/assassino.png",
-
+      "image": "subclasses/assassino.png",
       "subclass_ability": {
         "name": "Golpe Mortal",
         "type": "combat",
@@ -105,8 +96,7 @@
       "name": "Trapaceiro",
       "class": "Ladino",
       "description": "Manipula o jogo com truques e blefes.",
-      "image": "images/subclasses/trapaceiro.png",
-
+      "image": "subclasses/trapaceiro.png",
       "subclass_ability": {
         "name": "Truque Sujo",
         "type": "intrigue",
@@ -119,8 +109,7 @@
       "name": "Espião",
       "class": "Ladino",
       "description": "Mestre em coleta de informação.",
-      "image": "images/subclasses/espiao.png",
-
+      "image": "subclasses/espiao.png",
       "subclass_ability": {
         "name": "Informante",
         "type": "exploration",
@@ -128,14 +117,12 @@
         "effect": "Olhe as 2 próximas cartas do baralho."
       }
     },
-
     {
       "id": 10,
       "name": "Atirador",
       "class": "Caçador",
       "description": "Especialista em ataques de longa distância.",
-      "image": "images/subclasses/atirador.png",
-
+      "image": "subclasses/atirador.png",
       "subclass_ability": {
         "name": "Disparo Perfeito",
         "type": "combat",
@@ -148,8 +135,7 @@
       "name": "Domador de Feras",
       "class": "Caçador",
       "description": "Luta ao lado de criaturas leais.",
-      "image": "images/subclasses/domador_feras.png",
-
+      "image": "subclasses/domador_feras.png",
       "subclass_ability": {
         "name": "Companheiro Selvagem",
         "type": "combat",
@@ -162,8 +148,7 @@
       "name": "Explorador",
       "class": "Caçador",
       "description": "Especialista em atravessar territórios perigosos.",
-      "image": "images/subclasses/explorador.png",
-
+      "image": "subclasses/explorador.png",
       "subclass_ability": {
         "name": "Caminhos Secretos",
         "type": "exploration",
@@ -171,14 +156,12 @@
         "effect": "Ignore o efeito negativo de uma carta de exploração."
       }
     },
-
     {
       "id": 13,
       "name": "Templário",
       "class": "Paladino",
       "description": "Cavaleiro sagrado defensor da fé.",
-      "image": "images/subclasses/templario.png",
-
+      "image": "subclasses/templario.png",
       "subclass_ability": {
         "name": "Escudo Sagrado",
         "type": "combat",
@@ -191,8 +174,7 @@
       "name": "Exorcista",
       "class": "Paladino",
       "description": "Especialista em destruir criaturas malignas.",
-      "image": "images/subclasses/exorcista.png",
-
+      "image": "subclasses/exorcista.png",
       "subclass_ability": {
         "name": "Banimento",
         "type": "combat",
@@ -205,8 +187,7 @@
       "name": "Arauto da Luz",
       "class": "Paladino",
       "description": "Portador do poder restaurador da luz.",
-      "image": "images/subclasses/arauto_luz.png",
-
+      "image": "subclasses/arauto_luz.png",
       "subclass_ability": {
         "name": "Luz Restauradora",
         "type": "utility",
@@ -214,14 +195,12 @@
         "effect": "Cure 2 HP de um aliado."
       }
     },
-
     {
       "id": 16,
       "name": "Berserker",
       "class": "Bárbaro",
       "description": "Canaliza pura fúria no combate.",
-      "image": "images/subclasses/berserker.png",
-
+      "image": "subclasses/berserker.png",
       "subclass_ability": {
         "name": "Frenesi",
         "type": "combat",
@@ -234,8 +213,7 @@
       "name": "Xamã de Guerra",
       "class": "Bárbaro",
       "description": "Mistura espiritualidade tribal e brutalidade.",
-      "image": "images/subclasses/xama_guerra.png",
-
+      "image": "subclasses/xama_guerra.png",
       "subclass_ability": {
         "name": "Totem Espiritual",
         "type": "utility",
@@ -248,8 +226,7 @@
       "name": "Senhor da Tempestade",
       "class": "Bárbaro",
       "description": "Um guerreiro que canaliza o poder das tempestades.",
-      "image": "images/subclasses/senhor_tempestade.png",
-
+      "image": "subclasses/senhor_tempestade.png",
       "subclass_ability": {
         "name": "Golpe do Trovão",
         "type": "combat",

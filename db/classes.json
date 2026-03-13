@@ -4,137 +4,114 @@
       "id": 1,
       "name": "Guerreiro",
       "description": "Especialista em combate direto, capaz de enfrentar monstros poderosos sem recuar.",
-      "image": "images/classes/guerreiro.png",
-
+      "image": "classes/guerreiro.png",
       "stat_modifiers": {
         "hp": 2,
         "power": 1,
         "defense": 1,
         "speed": 0
       },
-
       "class_ability": {
         "name": "Golpe Poderoso",
         "type": "combat",
         "usage": "1 vez por combate",
         "effect": "Adiciona +2 de dano a um ataque contra um monstro."
       },
-
       "playstyle": "Combate direto e resistência"
     },
-
     {
       "id": 2,
       "name": "Mago",
       "description": "Manipula energias arcanas para destruir inimigos ou alterar o fluxo da batalha.",
-      "image": "images/classes/mago.png",
-
+      "image": "classes/mago.png",
       "stat_modifiers": {
         "hp": -1,
         "power": 2,
         "defense": 0,
         "speed": 1
       },
-
       "class_ability": {
         "name": "Rajada Arcana",
         "type": "combat",
         "usage": "1 vez por combate",
         "effect": "Cause 2 de dano mágico direto ignorando defesa."
       },
-
       "playstyle": "Alto dano e habilidades mágicas"
     },
-
     {
       "id": 3,
       "name": "Ladino",
       "description": "Ágil e imprevisível, prefere ataques rápidos e truques inteligentes.",
-      "image": "images/classes/ladino.png",
-
+      "image": "classes/ladino.png",
       "stat_modifiers": {
         "hp": 0,
         "power": 1,
         "defense": 0,
         "speed": 2
       },
-
       "class_ability": {
         "name": "Roubo Rápido",
         "type": "intrigue",
         "usage": "1 vez por rodada",
         "effect": "Roube 1 carta aleatória da mão de um jogador ou compre 1 carta extra do baralho."
       },
-
       "playstyle": "Agilidade e táticas oportunistas"
     },
-
     {
       "id": 4,
       "name": "Caçador",
       "description": "Especialista em rastrear e derrotar criaturas perigosas à distância.",
-      "image": "images/classes/cacador.png",
-
+      "image": "classes/cacador.png",
       "stat_modifiers": {
         "hp": 1,
         "power": 1,
         "defense": 0,
         "speed": 1
       },
-
       "class_ability": {
         "name": "Tiro Preciso",
         "type": "combat",
         "usage": "1 vez por combate",
         "effect": "Ignore totalmente a defesa do monstro neste ataque."
       },
-
       "playstyle": "Controle do campo e estratégia"
     },
-
     {
       "id": 5,
       "name": "Paladino",
       "description": "Guerreiro sagrado que protege aliados e combate forças sombrias.",
-      "image": "images/classes/paladino.png",
-
+      "image": "classes/paladino.png",
       "stat_modifiers": {
         "hp": 2,
         "power": 0,
         "defense": 2,
         "speed": -1
       },
-
       "class_ability": {
         "name": "Luz Curativa",
         "type": "utility",
         "usage": "1 vez por turno",
         "effect": "Cure 2 pontos de vida seus ou de um aliado."
       },
-
       "playstyle": "Defesa e suporte"
     },
-
     {
       "id": 6,
       "name": "Bárbaro",
       "description": "Um guerreiro brutal que luta com força e fúria incontrolável.",
-      "image": "images/classes/barbaro.png",
-
+      "image": "classes/barbaro.png",
       "stat_modifiers": {
         "hp": 2,
         "power": 2,
         "defense": -1,
         "speed": 0
       },
-
       "class_ability": {
         "name": "Ataque Selvagem",
         "type": "combat",
         "usage": "1 vez por combate",
         "effect": "Cause +3 de dano, mas receba 1 de dano após o ataque."
       },
-
       "playstyle": "Ataques agressivos e dano elevado"
     }
   ]

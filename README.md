@@ -10,6 +10,14 @@ Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criat
 
 ---
 
+## 🌐 Acesso Online
+
+**Gerador de Cartas:** https://wesleysza1.github.io/legends_card_game/
+
+**Galeria de Assets:** https://wesleysza1.github.io/legends_card_game/images/
+
+---
+
 ## 🎯 Visão do Jogo
 
 Legends combina três pilares de design:
@@ -24,18 +32,39 @@ O jogo foi projetado para ser simples de aprender, rápido de jogar e profundo o
 
 ## 🎮 Componentes Atuais
 
-### Cartas de Monstro (24 cartas)
-Representam inimigos encontrados durante a exploração. Cada monstro possui:
-- Nome, Nível, Vida, Dano, Glória
+### Heróis (6 cartas)
+Personagens jogáveis com stats únicos e habilidades especiais:
+- Guerreiro Errante
+- Ladra das Sombras
+- Maga Arcana
+- Caçador da Fronteira
+- Paladina da Aurora
+- Bárbaro das Terras Altas
+
+### Classes (6 cartas)
+Definem o estilo base de combate:
+- Guerreiro
+- Mago
+- Ladino
+- Caçador
+- Paladino
+- Bárbaro
+
+### Subclasses (18 cartas)
+Especializações que expandem as classes base com habilidades únicas.
+
+### Monstros (24 cartas)
+Inimigos encontrados durante a exploração. Cada monstro possui:
+- Nome, Nível, Vida, Dano, Velocidade, Glória
 - Habilidade especial única
 - Recompensa (troféu ou níveis diretos)
 
-### Cartas de Troféu
-Obtidas ao derrotar certos monstros. Concedem bônus permanentes como:
-- +1 poder em duelos
-- +1 dano contra monstros
-- +2 defesa
-- Bônus mágicos
+### Equipamentos (24 cartas)
+Armas, armaduras, escudos e acessórios que fortalecem o herói:
+- 8 Armas
+- 6 Armaduras
+- 3 Escudos
+- 7 Acessórios
 
 ### Chefes (6 cartas)
 Monstros raros e extremamente poderosos que concedem múltiplos níveis:
@@ -44,21 +73,27 @@ Monstros raros e extremamente poderosos que concedem múltiplos níveis:
 - Titã Adormecido
 - Lich Antigo
 - Behemoth Abissal
+- Demônio Menor
 
 ---
 
 ## 🖨️ Como Usar
 
-1. Abra `generator.html` para carregar o gerador principal, selecione um modelo e prepare as páginas prontas para impressão.
-2. Use o botão “Estrutura do Deck” dentro do gerador para abrir um menu com os links do jogo base (`structure-official.html`) e da expansão “Reinos Celestiais” (`structure-reinos.html`), assim você vê tudo que pertence a cada versão sem lotar o gerador principal.
-3. Abra `classes.html` para visualizar e imprimir as cartas de classes.
-4. Abra `subclasses.html` para visualizar e imprimir as subclasses com o mesmo layout.
-5. Use `monsters.html` como atalho para visualizar apenas as cartas de monstros com o mesmo layout.
-6. Abra `backs.html` para imprimir os versos das cartas.
-4. Imprima em papel adequado (recomendado: papel fotográfico ou cartolina).
+### Online (Recomendado)
+
+1. Acesse: https://wesleysza1.github.io/legends_card_game/
+2. Selecione o tipo de carta desejado (Monstros, Heróis, Classes, etc)
+3. Clique em "Imprimir/Exportar PDF"
+4. Imprima em papel adequado (recomendado: papel fotográfico ou cartolina)
 5. Recorte as cartas e divirta-se!
 
-Para regras completas e detalhes do jogo, consulte [about.md](about.md).
+### Local
+
+1. Clone o repositório
+2. Abra `index.html` no navegador
+3. As imagens serão carregadas automaticamente do GitHub Pages
+
+Para regras completas e detalhes do jogo, consulte [ABOUT.md](ABOUT.md).
 
 ---
 
@@ -93,18 +128,42 @@ O objetivo visual é transmitir **aventura divertida**, não terror ou realismo 
 
 ---
 
-## 🚀 Futuro do Jogo
+## 🏗️ Arquitetura do Projeto
 
-Legends foi projetado para crescer. Expansões planejadas incluem:
-- Itens e equipamentos
-- Eventos de exploração
-- Armadilhas
-- Heróis jogáveis
-- Cartas de magia
-- Duelos entre jogadores
-- Campanhas cooperativas
+### Separação de Assets
 
-O sistema modular permite adicionar novos conteúdos facilmente.
+O projeto utiliza uma arquitetura de **branches separadas** para otimizar o repositório:
+
+- **Branch `main`** - Código-fonte (HTML, CSS, JS, JSON)
+- **Branch `assets`** - Imagens das cartas (servidas via GitHub Pages)
+
+**Vantagens:**
+- ✅ Repositório principal leve e rápido
+- ✅ Versionamento independente de código e assets
+- ✅ CDN gratuito via GitHub Pages (Fastly)
+- ✅ URLs permanentes e estáveis
+
+### Sistema de URLs
+
+As imagens são referenciadas nos JSONs usando **caminhos relativos**:
+
+```json
+{
+  "name": "Goblin das Ruínas",
+  "image": "monsters/goblin_ruinas.png"
+}
+```
+
+A URL base é definida em `js/cards.js`:
+
+```javascript
+const IMAGES_BASE_URL = 'https://wesleysza1.github.io/legends_card_game/images'
+```
+
+Isso permite:
+- Fácil migração para outro CDN
+- Teste local alterando apenas uma linha
+- Sem repetição de URLs nos JSONs
 
 ---
 
@@ -112,18 +171,122 @@ O sistema modular permite adicionar novos conteúdos facilmente.
 
 ```
 legends_card_game/
-├── db/              # Dados dos monstros e cartas (JSON)
-├── css/             # Estilos
-├── js/              # Scripts
-├── images/          # Imagens e assets
-├── fonts/           # Fontes customizadas
-├── generator.html   # Página principal (menu de modelos e exportação em PDF)
-├── monsters.html    # Gerador de cartas de monstros
-├── heroes.html      # Gerador de cartas de heróis
-├── classes.html     # Gerador de cartas de classes
-├── backs.html       # Gerador de versos das cartas
-└── about.md         # Documentação completa do jogo
+├── db/                      # Banco de dados JSON
+│   ├── monsters.json        # Dados dos monstros
+│   ├── heroes.json          # Dados dos heróis
+│   ├── classes.json         # Dados das classes
+│   ├── subclasses.json      # Dados das subclasses
+│   └── equipments.json      # Dados dos equipamentos
+├── css/                     # Estilos
+│   ├── cards.css            # Estilos dos cards
+│   ├── generator.css        # Estilos do gerador
+│   └── backs.css            # Estilos dos versos
+├── js/                      # Scripts
+│   ├── cards.js             # Renderização de cards
+│   ├── generator.js         # Lógica do gerador
+│   └── backs.js             # Renderização de versos
+├── fonts/                   # Fontes customizadas
+│   └── warrior.ttf          # Fonte do título
+├── index.html               # Página principal (gerador)
+├── monsters.html            # Preview de monstros
+├── heroes.html              # Preview de heróis
+├── classes.html             # Preview de classes
+├── subclasses.html          # Preview de subclasses
+├── backs.html               # Preview de versos
+├── build_assets_index.py    # Script para gerar galeria de assets
+├── update_json_paths.py     # Script para atualizar paths nos JSONs
+├── ABOUT.md                 # Documentação completa do jogo
+├── PROJECT_CONTEXT.md       # Contexto técnico do projeto
+├── RULES.md                 # Regras para desenvolvimento
+└── BUILD_ASSETS.md          # Documentação do build de assets
 ```
+
+---
+
+## 🛠️ Scripts Utilitários
+
+### `build_assets_index.py`
+
+Gera automaticamente a galeria visual de assets (`images/index.html`).
+
+```bash
+python3 build_assets_index.py
+```
+
+**Uso automático:** Configurado como pre-commit hook na branch `assets`.
+
+### `update_json_paths.py`
+
+Atualiza todos os JSONs para usar caminhos relativos.
+
+```bash
+python3 update_json_paths.py
+```
+
+---
+
+## 🚀 Desenvolvimento
+
+### Adicionar Novas Imagens
+
+1. Mude para a branch `assets`:
+   ```bash
+   git checkout assets
+   ```
+
+2. Adicione as imagens na pasta correta:
+   ```bash
+   cp nova_imagem.png images/monsters/
+   ```
+
+3. Commit e push (o pre-commit hook atualiza o index automaticamente):
+   ```bash
+   git add images/
+   git commit -m "Add: nova imagem de monstro"
+   git push origin assets
+   ```
+
+4. Volte para a branch principal e atualize o JSON correspondente:
+   ```bash
+   git checkout main
+   # Edite db/monsters.json adicionando a nova entrada
+   git commit -m "Add: novo monstro no JSON"
+   git push
+   ```
+
+### Testar Localmente
+
+```bash
+# Inicie um servidor local (ex: Live Server no VSCode)
+# As imagens serão carregadas do GitHub Pages automaticamente
+```
+
+---
+
+## 🎯 Futuro do Jogo
+
+Legends foi projetado para crescer. Expansões planejadas incluem:
+- Itens utilizáveis
+- Eventos de exploração
+- Armadilhas
+- Cartas de intriga
+- Relíquias lendárias
+- Duelos entre jogadores
+- Campanhas cooperativas
+
+O sistema modular permite adicionar novos conteúdos facilmente.
+
+---
+
+## 📊 Estatísticas do Projeto
+
+- **Total de Cartas:** 78+
+- **Monstros:** 24 (incluindo 6 chefes)
+- **Heróis:** 6
+- **Classes:** 6
+- **Subclasses:** 18
+- **Equipamentos:** 24
+- **Imagens:** 79+ assets
 
 ---
 
@@ -143,6 +306,19 @@ Este projeto está sob uma licença proprietária não comercial. Veja o arquivo
 
 Wesley Souza (wesleysza1@gmail.com)
 
+**Repositório:** https://github.com/Wesleysza1/legends_card_game
+
+---
+
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas para uso não comercial. Sinta-se livre para abrir issues ou pull requests.
+
+---
+
+## 📚 Documentação Adicional
+
+- [ABOUT.md](ABOUT.md) - Visão completa do jogo e mecânicas
+- [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) - Contexto técnico e decisões de design
+- [RULES.md](RULES.md) - Regras para desenvolvimento e modificações
+- [BUILD_ASSETS.md](BUILD_ASSETS.md) - Como funciona o sistema de build de assets

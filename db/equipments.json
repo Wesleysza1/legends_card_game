@@ -1,253 +1,303 @@
 {
   "equipment": [
-
     {
       "id": 1,
       "name": "Espada Longa",
       "type": "Arma",
       "rarity": "common",
-      "image": "images/equipments/espada_longa.png",
-      "stat_bonus": { "power": 2 },
+      "image": "equipments/espada_longa.png",
+      "stat_bonus": {
+        "power": 2
+      },
       "effect": "Ataques causam recebem +1 dano.",
-      "synergy": ["Guerreiro", "Paladino"]
+      "synergy": [
+        "Guerreiro",
+        "Paladino"
+      ]
     },
-
     {
       "id": 2,
       "name": "Machado de Guerra",
       "type": "Arma",
       "rarity": "common",
-      "image": "images/equipments/machado_guerra.png",
-      "stat_bonus": { "power": 3, "speed": -1 },
+      "image": "equipments/machado_guerra.png",
+      "stat_bonus": {
+        "power": 3,
+        "speed": -1
+      },
       "effect": "Cause +1 dano sempre que sofrer dano na rodada anterior.",
-      "synergy": ["Bárbaro", "Guerreiro"]
+      "synergy": [
+        "Bárbaro",
+        "Guerreiro"
+      ]
     },
-
     {
       "id": 3,
       "name": "Adaga Sombria",
       "type": "Arma",
       "rarity": "rare",
-      "image": "images/equipments/adaga_sombria.png",
-      "stat_bonus": { "speed": 2 },
+      "image": "equipments/adaga_sombria.png",
+      "stat_bonus": {
+        "speed": 2
+      },
       "effect": "No inicio da batalha cause +1 dano no inimigo",
-      "synergy": ["Ladino"]
+      "synergy": [
+        "Ladino"
+      ]
     },
-
     {
       "id": 4,
       "name": "Arco Longo",
       "type": "Arma",
       "rarity": "common",
-      "image": "images/equipments/arco_longo.png",
-      "stat_bonus": { "power": 1, "speed": 1 },
+      "image": "equipments/arco_longo.png",
+      "stat_bonus": {
+        "power": 1,
+        "speed": 1
+      },
       "effect": "Pode atacar monstros ignorando 1 ponto de defesa.",
-      "synergy": ["Caçador"]
+      "synergy": [
+        "Caçador"
+      ]
     },
-
     {
       "id": 5,
       "name": "Cajado Arcano",
       "type": "Arma",
       "rarity": "rare",
-      "image": "images/equipments/cajado_arcano.png",
-      "stat_bonus": { "power": 2 },
+      "image": "equipments/cajado_arcano.png",
+      "stat_bonus": {
+        "power": 2
+      },
       "effect": "Habilidades mágicas causam +1 de dano.",
-      "synergy": ["Mago"]
+      "synergy": [
+        "Mago"
+      ]
     },
-
     {
       "id": 6,
       "name": "Martelo Sagrado",
       "type": "Arma",
       "rarity": "rare",
-      "image": "images/equipments/martelo_sagrado.png",
-      "stat_bonus": { "power": 2, "defense": 1 },
+      "image": "equipments/martelo_sagrado.png",
+      "stat_bonus": {
+        "power": 2,
+        "defense": 1
+      },
       "effect": "Causa +2 dano contra monstros.",
-      "synergy": ["Paladino"]
+      "synergy": [
+        "Paladino"
+      ]
     },
-
     {
       "id": 7,
       "name": "Lança de Caça",
       "type": "Arma",
       "rarity": "common",
-      "image": "images/equipments/lanca_caca.png",
-      "stat_bonus": { "power": 1, "speed": 1 },
+      "image": "equipments/lanca_caca.png",
+      "stat_bonus": {
+        "power": 1,
+        "speed": 1
+      },
       "effect": "Cause sangramento no alvo de seus ataques. Sangramento causa 1 de dano a cada rodada.",
-      "synergy": ["Caçador"]
+      "synergy": [
+        "Caçador"
+      ]
     },
-
     {
       "id": 8,
       "name": "Lâmina Rúnica",
       "type": "Arma",
       "rarity": "epic",
-      "image": "images/equipments/lamina_runica.png",
-      "stat_bonus": { "power": 3 },
+      "image": "equipments/lamina_runica.png",
+      "stat_bonus": {
+        "power": 3
+      },
       "effect": "Uma vez por combate, dobre o dano do ataque.",
-      "synergy": ["Mago", "Paladino"]
+      "synergy": [
+        "Mago",
+        "Paladino"
+      ]
     },
-
     {
       "id": 9,
       "name": "Armadura de Ferro",
       "type": "Armadura",
       "rarity": "common",
-      "image": "images/equipments/armadura_ferro.png",
-      "stat_bonus": { "defense": 2 },
+      "image": "equipments/armadura_ferro.png",
+      "stat_bonus": {
+        "defense": 2
+      },
       "effect": "Reduz o primeiro dano recebido em cada combate."
     },
-
     {
       "id": 10,
       "name": "Armadura de Placas",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "images/equipments/armadura_placas.png",
-      "stat_bonus": { "defense": 3, "speed": -1 },
+      "image": "equipments/armadura_placas.png",
+      "stat_bonus": {
+        "defense": 3,
+        "speed": -1
+      },
       "effect": "Ignore 1 ponto de dano recebido."
     },
-
     {
       "id": 11,
       "name": "Capa Sombria",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "images/equipments/capa_sombria.png",
-      "stat_bonus": { "speed": 2 },
+      "image": "equipments/capa_sombria.png",
+      "stat_bonus": {
+        "speed": 2
+      },
       "effect": "Se perder um combate, compre 1 carta."
     },
-
     {
       "id": 12,
       "name": "Couraça do Guardião",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "images/equipments/couraca_guardiao.png",
-      "stat_bonus": { "defense": 3 },
+      "image": "equipments/couraca_guardiao.png",
+      "stat_bonus": {
+        "defense": 3
+      },
       "effect": "Você e aliados recebem +1 defesa enquanto você estiver em combate."
     },
-
     {
       "id": 13,
       "name": "Armadura de Escamas",
       "type": "Armadura",
       "rarity": "common",
-      "image": "images/equipments/armadura_escamas.png",
-      "stat_bonus": { "defense": 2, "speed": 1 },
+      "image": "equipments/armadura_escamas.png",
+      "stat_bonus": {
+        "defense": 2,
+        "speed": 1
+      },
       "effect": "Reduz dano de ataques em 2 pontos"
     },
-
     {
       "id": 14,
       "name": "Manto Arcano",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "images/equipments/manto_arcano.png",
-      "stat_bonus": { "power": 1 },
+      "image": "equipments/manto_arcano.png",
+      "stat_bonus": {
+        "power": 1
+      },
       "effect": "Habilidades mágicas podem ser usadas duas vezes por combate."
     },
-
     {
       "id": 15,
       "name": "Escudo de Ferro",
       "type": "Escudo",
       "rarity": "common",
-      "image": "images/equipments/escudo_ferro.png",
-      "stat_bonus": { "defense": 2 },
+      "image": "equipments/escudo_ferro.png",
+      "stat_bonus": {
+        "defense": 2
+      },
       "effect": "Bloqueia um ponto de dano do primeiro ataque inimigo."
     },
-
     {
       "id": 16,
       "name": "Escudo Torre",
       "type": "Escudo",
       "rarity": "rare",
-      "image": "images/equipments/escudo_torre.png",
-      "stat_bonus": { "defense": 3, "speed": -1 },
+      "image": "equipments/escudo_torre.png",
+      "stat_bonus": {
+        "defense": 3,
+        "speed": -1
+      },
       "effect": "Ignore completamente o primeiro ataque recebido."
     },
-
     {
       "id": 17,
       "name": "Escudo Rúnico",
       "type": "Escudo",
       "rarity": "epic",
-      "image": "images/equipments/escudo_runico.png",
-      "stat_bonus": { "defense": 2 },
+      "image": "equipments/escudo_runico.png",
+      "stat_bonus": {
+        "defense": 2
+      },
       "effect": "Reflete 1 ponto de dano ao atacante."
     },
-
     {
       "id": 18,
       "name": "Anel de Força",
       "type": "Acessório",
       "rarity": "common",
-      "image": "images/equipments/anel_forca.png",
-      "stat_bonus": { "power": 1 },
+      "image": "equipments/anel_forca.png",
+      "stat_bonus": {
+        "power": 1
+      },
       "effect": "Ataques básicos recebem +1 dano."
     },
-
     {
       "id": 19,
       "name": "Anel Arcano",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "images/equipments/anel_arcano.png",
-      "stat_bonus": { "power": 1 },
+      "image": "equipments/anel_arcano.png",
+      "stat_bonus": {
+        "power": 1
+      },
       "effect": "Cura 2 pontos de vida por rodada."
     },
-
     {
       "id": 20,
       "name": "Amuleto de Proteção",
       "type": "Acessório",
       "rarity": "common",
-      "image": "images/equipments/amuleto_protecao.png",
-      "stat_bonus": { "defense": 1 },
+      "image": "equipments/amuleto_protecao.png",
+      "stat_bonus": {
+        "defense": 1
+      },
       "effect": "Uma vez por combate, reduza o dano recebido para 1."
     },
-
     {
       "id": 21,
       "name": "Colar do Caçador",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "images/equipments/colar_cacador.png",
-      "stat_bonus": { "speed": 1 },
+      "image": "equipments/colar_cacador.png",
+      "stat_bonus": {
+        "speed": 1
+      },
       "effect": "Monstros são amendrotados. Monstros com medo recebem +2 de dano."
     },
-
     {
       "id": 22,
       "name": "Luvas do Duelista",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "images/equipments/luvas_duelista.png",
-      "stat_bonus": { "speed": 2 },
+      "image": "equipments/luvas_duelista.png",
+      "stat_bonus": {
+        "speed": 2
+      },
       "effect": "Se atacar primeiro, compre 1 carta."
     },
-
     {
       "id": 23,
       "name": "Botas da Agilidade",
       "type": "Acessório",
       "rarity": "common",
-      "image": "images/equipments/botas_agilidade.png",
-      "stat_bonus": { "speed": 2 },
+      "image": "equipments/botas_agilidade.png",
+      "stat_bonus": {
+        "speed": 2
+      },
       "effect": "Pode evitar o primeiro ataque inimigo."
     },
-
     {
       "id": 24,
       "name": "Cinto do Gigante",
       "type": "Acessório",
       "rarity": "epic",
-      "image": "images/equipments/cinto_gigante.png",
-      "stat_bonus": { "power": 2, "hp": 2 },
+      "image": "equipments/cinto_gigante.png",
+      "stat_bonus": {
+        "power": 2,
+        "hp": 2
+      },
       "effect": "Se vencer um combate, recupere 2 HP."
     }
-
   ]
 }
