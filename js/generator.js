@@ -29,6 +29,30 @@ const MODELS = {
     load: fetchEquipments,
     render: renderEquipmentPages,
   },
+  items: {
+    label: 'Itens Utilizáveis',
+    description: 'Itens consumíveis como poções, pergaminhos e ferramentas.',
+    load: fetchItems,
+    render: renderItemPages,
+  },
+  intrigue: {
+    label: 'Cartas de Intriga',
+    description: 'Cartas de interação entre jogadores com efeitos estratégicos.',
+    load: fetchIntrigue,
+    render: renderIntriguePages,
+  },
+  events: {
+    label: 'Eventos',
+    description: 'Eventos de exploração que alteram o estado do jogo.',
+    load: fetchEvents,
+    render: renderEventPages,
+  },
+  relics: {
+    label: 'Relíquias',
+    description: 'Artefatos lendários com efeitos poderosos e permanentes.',
+    load: fetchRelics,
+    render: renderRelicPages,
+  },
   backs: {
     label: 'Versos',
     description: 'Impressão dos versos oficial com o logo Legends.',
@@ -149,12 +173,16 @@ activateModel('monsters')
 // Preload de todas as imagens em background
 async function preloadAllImages() {
   try {
-    const [monsters, heroes, classes, subclasses, equipments] = await Promise.all([
+    const [monsters, heroes, classes, subclasses, equipments, items, intrigue, events, relics] = await Promise.all([
       fetchMonsters(),
       fetchHeroes(),
       fetchClasses(),
       fetchSubclasses(),
-      fetchEquipments()
+      fetchEquipments(),
+      fetchItems(),
+      fetchIntrigue(),
+      fetchEvents(),
+      fetchRelics()
     ])
 
     const allImages = [
@@ -162,7 +190,11 @@ async function preloadAllImages() {
       ...heroes.map(h => h.image),
       ...classes.map(c => c.image),
       ...subclasses.map(s => s.image),
-      ...equipments.map(e => e.image)
+      ...equipments.map(e => e.image),
+      ...items.map(i => i.image),
+      ...intrigue.map(c => c.image),
+      ...events.map(e => e.image),
+      ...relics.map(r => r.image)
     ].filter(Boolean)
 
     console.log(`🔄 Precarregando ${allImages.length} imagens...`)
