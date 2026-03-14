@@ -1,0 +1,136 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Taverna Barulhenta",
+      "type": "event",
+      "rarity": "common",
+      "category": "social",
+      "effect": "Todos os jogadores compram 1 carta.",
+      "flavor_text": "Entre risadas, histórias exageradas e canecas batendo, novos planos começam a surgir.",
+      "image": "events/taverna_barulhenta.png",
+      "copies": 2
+    },
+    {
+      "id": 2,
+      "name": "Baú Abandonado",
+      "type": "event",
+      "rarity": "common",
+      "category": "treasure",
+      "effect": "Compre 1 carta de equipamento ou item utilizável.",
+      "flavor_text": "Um baú esquecido raramente significa boa sorte... mas às vezes significa.",
+      "image": "events/bau_abandonado.png",
+      "copies": 2
+    },
+    {
+      "id": 3,
+      "name": "Mercador Errante",
+      "type": "event",
+      "rarity": "common",
+      "category": "social",
+      "effect": "Troque uma carta da sua mão por outra carta do baralho.",
+      "flavor_text": "Tenho exatamente o que você precisa... provavelmente.",
+      "image": "events/mercador_errante.png",
+      "copies": 2
+    },
+    {
+      "id": 4,
+      "name": "Emboscada Goblin",
+      "type": "event",
+      "rarity": "common",
+      "category": "danger",
+      "effect": "Sofra 1 de dano ou descarte uma carta.",
+      "flavor_text": "Pequenos, irritantes e aparentemente infinitos.",
+      "image": "events/emboscada_goblin.png",
+      "copies": 2
+    },
+    {
+      "id": 5,
+      "name": "Ruínas Antigas",
+      "type": "event",
+      "rarity": "rare",
+      "category": "exploration",
+      "effect": "Revele as 2 próximas cartas do baralho e escolha uma para adicionar à sua mão.",
+      "flavor_text": "Pedras antigas guardam histórias... e às vezes tesouros.",
+      "image": "events/ruinas_antigas.png",
+      "copies": 2
+    },
+    {
+      "id": 6,
+      "name": "Estrada Perigosa",
+      "type": "event",
+      "rarity": "common",
+      "category": "danger",
+      "effect": "O jogador ativo perde 1 turno.",
+      "flavor_text": "Nem todo caminho leva ao destino... alguns levam ao problema.",
+      "image": "events/estrada_perigosa.png",
+      "copies": 2
+    },
+    {
+      "id": 7,
+      "name": "Santuário Esquecido",
+      "type": "event",
+      "rarity": "rare",
+      "category": "mystery",
+      "effect": "Recupere 2 de vida ou compre 1 carta.",
+      "flavor_text": "Mesmo deuses esquecidos às vezes escutam.",
+      "image": "events/santuario_esquecido.png",
+      "copies": 2
+    },
+    {
+      "id": 8,
+      "name": "Mapa Misterioso",
+      "type": "event",
+      "rarity": "rare",
+      "category": "exploration",
+      "effect": "Veja as 3 próximas cartas do baralho e reorganize-as.",
+      "flavor_text": "Um mapa incompleto é melhor que mapa nenhum.",
+      "image": "events/mapa_misterioso.png",
+      "copies": 2
+    },
+    {
+      "id": 9,
+      "name": "Chuva Torrencial",
+      "type": "event",
+      "rarity": "common",
+      "category": "environment",
+      "effect": "Todos os jogadores recebem -1 de velocidade até o próximo turno.",
+      "flavor_text": "A estrada vira lama e cada passo pesa mais.",
+      "image": "events/chuva_torrencial.png",
+      "copies": 2
+    },
+    {
+      "id": 10,
+      "name": "Viajante Misterioso",
+      "type": "event",
+      "rarity": "rare",
+      "category": "social",
+      "effect": "Escolha: compre 2 cartas ou dê 1 carta a outro jogador para recuperar 2 de vida.",
+      "flavor_text": "Alguns encontros mudam o destino... outros apenas o complicam.",
+      "image": "events/viajante_misterioso.png",
+      "copies": 2
+    },
+    {
+      "id": 11,
+      "name": "Porta Selada",
+      "type": "event",
+      "rarity": "common",
+      "category": "mystery",
+      "effect": "Descarte uma chave ou perca a próxima compra de carta.",
+      "flavor_text": "Atrás de algumas portas há tesouros. Atrás de outras... problemas.",
+      "image": "events/porta_selada.png",
+      "copies": 2
+    },
+    {
+      "id": 12,
+      "name": "Festival da Vila",
+      "type": "event",
+      "rarity": "rare",
+      "category": "social",
+      "effect": "Todos os jogadores recuperam 1 de vida e compram 1 carta.",
+      "flavor_text": "Música, comida e histórias — um raro momento de paz.",
+      "image": "events/festival_da_vila.png",
+      "copies": 2
+    }
+  ]
+}

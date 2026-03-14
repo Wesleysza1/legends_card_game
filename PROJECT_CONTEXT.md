@@ -6,7 +6,7 @@
 
 The project contains tools to render printable cards using **HTML, CSS and JavaScript**, using a **JSON database** as the source of truth for game content.
 
-The current implementation includes **monster cards**, **heroes**, **classes**, **subclasses**, **equipments**, and **card backs**, unified in a generator hub that orchestrates all models while staying print-friendly.
+The current implementation includes **monster cards**, **heroes**, **classes**, **subclasses**, **equipments**, **usable items**, **intrigue cards**, **events**, **relics** and **card backs**, unified in a generator hub that orchestrates all models while staying print-friendly.
 
 Cards are designed to be printed on **A4 paper**, with **9 cards per page**, optimized for home printers (low ink usage, white backgrounds).
 
@@ -146,7 +146,11 @@ legends_card_game/
 │   ├── heroes.json          # Hero data (6 cards)
 │   ├── classes.json         # Class data (6 cards)
 │   ├── subclasses.json      # Subclass data (18 cards)
-│   └── equipments.json      # Equipment data (24 cards)
+│   ├── equipments.json      # Equipment data (24 cards)
+│   ├── items.json           # Usable items data (12 unique, 36 with copies)
+│   ├── intrigue.json        # Intrigue cards data (10 unique, 20 with copies)
+│   ├── events.json          # Event data (12 unique, 24 with copies)
+│   └── relics.json          # Relic data (20 cards)
 ├── css/                     # Stylesheets
 │   ├── cards.css            # Card layouts
 │   ├── generator.css        # Generator UI
@@ -404,18 +408,25 @@ When modifying code, always respect:
 - ✅ Fixed DOCTYPE issue in generator
 - ✅ Created visual assets gallery at `/images/`
 
+### New Card Types
+- ✅ Added Usable Items (12 unique, 36 total with copies)
+- ✅ Added Intrigue Cards (10 unique, 20 total with copies)
+- ✅ Added Events (12 unique, 24 total with copies)
+- ✅ Added Relics (20 unique, 20 total)
+- ✅ Total cards: **178** (up from 78)
+
 ---
 
 ## Future Expansion Plans
 
 The game was designed to support additional card types:
 
-- Items / Consumables
-- Events
+- ~~Items / Consumables~~ ✅ Implemented
+- ~~Events~~ ✅ Implemented
 - Traps
 - Spells
-- Relics
-- Intrigue cards
+- ~~Relics~~ ✅ Implemented
+- ~~Intrigue cards~~ ✅ Implemented
 - PvP duel mechanics
 
 The JSON-based system allows easy expansion.

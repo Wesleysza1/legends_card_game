@@ -1,0 +1,124 @@
+{
+  "intrigue_cards": [
+    {
+      "id": 1,
+      "name": "Troca Astuta",
+      "type": "intrigue",
+      "rarity": "common",
+      "timing": "anytime",
+      "target": "player",
+      "effect": "Troque um equipamento seu por um equipamento de outro jogador.",
+      "flavor_text": "Negócios são negócios... mesmo quando ninguém concorda.",
+      "image": "intrigue/troca_astuta.png",
+      "copies": 2
+    },
+    {
+      "id": 2,
+      "name": "Roubo nas Sombras",
+      "type": "intrigue",
+      "rarity": "common",
+      "timing": "anytime",
+      "target": "player",
+      "effect": "Roube uma carta aleatória da mão de outro jogador.",
+      "flavor_text": "Quando perceberem que sumiu, eu já estarei longe.",
+      "image": "intrigue/roubo_nas_sombras.png",
+      "copies": 2
+    },
+    {
+      "id": 3,
+      "name": "Armadilha Improvisada",
+      "type": "intrigue",
+      "rarity": "common",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "Cause 2 de dano ao inimigo que estiver lutando contra um jogador.",
+      "flavor_text": "Ops. Acho que alguém pisou onde não devia.",
+      "image": "intrigue/armadilha_improvisada.png",
+      "copies": 2
+    },
+    {
+      "id": 4,
+      "name": "Plano Perfeito",
+      "type": "intrigue",
+      "rarity": "rare",
+      "timing": "anytime",
+      "target": "self",
+      "effect": "Compre 2 cartas adicionais.",
+      "flavor_text": "Tudo está exatamente como eu previ.",
+      "image": "intrigue/plano_perfeito.png",
+      "copies": 2
+    },
+    {
+      "id": 5,
+      "name": "Acusação Falsa",
+      "type": "intrigue",
+      "rarity": "common",
+      "timing": "anytime",
+      "target": "player",
+      "effect": "Escolha um jogador. Ele descarta 1 carta da mão.",
+      "flavor_text": "Não tenho provas... mas tenho certeza!",
+      "image": "intrigue/acusacao_falsa.png",
+      "copies": 2
+    },
+    {
+      "id": 6,
+      "name": "Ajuda Suspeita",
+      "type": "intrigue",
+      "rarity": "common",
+      "timing": "combat",
+      "target": "player",
+      "effect": "Um jogador recebe +2 de poder neste combate.",
+      "flavor_text": "Relaxe... eu definitivamente não tenho segundas intenções.",
+      "image": "intrigue/ajuda_suspeita.png",
+      "copies": 2
+    },
+    {
+      "id": 7,
+      "name": "Sabotagem",
+      "type": "intrigue",
+      "rarity": "rare",
+      "timing": "combat",
+      "target": "player",
+      "effect": "Um jogador recebe -2 de poder neste combate.",
+      "flavor_text": "Foi só um pequeno 'acidente'.",
+      "image": "intrigue/sabotagem.png",
+      "copies": 2
+    },
+    {
+      "id": 8,
+      "name": "Segredo Revelado",
+      "type": "intrigue",
+      "rarity": "rare",
+      "timing": "anytime",
+      "target": "player",
+      "effect": "Veja a mão de outro jogador e escolha uma carta para ele descartar.",
+      "flavor_text": "Interessante... eu não contaria isso para ninguém.",
+      "image": "intrigue/segredo_revelado.png",
+      "copies": 2
+    },
+    {
+      "id": 9,
+      "name": "Aliança Temporária",
+      "type": "intrigue",
+      "rarity": "rare",
+      "timing": "combat",
+      "target": "player",
+      "effect": "Dois jogadores recebem +1 de poder neste combate.",
+      "flavor_text": "Hoje lutamos juntos. Amanhã... veremos.",
+      "image": "intrigue/alianca_temporaria.png",
+      "copies": 2
+    },
+    {
+      "id": 10,
+      "name": "Caos Calculado",
+      "type": "intrigue",
+      "rarity": "epic",
+      "timing": "anytime",
+      "target": "all_players",
+      "effect": "Todos os jogadores embaralham suas mãos e compram o mesmo número de cartas novamente.",
+      "flavor_text": "Às vezes a melhor estratégia é bagunçar tudo.",
+      "image": "intrigue/caos_calculado.png",
+      "copies": 2
+    }
+  ]
+}

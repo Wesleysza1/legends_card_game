@@ -1,0 +1,136 @@
+{
+  "usable_items": [
+    {
+      "id": 1,
+      "name": "Poção de Cura",
+      "type": "potion",
+      "rarity": "common",
+      "image": "items/pocao_de_cura.png",
+      "timing": "anytime",
+      "target": "self",
+      "effect": "Recupere 3 pontos de vida.",
+      "copies": 3
+    },
+    {
+      "id": 2,
+      "name": "Poção de Força",
+      "type": "potion",
+      "rarity": "common",
+      "image": "items/pocao_de_forca.png",
+      "timing": "combat",
+      "target": "self",
+      "effect": "Receba +2 de poder no próximo ataque.",
+      "copies": 3
+    },
+    {
+      "id": 3,
+      "name": "Poção de Velocidade",
+      "type": "potion",
+      "rarity": "common",
+      "image": "items/pocao_de_velocidade.png",
+      "timing": "combat",
+      "target": "self",
+      "effect": "Receba +2 de velocidade neste turno.",
+      "copies": 3
+    },
+    {
+      "id": 4,
+      "name": "Poção de Mana",
+      "type": "potion",
+      "rarity": "common",
+      "image": "items/pocao_de_mana.png",
+      "timing": "combat",
+      "target": "self",
+      "effect": "Permite usar uma habilidade de classe novamente neste combate.",
+      "copies": 3
+    },
+    {
+      "id": 5,
+      "name": "Bomba Alquímica",
+      "type": "bomb",
+      "rarity": "rare",
+      "image": "items/bomba_alquimica.png",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "Cause 3 de dano direto ao inimigo.",
+      "copies": 3
+    },
+    {
+      "id": 6,
+      "name": "Veneno Mortal",
+      "type": "poison",
+      "rarity": "rare",
+      "image": "items/veneno_mortal.png",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "O inimigo sofre 1 de dano por turno durante 3 turnos.",
+      "copies": 3
+    },
+    {
+      "id": 7,
+      "name": "Pergaminho de Fogo",
+      "type": "scroll",
+      "rarity": "rare",
+      "image": "items/pergaminho_de_fogo.png",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "Cause 2 de dano mágico ignorando defesa.",
+      "copies": 3
+    },
+    {
+      "id": 8,
+      "name": "Pergaminho de Gelo",
+      "type": "scroll",
+      "rarity": "rare",
+      "image": "items/pergaminho_de_gelo.png",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "Congele o inimigo. Ele perde o próximo turno.",
+      "copies": 3
+    },
+    {
+      "id": 9,
+      "name": "Pergaminho de Teleporte",
+      "type": "scroll",
+      "rarity": "epic",
+      "image": "items/pergaminho_de_teleporte.png",
+      "timing": "exploration",
+      "target": "self",
+      "effect": "Evite completamente um combate ou evento.",
+      "copies": 3
+    },
+    {
+      "id": 10,
+      "name": "Kit de Armadilhas",
+      "type": "tool",
+      "rarity": "rare",
+      "image": "items/kit_de_armadilhas.png",
+      "timing": "combat",
+      "target": "enemy",
+      "effect": "Arme uma armadilha que causa 2 de dano quando o inimigo atacar.",
+      "copies": 3
+    },
+    {
+      "id": 11,
+      "name": "Tocha Encantada",
+      "type": "tool",
+      "rarity": "common",
+      "image": "items/tocha_encantada.png",
+      "timing": "exploration",
+      "target": "self",
+      "effect": "Revele a próxima carta de evento ou monstro antes de enfrentá-la.",
+      "copies": 3
+    },
+    {
+      "id": 12,
+      "name": "Chave Antiga",
+      "type": "tool",
+      "rarity": "rare",
+      "image": "items/chave_antiga.png",
+      "timing": "exploration",
+      "target": "self",
+      "effect": "Abra um baú ou ignore uma tranca em um evento.",
+      "copies": 3
+    }
+  ]
+}

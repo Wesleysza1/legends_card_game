@@ -470,3 +470,366 @@ async function loadEquipments() {
 window.fetchEquipments = fetchEquipments
 window.renderEquipmentPages = renderEquipmentPages
 window.loadEquipments = loadEquipments
+
+const ITEM_RARITY_LABELS = {
+    common: 'Comum',
+    rare: 'Raro',
+    epic: 'Épico',
+}
+
+const ITEM_TIMING_LABELS = {
+    anytime: 'Qualquer momento',
+    combat: 'Combate',
+    exploration: 'Exploração',
+}
+
+async function fetchItems() {
+    const response = await fetch('db/items.json')
+    const data = await response.json()
+    return data.usable_items ?? []
+}
+
+function buildItemCardHtml(item) {
+    const typeLabel = item.type ? item.type.charAt(0).toUpperCase() + item.type.slice(1) : 'Item'
+    const rarityKey = (item.rarity || 'common').toLowerCase()
+    const rarityLabel = ITEM_RARITY_LABELS[rarityKey] || rarityKey
+    const timingLabel = ITEM_TIMING_LABELS[item.timing] || item.timing || '-'
+    const targetLabel = item.target === 'self' ? 'Próprio' : item.target === 'enemy' ? 'Inimigo' : item.target || '-'
+
+    return `
+        <div class="card-header">
+            <div>
+                <div class="card-name">${item.name}</div>
+                <div class="card-title">${typeLabel}</div>
+            </div>
+            <div class="card-level equipment-rarity">${rarityLabel}</div>
+        </div>
+        <div class="card-image">
+            <img src="${getImageUrl(item.image)}" alt="${item.name}">
+        </div>
+        <div class="card-stats">
+            <div>🕐 ${timingLabel}</div>
+            <div>🎯 ${targetLabel}</div>
+        </div>
+        <div class="card-text">
+            <b>Efeito</b><br>
+            ${item.effect || '-'}
+        </div>
+        <div class="card-trophy">
+            <b>Consumível</b><br>
+            Descarte após o uso.
+        </div>
+    `
+}
+
+function renderItemPages(items, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    items.forEach((item) => {
+        const copies = normalizeCopies(item)
+        for (let i = 0; i < copies; i++) {
+            if (renderedCount % cardsPerPage === 0) {
+                const page = document.createElement('div')
+                page.classList.add('page')
+                container.appendChild(page)
+            }
+
+            const currentPage = container.lastElementChild
+            const card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML = buildItemCardHtml(item)
+            currentPage.appendChild(card)
+            renderedCount += 1
+        }
+    })
+
+    return renderedCount
+}
+
+async function loadItems() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const items = await fetchItems()
+    renderItemPages(items, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchItems = fetchItems
+window.renderItemPages = renderItemPages
+window.loadItems = loadItems
+
+const INTRIGUE_RARITY_LABELS = {
+    common: 'Comum',
+    rare: 'Raro',
+    epic: 'Épico',
+}
+
+const INTRIGUE_TIMING_LABELS = {
+    anytime: 'Qualquer momento',
+    combat: 'Combate',
+    exploration: 'Exploração',
+}
+
+const INTRIGUE_TARGET_LABELS = {
+    self: 'Próprio',
+    player: 'Jogador',
+    enemy: 'Inimigo',
+    all_players: 'Todos',
+}
+
+async function fetchIntrigue() {
+    const response = await fetch('db/intrigue.json')
+    const data = await response.json()
+    return data.intrigue_cards ?? []
+}
+
+function buildIntrigueCardHtml(card) {
+    const rarityLabel = INTRIGUE_RARITY_LABELS[(card.rarity || 'common').toLowerCase()] || card.rarity
+    const timingLabel = INTRIGUE_TIMING_LABELS[card.timing] || card.timing || '-'
+    const targetLabel = INTRIGUE_TARGET_LABELS[card.target] || card.target || '-'
+
+    return `
+        <div class="card-header">
+            <div class="card-name">${card.name}</div>
+            <div class="card-level equipment-rarity">${rarityLabel}</div>
+        </div>
+        <div class="card-image">
+            <img src="${getImageUrl(card.image)}" alt="${card.name}">
+        </div>
+        <div class="card-stats">
+            <div>🕐 ${timingLabel}</div>
+            <div>🎯 ${targetLabel}</div>
+        </div>
+        <div class="card-text">
+            <b>Efeito</b><br>
+            ${card.effect || '-'}
+        </div>
+        <div class="card-trophy">
+            <i>${card.flavor_text || ''}</i>
+        </div>
+    `
+}
+
+function renderIntriguePages(cards, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    cards.forEach((card) => {
+        const copies = normalizeCopies(card)
+        for (let i = 0; i < copies; i++) {
+            if (renderedCount % cardsPerPage === 0) {
+                const page = document.createElement('div')
+                page.classList.add('page')
+                container.appendChild(page)
+            }
+
+            const currentPage = container.lastElementChild
+            const cardEl = document.createElement('div')
+            cardEl.classList.add('card')
+            cardEl.innerHTML = buildIntrigueCardHtml(card)
+            currentPage.appendChild(cardEl)
+            renderedCount += 1
+        }
+    })
+
+    return renderedCount
+}
+
+async function loadIntrigue() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const cards = await fetchIntrigue()
+    renderIntriguePages(cards, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchIntrigue = fetchIntrigue
+window.renderIntriguePages = renderIntriguePages
+window.loadIntrigue = loadIntrigue
+
+const EVENT_RARITY_LABELS = {
+    common: 'Comum',
+    rare: 'Raro',
+    epic: 'Épico',
+}
+
+const EVENT_CATEGORY_LABELS = {
+    social: '🗣 Social',
+    treasure: '💰 Tesouro',
+    danger: '⚠ Perigo',
+    exploration: '🗺 Exploração',
+    mystery: '🔮 Mistério',
+    environment: '🌧 Ambiente',
+}
+
+async function fetchEvents() {
+    const response = await fetch('db/events.json')
+    const data = await response.json()
+    return data.events ?? []
+}
+
+function buildEventCardHtml(event) {
+    const rarityLabel = EVENT_RARITY_LABELS[(event.rarity || 'common').toLowerCase()] || event.rarity
+    const categoryLabel = EVENT_CATEGORY_LABELS[event.category] || event.category || '-'
+
+    return `
+        <div class="card-header">
+            <div class="card-name">${event.name}</div>
+            <div class="card-level equipment-rarity">${rarityLabel}</div>
+        </div>
+        <div class="card-image">
+            <img src="${getImageUrl(event.image)}" alt="${event.name}">
+        </div>
+        <div class="card-stats">
+            <div>${categoryLabel}</div>
+        </div>
+        <div class="card-text">
+            <b>Efeito</b><br>
+            ${event.effect || '-'}
+        </div>
+        <div class="card-trophy">
+            <i>${event.flavor_text || ''}</i>
+        </div>
+    `
+}
+
+function renderEventPages(events, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    events.forEach((event) => {
+        const copies = normalizeCopies(event)
+        for (let i = 0; i < copies; i++) {
+            if (renderedCount % cardsPerPage === 0) {
+                const page = document.createElement('div')
+                page.classList.add('page')
+                container.appendChild(page)
+            }
+
+            const currentPage = container.lastElementChild
+            const card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML = buildEventCardHtml(event)
+            currentPage.appendChild(card)
+            renderedCount += 1
+        }
+    })
+
+    return renderedCount
+}
+
+async function loadEvents() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const events = await fetchEvents()
+    renderEventPages(events, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchEvents = fetchEvents
+window.renderEventPages = renderEventPages
+window.loadEvents = loadEvents
+
+const RELIC_SLOT_LABELS = {
+    head: '👑 Cabeça',
+    weapon: '⚔ Arma',
+    shield: '🛡 Escudo',
+    ring: '💍 Anel',
+    artifact: '🔮 Artefato',
+}
+
+async function fetchRelics() {
+    const response = await fetch('db/relics.json')
+    const data = await response.json()
+    return data.relics ?? []
+}
+
+function buildRelicCardHtml(relic) {
+    const slotLabel = RELIC_SLOT_LABELS[relic.slot] || relic.slot || '-'
+
+    return `
+        <div class="card-header">
+            <div class="card-name">${relic.name}</div>
+            <div class="card-level equipment-rarity">Lendário</div>
+        </div>
+        <div class="card-image">
+            <img src="${getImageUrl(relic.image)}" alt="${relic.name}">
+        </div>
+        <div class="card-stats">
+            <div>${slotLabel}</div>
+        </div>
+        <div class="card-text">
+            <b>Efeito</b><br>
+            ${relic.effect || '-'}
+        </div>
+        <div class="card-trophy">
+            <i>${relic.flavor_text || ''}</i>
+        </div>
+    `
+}
+
+function renderRelicPages(relics, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) {
+        return 0
+    }
+
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    relics.forEach((relic) => {
+        const copies = normalizeCopies(relic)
+        for (let i = 0; i < copies; i++) {
+            if (renderedCount % cardsPerPage === 0) {
+                const page = document.createElement('div')
+                page.classList.add('page')
+                container.appendChild(page)
+            }
+
+            const currentPage = container.lastElementChild
+            const card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML = buildRelicCardHtml(relic)
+            currentPage.appendChild(card)
+            renderedCount += 1
+        }
+    })
+
+    return renderedCount
+}
+
+async function loadRelics() {
+    const pagesContainer = document.getElementById('pages-container')
+    if (!pagesContainer) {
+        return
+    }
+
+    const relics = await fetchRelics()
+    renderRelicPages(relics, pagesContainer)
+    document.body.classList.add('loaded')
+}
+
+window.fetchRelics = fetchRelics
+window.renderRelicPages = renderRelicPages
+window.loadRelics = loadRelics

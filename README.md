@@ -75,6 +75,18 @@ Monstros raros e extremamente poderosos que concedem múltiplos níveis:
 - Behemoth Abissal
 - Demônio Menor
 
+### Itens Utilizáveis (12 únicos / 36 com cópias)
+Consumíveis como poções, pergaminhos e ferramentas que auxiliam em combate ou exploração.
+
+### Cartas de Intriga (10 únicas / 20 com cópias)
+Cartas de interação entre jogadores com efeitos estratégicos e imprevisíveis.
+
+### Eventos (12 únicos / 24 com cópias)
+Situações de exploração que alteram o estado do jogo ou criam oportunidades.
+
+### Relíquias (20 cartas)
+Artefatos lendários com efeitos poderosos e permanentes.
+
 ---
 
 ## 🖨️ Como Usar
@@ -176,7 +188,11 @@ legends_card_game/
 │   ├── heroes.json          # Dados dos heróis
 │   ├── classes.json         # Dados das classes
 │   ├── subclasses.json      # Dados das subclasses
-│   └── equipments.json      # Dados dos equipamentos
+│   ├── equipments.json      # Dados dos equipamentos
+│   ├── items.json           # Dados dos itens utilizáveis
+│   ├── intrigue.json        # Dados das cartas de intriga
+│   ├── events.json          # Dados dos eventos
+│   └── relics.json          # Dados das relíquias
 ├── css/                     # Estilos
 │   ├── cards.css            # Estilos dos cards
 │   ├── generator.css        # Estilos do gerador
@@ -266,11 +282,11 @@ python3 update_json_paths.py
 ## 🎯 Futuro do Jogo
 
 Legends foi projetado para crescer. Expansões planejadas incluem:
-- Itens utilizáveis
-- Eventos de exploração
+- ~~Itens utilizáveis~~ ✅
+- ~~Eventos de exploração~~ ✅
 - Armadilhas
-- Cartas de intriga
-- Relíquias lendárias
+- ~~Cartas de intriga~~ ✅
+- ~~Relíquias lendárias~~ ✅
 - Duelos entre jogadores
 - Campanhas cooperativas
 
@@ -280,13 +296,16 @@ O sistema modular permite adicionar novos conteúdos facilmente.
 
 ## 📊 Estatísticas do Projeto
 
-- **Total de Cartas:** 78+
+- **Total de Cartas:** 178 (contando cópias)
 - **Monstros:** 24 (incluindo 6 chefes)
 - **Heróis:** 6
 - **Classes:** 6
 - **Subclasses:** 18
 - **Equipamentos:** 24
-- **Imagens:** 79+ assets
+- **Itens Utilizáveis:** 36 (12 únicos × 3 cópias)
+- **Cartas de Intriga:** 20 (10 únicas × 2 cópias)
+- **Eventos:** 24 (12 únicos × 2 cópias)
+- **Relíquias:** 20
 
 ---
 

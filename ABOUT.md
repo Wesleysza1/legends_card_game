@@ -47,19 +47,19 @@ Chefes concedem níveis extras e representam os maiores desafios do jogo.
 
 # ESTRUTURA DO BARALHO
 
-O jogo possui atualmente **132 cartas**, divididas em diferentes categorias.
+O jogo possui atualmente **178 cartas** (contando cópias), divididas em diferentes categorias.
 
-| Tipo de Carta     | Quantidade |
-| ----------------- | ---------- |
-| Heróis            | 6          |
-| Classes           | 6          |
-| Subclasses        | 18         |
-| Monstros          | 24         |
-| Equipamentos      | 24         |
-| Itens Utilizáveis | 12         |
-| Cartas de Intriga | 18         |
-| Eventos           | 12         |
-| Relíquias         | 12         |
+| Tipo de Carta     | Únicas | Cópias | Total |
+| ----------------- | ------ | ------ | ----- |
+| Heróis            | 6      | 1      | 6     |
+| Classes           | 6      | 1      | 6     |
+| Subclasses        | 18     | 1      | 18    |
+| Monstros          | 24     | 1      | 24    |
+| Equipamentos      | 24     | 1      | 24    |
+| Itens Utilizáveis | 12     | 3      | 36    |
+| Cartas de Intriga | 10     | 2      | 20    |
+| Eventos           | 12     | 2      | 24    |
+| Relíquias         | 20     | 1      | 20    |
 
 Essa estrutura permite **grande variedade de partidas** e facilita a criação de expansões futuras.
 
@@ -251,7 +251,7 @@ Cinto do Gigante
 
 Itens utilizáveis são consumidos após o uso.
 
-Total: **12 cartas**
+Total: **12 cartas únicas (36 com cópias)**
 
 Poção de Cura
 Poção de Força
@@ -272,26 +272,18 @@ Chave Antiga
 
 Cartas de intriga permitem interação direta entre jogadores e criam momentos imprevisíveis.
 
-Total: **18 cartas**
+Total: **10 cartas únicas (20 com cópias)**
 
-Emboscada
+Troca Astuta
+Roubo nas Sombras
+Armadilha Improvisada
+Plano Perfeito
+Acusação Falsa
+Ajuda Suspeita
 Sabotagem
-Roubo
-Traição
-Blefe
-Espionagem
-Contra-ataque
-Armadilha Oculta
-Ilusão
-Maldição
-Fúria
-Desarmar
-Disfarce
-Chantagem
-Golpe Sujo
-Provocação
-Barganha Sombria
-Vingança
+Segredo Revelado
+Aliança Temporária
+Caos Calculado
 
 ---
 
@@ -299,20 +291,20 @@ Vingança
 
 Eventos alteram o estado do jogo ou criam situações inesperadas.
 
-Total: **12 cartas**
+Total: **12 cartas únicas (24 com cópias)**
 
-Mercador Ambulante
-Taverna Abandonada
-Armadilha Antiga
-Tesouro Escondido
-Santuário Sagrado
-Portal Arcano
-Terremoto
-Chuva de Meteoros
-Névoa Misteriosa
-Ritual Proibido
-Invasão de Monstros
-Eclipse Arcano
+Taverna Barulhenta
+Baú Abandonado
+Mercador Errante
+Emboscada Goblin
+Ruínas Antigas
+Estrada Perigosa
+Santuário Esquecido
+Mapa Misterioso
+Chuva Torrencial
+Viajante Misterioso
+Porta Selada
+Festival da Vila
 
 ---
 
@@ -320,20 +312,28 @@ Eclipse Arcano
 
 Relíquias são artefatos lendários extremamente poderosos.
 
-Total: **12 cartas**
+Total: **20 cartas**
 
-Coroa do Rei Esquecido
+Coroa dos Reis Antigos
 Orbe do Infinito
-Espada do Dragão
-Cálice da Vida
-Grimório Proibido
-Amuleto da Eternidade
-Lâmina do Destino
-Martelo dos Titãs
-Relógio do Tempo
-Pedra da Alma
-Chama Eterna
-Máscara do Deus Antigo
+Espada do Último Herói
+Cálice da Vida Eterna
+Lâmina do Eclipse
+Ampulheta do Destino
+Escudo do Guardião Eterno
+Livro dos Mil Segredos
+Coração de Dragão
+Anel do Viajante Eterno
+Martelo do Titã Adormecido
+Máscara das Mil Faces
+Lanterna das Almas Perdidas
+Tridente das Marés Eternas
+Olho do Arquimago
+Capa do Andarilho Dimensional
+Chave do Portal Antigo
+Cetro da Tempestade
+Relicário do Guardião Antigo
+Pedra do Caos Primordial
 
 ---
 
