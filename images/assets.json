@@ -1,0 +1,548 @@
+{
+  "classes": [
+    {
+      "name": "barbaro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/barbaro.webp"
+    },
+    {
+      "name": "cacador",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/cacador.webp"
+    },
+    {
+      "name": "guerreiro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/guerreiro.webp"
+    },
+    {
+      "name": "ladino",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/ladino.webp"
+    },
+    {
+      "name": "mago",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/mago.webp"
+    },
+    {
+      "name": "paladino",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/classes/paladino.webp"
+    }
+  ],
+  "equipments": [
+    {
+      "name": "adaga_sombria",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/adaga_sombria.webp"
+    },
+    {
+      "name": "amuleto_protecao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/amuleto_protecao.webp"
+    },
+    {
+      "name": "anel_arcano",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/anel_arcano.webp"
+    },
+    {
+      "name": "anel_forca",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/anel_forca.webp"
+    },
+    {
+      "name": "arco_longo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/arco_longo.webp"
+    },
+    {
+      "name": "armadura_escamas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/armadura_escamas.webp"
+    },
+    {
+      "name": "armadura_ferro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/armadura_ferro.webp"
+    },
+    {
+      "name": "armadura_placas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/armadura_placas.webp"
+    },
+    {
+      "name": "botas_agilidade",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/botas_agilidade.webp"
+    },
+    {
+      "name": "cajado_arcano",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/cajado_arcano.webp"
+    },
+    {
+      "name": "capa_sombria",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/capa_sombria.webp"
+    },
+    {
+      "name": "cinto_gigante",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/cinto_gigante.webp"
+    },
+    {
+      "name": "colar_cacador",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/colar_cacador.webp"
+    },
+    {
+      "name": "couraca_guardiao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/couraca_guardiao.webp"
+    },
+    {
+      "name": "escudo_ferro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/escudo_ferro.webp"
+    },
+    {
+      "name": "escudo_runico",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/escudo_runico.webp"
+    },
+    {
+      "name": "escudo_torre",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/escudo_torre.webp"
+    },
+    {
+      "name": "espada_longa",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/espada_longa.webp"
+    },
+    {
+      "name": "lamina_runica",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/lamina_runica.webp"
+    },
+    {
+      "name": "lanca_caca",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/lanca_caca.webp"
+    },
+    {
+      "name": "luvas_duelista",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/luvas_duelista.webp"
+    },
+    {
+      "name": "machado_guerra",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/machado_guerra.webp"
+    },
+    {
+      "name": "manto_arcano",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/manto_arcano.webp"
+    },
+    {
+      "name": "martelo_sagrado",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/equipments/martelo_sagrado.webp"
+    }
+  ],
+  "events": [
+    {
+      "name": "bau_abandonado",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/bau_abandonado.webp"
+    },
+    {
+      "name": "chuva_torrencial",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/chuva_torrencial.webp"
+    },
+    {
+      "name": "emboscada_goblin",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/emboscada_goblin.webp"
+    },
+    {
+      "name": "estrada_perigosa",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/estrada_perigosa.webp"
+    },
+    {
+      "name": "festival_da_vila",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/festival_da_vila.webp"
+    },
+    {
+      "name": "mapa_misterioso",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/mapa_misterioso.webp"
+    },
+    {
+      "name": "mercador_errante",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/mercador_errante.webp"
+    },
+    {
+      "name": "porta_selada",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/porta_selada.webp"
+    },
+    {
+      "name": "ruinas_antigas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/ruinas_antigas.webp"
+    },
+    {
+      "name": "santuario_esquecido",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/santuario_esquecido.webp"
+    },
+    {
+      "name": "taverna_barulhenta",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/taverna_barulhenta.webp"
+    },
+    {
+      "name": "viajante_misterioso",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/events/viajante_misterioso.webp"
+    }
+  ],
+  "heroes": [
+    {
+      "name": "barbaro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/barbaro.webp"
+    },
+    {
+      "name": "cacador_fronteira",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/cacador_fronteira.webp"
+    },
+    {
+      "name": "guerreiro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/guerreiro.webp"
+    },
+    {
+      "name": "ladra",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/ladra.webp"
+    },
+    {
+      "name": "maga_arcana",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/maga_arcana.webp"
+    },
+    {
+      "name": "paladina_aurora",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/heroes/paladina_aurora.webp"
+    }
+  ],
+  "intrigue": [
+    {
+      "name": "acusacao_falsa",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/acusacao_falsa.webp"
+    },
+    {
+      "name": "ajuda_suspeita",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/ajuda_suspeita.webp"
+    },
+    {
+      "name": "alianca_temporaria",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/alianca_temporaria.webp"
+    },
+    {
+      "name": "armadilha_improvisada",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/armadilha_improvisada.webp"
+    },
+    {
+      "name": "caos_calculado",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/caos_calculado.webp"
+    },
+    {
+      "name": "plano_perfeito",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/plano_perfeito.webp"
+    },
+    {
+      "name": "roubo_nas_sombras",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/roubo_nas_sombras.webp"
+    },
+    {
+      "name": "sabotagem",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/sabotagem.webp"
+    },
+    {
+      "name": "segredo_revelado",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/segredo_revelado.webp"
+    },
+    {
+      "name": "troca_astuta",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/intrigue/troca_astuta.webp"
+    }
+  ],
+  "items": [
+    {
+      "name": "bomba_alquimica",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/bomba_alquimica.webp"
+    },
+    {
+      "name": "chave_antiga",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/chave_antiga.webp"
+    },
+    {
+      "name": "kit_de_armadilhas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/kit_de_armadilhas.webp"
+    },
+    {
+      "name": "pergaminho_de_fogo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pergaminho_de_fogo.webp"
+    },
+    {
+      "name": "pergaminho_de_gelo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pergaminho_de_gelo.webp"
+    },
+    {
+      "name": "pergaminho_de_teleporte",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pergaminho_de_teleporte.webp"
+    },
+    {
+      "name": "pocao_de_cura",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pocao_de_cura.webp"
+    },
+    {
+      "name": "pocao_de_forca",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pocao_de_forca.webp"
+    },
+    {
+      "name": "pocao_de_mana",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pocao_de_mana.webp"
+    },
+    {
+      "name": "pocao_de_velocidade",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/pocao_de_velocidade.webp"
+    },
+    {
+      "name": "tocha_encantada",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/tocha_encantada.webp"
+    },
+    {
+      "name": "veneno_mortal",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/items/veneno_mortal.webp"
+    }
+  ],
+  "monsters": [
+    {
+      "name": "aranha_gigante",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/aranha_gigante.webp"
+    },
+    {
+      "name": "bandido_estradas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/bandido_estradas.webp"
+    },
+    {
+      "name": "behemoth_abissal",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/behemoth_abissal.webp"
+    },
+    {
+      "name": "cavaleiro_espectral",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/cavaleiro_espectral.webp"
+    },
+    {
+      "name": "cultista_sombrio",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/cultista_sombrio.webp"
+    },
+    {
+      "name": "demonio_menor",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/demonio_menor.webp"
+    },
+    {
+      "name": "dragao_ruinas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/dragao_ruinas.webp"
+    },
+    {
+      "name": "esqueleto_guardiao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/esqueleto_guardiao.webp"
+    },
+    {
+      "name": "gargula_pedra",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/gargula_pedra.webp"
+    },
+    {
+      "name": "gigante_ferro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/gigante_ferro.webp"
+    },
+    {
+      "name": "goblin_ruinas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/goblin_ruinas.webp"
+    },
+    {
+      "name": "guardiao_ancestral",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/guardiao_ancestral.webp"
+    },
+    {
+      "name": "hidra_selvagem",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/hidra_selvagem.webp"
+    },
+    {
+      "name": "lich_antigo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/lich_antigo.webp"
+    },
+    {
+      "name": "lobo_sombrio",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/lobo_sombrio.webp"
+    },
+    {
+      "name": "mimico_faminto",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/mimico_faminto.webp"
+    },
+    {
+      "name": "necromante_caido",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/necromante_caido.webp"
+    },
+    {
+      "name": "ogro_cavernas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/ogro_cavernas.webp"
+    },
+    {
+      "name": "orc_brutamontes",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/orc_brutamontes.webp"
+    },
+    {
+      "name": "quimera_jovem",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/quimera_jovem.webp"
+    },
+    {
+      "name": "serpente_profundezas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/serpente_profundezas.webp"
+    },
+    {
+      "name": "slime_acido",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/slime_acido.webp"
+    },
+    {
+      "name": "tita_adormecido",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/tita_adormecido.webp"
+    },
+    {
+      "name": "troll_regenerador",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/monsters/troll_regenerador.webp"
+    }
+  ],
+  "relics": [
+    {
+      "name": "ampulheta_destino",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/ampulheta_destino.webp"
+    },
+    {
+      "name": "anel_viajante_eterno",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/anel_viajante_eterno.webp"
+    },
+    {
+      "name": "calice_vida_eterna",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/calice_vida_eterna.webp"
+    },
+    {
+      "name": "capa_andarilho_dimensional",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/capa_andarilho_dimensional.webp"
+    },
+    {
+      "name": "cetro_tempestade",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/cetro_tempestade.webp"
+    },
+    {
+      "name": "chave_portal_antigo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/chave_portal_antigo.webp"
+    },
+    {
+      "name": "coracao_dragao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/coracao_dragao.webp"
+    },
+    {
+      "name": "coroa_reis_antigos",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/coroa_reis_antigos.webp"
+    },
+    {
+      "name": "escudo_guardiao_eterno",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/escudo_guardiao_eterno.webp"
+    },
+    {
+      "name": "espada_ultimo_heroi",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/espada_ultimo_heroi.webp"
+    },
+    {
+      "name": "lamina_eclipse",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/lamina_eclipse.webp"
+    },
+    {
+      "name": "lanterna_almas_perdidas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/lanterna_almas_perdidas.webp"
+    },
+    {
+      "name": "livro_mil_segredos",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/livro_mil_segredos.webp"
+    },
+    {
+      "name": "martelo_tita_adormecido",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/martelo_tita_adormecido.webp"
+    },
+    {
+      "name": "mascara_mil_faces",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/mascara_mil_faces.webp"
+    },
+    {
+      "name": "olho_arquimago",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/olho_arquimago.webp"
+    },
+    {
+      "name": "orbe_do_infinito",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/orbe_do_infinito.webp"
+    },
+    {
+      "name": "pedra_caos_primordial",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/pedra_caos_primordial.webp"
+    },
+    {
+      "name": "relicario_guardiao_antigo",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/relicario_guardiao_antigo.webp"
+    },
+    {
+      "name": "tridente_mares_eternas",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/relics/tridente_mares_eternas.webp"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "arauto_luz",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/arauto_luz.webp"
+    },
+    {
+      "name": "arcanista",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/arcanista.webp"
+    },
+    {
+      "name": "assassino",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/assassino.webp"
+    },
+    {
+      "name": "atirador",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/atirador.webp"
+    },
+    {
+      "name": "berserker",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/berserker.webp"
+    },
+    {
+      "name": "campeao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/campeao.webp"
+    },
+    {
+      "name": "cronomante",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/cronomante.webp"
+    },
+    {
+      "name": "domador_feras",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/domador_feras.webp"
+    },
+    {
+      "name": "duelista",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/duelista.webp"
+    },
+    {
+      "name": "espiao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/espiao.webp"
+    },
+    {
+      "name": "exorcista",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/exorcista.webp"
+    },
+    {
+      "name": "explorador",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/explorador.webp"
+    },
+    {
+      "name": "guardiao",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/guardiao.webp"
+    },
+    {
+      "name": "piromante",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/piromante.webp"
+    },
+    {
+      "name": "senhor_tempestade",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/senhor_tempestade.webp"
+    },
+    {
+      "name": "templario",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/templario.webp"
+    },
+    {
+      "name": "trapaceiro",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/trapaceiro.webp"
+    },
+    {
+      "name": "xama_guerra",
+      "url": "https://wesleysza1.github.io/legends_card_game/images/subclasses/xama_guerra.webp"
+    }
+  ]
+}
