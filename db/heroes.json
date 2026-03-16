@@ -5,7 +5,7 @@
       "name": "Guerreiro Errante",
       "title": "Veterano das Estradas",
       "description": "Um combatente experiente que já lutou em centenas de batalhas.",
-      "image": "heroes/guerreiro.png",
+      "image": "heroes/guerreiro.webp",
       "stats": {
         "hp": 12,
         "power": 3,
@@ -26,7 +26,7 @@
       "name": "Ladra das Sombras",
       "title": "Mestre da Furtividade",
       "description": "Especialista em ataques rápidos e truques inesperados.",
-      "image": "heroes/ladra.png",
+      "image": "heroes/ladra.webp",
       "stats": {
         "hp": 9,
         "power": 2,
@@ -47,7 +47,7 @@
       "name": "Maga Arcana",
       "title": "Discípula do Véu Arcano",
       "description": "Controla energias mágicas capazes de alterar o destino do combate.",
-      "image": "heroes/maga_arcana.png",
+      "image": "heroes/maga_arcana.webp",
       "stats": {
         "hp": 8,
         "power": 3,
@@ -67,7 +67,7 @@
       "name": "Caçador da Fronteira",
       "title": "Guardião das Terras Selvagens",
       "description": "Rastreador habilidoso acostumado a sobreviver em territórios perigosos.",
-      "image": "heroes/cacador_fronteira.png",
+      "image": "heroes/cacador_fronteira.webp",
       "stats": {
         "hp": 10,
         "power": 2,
@@ -88,7 +88,7 @@
       "name": "Paladina da Aurora",
       "title": "Campeã da Luz",
       "description": "Uma guerreira sagrada que luta em nome da justiça.",
-      "image": "heroes/paladina_aurora.png",
+      "image": "heroes/paladina_aurora.webp",
       "stats": {
         "hp": 11,
         "power": 2,
@@ -109,7 +109,7 @@
       "name": "Bárbaro das Terras Altas",
       "title": "Fúria Indomável",
       "description": "Um guerreiro brutal que transforma dor em força.",
-      "image": "heroes/barbaro.png",
+      "image": "heroes/barbaro.webp",
       "stats": {
         "hp": 13,
         "power": 3,

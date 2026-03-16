@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Guerreiro",
       "description": "Especialista em combate direto, capaz de enfrentar monstros poderosos sem recuar.",
-      "image": "classes/guerreiro.png",
+      "image": "classes/guerreiro.webp",
       "stat_modifiers": {
         "hp": 2,
         "power": 1,
@@ -23,7 +23,7 @@
       "id": 2,
       "name": "Mago",
       "description": "Manipula energias arcanas para destruir inimigos ou alterar o fluxo da batalha.",
-      "image": "classes/mago.png",
+      "image": "classes/mago.webp",
       "stat_modifiers": {
         "hp": -1,
         "power": 2,
@@ -42,7 +42,7 @@
       "id": 3,
       "name": "Ladino",
       "description": "Ágil e imprevisível, prefere ataques rápidos e truques inteligentes.",
-      "image": "classes/ladino.png",
+      "image": "classes/ladino.webp",
       "stat_modifiers": {
         "hp": 0,
         "power": 1,
@@ -61,7 +61,7 @@
       "id": 4,
       "name": "Caçador",
       "description": "Especialista em rastrear e derrotar criaturas perigosas à distância.",
-      "image": "classes/cacador.png",
+      "image": "classes/cacador.webp",
       "stat_modifiers": {
         "hp": 1,
         "power": 1,
@@ -80,7 +80,7 @@
       "id": 5,
       "name": "Paladino",
       "description": "Guerreiro sagrado que protege aliados e combate forças sombrias.",
-      "image": "classes/paladino.png",
+      "image": "classes/paladino.webp",
       "stat_modifiers": {
         "hp": 2,
         "power": 0,
@@ -99,7 +99,7 @@
       "id": 6,
       "name": "Bárbaro",
       "description": "Um guerreiro brutal que luta com força e fúria incontrolável.",
-      "image": "classes/barbaro.png",
+      "image": "classes/barbaro.webp",
       "stat_modifiers": {
         "hp": 2,
         "power": 2,

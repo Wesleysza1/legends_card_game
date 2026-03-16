@@ -8,7 +8,7 @@
       "slot": "head",
       "effect": "Enquanto equipada, compre 1 carta extra no início do seu turno.",
       "flavor_text": "Apenas um verdadeiro governante consegue suportar o peso desta coroa.",
-      "image": "relics/coroa_reis_antigos.png",
+      "image": "relics/coroa_reis_antigos.webp",
       "copies": 1
     },
     {
@@ -19,7 +19,7 @@
       "slot": "artifact",
       "effect": "Uma vez por turno, você pode repetir o efeito de um item utilizável.",
       "flavor_text": "Dentro dele, ecos de magia antiga ainda sussurram.",
-      "image": "relics/orbe_do_infinito.png",
+      "image": "relics/orbe_do_infinito.webp",
       "copies": 1
     },
     {
@@ -30,7 +30,7 @@
       "slot": "weapon",
       "effect": "+4 de ataque. Se vencer um duelo, compre 1 carta.",
       "flavor_text": "Forjada para derrotar um mal que já nem lembramos mais.",
-      "image": "relics/espada_ultimo_heroi.png",
+      "image": "relics/espada_ultimo_heroi.webp",
       "copies": 1
     },
     {
@@ -41,7 +41,7 @@
       "slot": "artifact",
       "effect": "No início do seu turno, recupere 1 de vida.",
       "flavor_text": "Dizem que o primeiro gole salvou um reino inteiro.",
-      "image": "relics/calice_vida_eterna.png",
+      "image": "relics/calice_vida_eterna.webp",
       "copies": 1
     },
     {
@@ -52,7 +52,7 @@
       "slot": "weapon",
       "effect": "Ataques ignoram 2 pontos de defesa do oponente.",
       "flavor_text": "Quando ela é desembainhada, até a luz hesita.",
-      "image": "relics/lamina_eclipse.png",
+      "image": "relics/lamina_eclipse.webp",
       "copies": 1
     },
     {
@@ -63,7 +63,7 @@
       "slot": "artifact",
       "effect": "Uma vez por partida, refaça completamente um turno.",
       "flavor_text": "Alguns erros merecem uma segunda chance.",
-      "image": "relics/ampulheta_destino.png",
+      "image": "relics/ampulheta_destino.webp",
       "copies": 1
     },
     {
@@ -74,7 +74,7 @@
       "slot": "shield",
       "effect": "+3 de defesa. O primeiro dano de cada duelo é ignorado.",
       "flavor_text": "Nenhuma muralha já foi tão confiável.",
-      "image": "relics/escudo_guardiao_eterno.png",
+      "image": "relics/escudo_guardiao_eterno.webp",
       "copies": 1
     },
     {
@@ -85,7 +85,7 @@
       "slot": "artifact",
       "effect": "Veja as 3 próximas cartas do baralho e reorganize-as a cada turno.",
       "flavor_text": "Cada página revela um segredo... e esconde outro.",
-      "image": "relics/livro_mil_segredos.png",
+      "image": "relics/livro_mil_segredos.webp",
       "copies": 1
     },
     {
@@ -96,7 +96,7 @@
       "slot": "artifact",
       "effect": "+2 ataque e +2 vida máxima.",
       "flavor_text": "Ainda pulsa com o poder de uma criatura lendária.",
-      "image": "relics/coracao_dragao.png",
+      "image": "relics/coracao_dragao.webp",
       "copies": 1
     },
     {
@@ -107,7 +107,7 @@
       "slot": "ring",
       "effect": "Você pode descartar uma carta para comprar outra uma vez por turno.",
       "flavor_text": "Nenhum caminho é longo demais para quem o usa.",
-      "image": "relics/anel_viajante_eterno.png",
+      "image": "relics/anel_viajante_eterno.webp",
       "copies": 1
     },
     {
@@ -118,7 +118,7 @@
       "slot": "weapon",
       "effect": "+5 de ataque no primeiro duelo de cada turno.",
       "flavor_text": "Forjado para quebrar montanhas, agora quebra destinos.",
-      "image": "relics/martelo_tita_adormecido.png",
+      "image": "relics/martelo_tita_adormecido.webp",
       "copies": 1
     },
     {
@@ -129,7 +129,7 @@
       "slot": "artifact",
       "effect": "Uma vez por turno você pode copiar a habilidade de outro jogador até o fim do turno.",
       "flavor_text": "Quem a usa nunca é exatamente quem parece ser.",
-      "image": "relics/mascara_mil_faces.png",
+      "image": "relics/mascara_mil_faces.webp",
       "copies": 1
     },
     {
@@ -140,7 +140,7 @@
       "slot": "artifact",
       "effect": "Sempre que derrotar um oponente em duelo, compre 1 carta.",
       "flavor_text": "A chama cresce cada vez que uma batalha termina.",
-      "image": "relics/lanterna_almas_perdidas.png",
+      "image": "relics/lanterna_almas_perdidas.webp",
       "copies": 1
     },
     {
@@ -151,7 +151,7 @@
       "slot": "weapon",
       "effect": "+3 de ataque. Uma vez por turno empurre um jogador a descartar uma carta.",
       "flavor_text": "Dizem que ele já comandou o próprio oceano.",
-      "image": "relics/tridente_mares_eternos.png",
+      "image": "relics/tridente_mares_eternos.webp",
       "copies": 1
     },
     {
@@ -162,7 +162,7 @@
       "slot": "artifact",
       "effect": "Você pode olhar a mão de um oponente uma vez por turno.",
       "flavor_text": "Nada permanece escondido diante de seu olhar.",
-      "image": "relics/olho_arquimago.png",
+      "image": "relics/olho_arquimago.webp",
       "copies": 1
     },
     {
@@ -173,7 +173,7 @@
       "slot": "armor",
       "effect": "Uma vez por turno você pode evitar completamente um efeito de carta.",
       "flavor_text": "Alguns dizem que quem a veste pisa em dois mundos ao mesmo tempo.",
-      "image": "relics/capa_andarilho_dimensional.png",
+      "image": "relics/capa_andarilho_dimensional.webp",
       "copies": 1
     },
     {
@@ -184,7 +184,7 @@
       "slot": "artifact",
       "effect": "Busque qualquer carta no baralho uma vez por partida.",
       "flavor_text": "Abre portas que nem deveriam existir.",
-      "image": "relics/chave_portal_antigo.png",
+      "image": "relics/chave_portal_antigo.webp",
       "copies": 1
     },
     {
@@ -195,7 +195,7 @@
       "slot": "weapon",
       "effect": "Itens mágicos que você usa causam +1 de efeito.",
       "flavor_text": "O céu responde ao chamado de quem o empunha.",
-      "image": "relics/cetro_tempestade.png",
+      "image": "relics/cetro_tempestade.webp",
       "copies": 1
     },
     {
@@ -206,7 +206,7 @@
       "slot": "artifact",
       "effect": "Receba +2 de defesa permanente.",
       "flavor_text": "Dentro dele repousa o juramento de um protetor esquecido.",
-      "image": "relics/relicario_guardiao_antigo.png",
+      "image": "relics/relicario_guardiao_antigo.webp",
       "copies": 1
     },
     {
@@ -217,7 +217,7 @@
       "slot": "artifact",
       "effect": "Uma vez por turno role um dado: 1-2 compre 1 carta, 3-4 cause 1 dano a um oponente, 5-6 recupere 1 de vida.",
       "flavor_text": "Nem os deuses sabem exatamente o que ela fará.",
-      "image": "relics/pedra_caos_primordial.png",
+      "image": "relics/pedra_caos_primordial.webp",
       "copies": 1
     }
   ]
