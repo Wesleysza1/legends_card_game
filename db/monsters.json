@@ -5,7 +5,7 @@
       "name": "Goblin das Ruínas",
       "level": 2,
       "unique": false,
-      "image": "monsters/goblin_ruinas.png",
+      "image": "monsters/goblin_ruinas.webp",
       "stats": {
         "hp": 2,
         "damage": 1,
@@ -25,7 +25,7 @@
       "name": "Lobo Sombrio",
       "level": 2,
       "unique": false,
-      "image": "monsters/lobo_sombrio.png",
+      "image": "monsters/lobo_sombrio.webp",
       "stats": {
         "hp": 2,
         "damage": 1,
@@ -45,7 +45,7 @@
       "name": "Esqueleto Guardião",
       "level": 3,
       "unique": false,
-      "image": "monsters/esqueleto_guardiao.png",
+      "image": "monsters/esqueleto_guardiao.webp",
       "stats": {
         "hp": 3,
         "damage": 1,
@@ -65,7 +65,7 @@
       "name": "Slime Ácido",
       "level": 3,
       "unique": false,
-      "image": "monsters/slime_acido.png",
+      "image": "monsters/slime_acido.webp",
       "stats": {
         "hp": 3,
         "damage": 1,
@@ -85,7 +85,7 @@
       "name": "Bandido das Estradas",
       "level": 2,
       "unique": false,
-      "image": "monsters/bandido_estradas.png",
+      "image": "monsters/bandido_estradas.webp",
       "stats": {
         "hp": 2,
         "damage": 1,
@@ -105,7 +105,7 @@
       "name": "Mímico Faminto",
       "level": 3,
       "unique": false,
-      "image": "monsters/mimico_faminto.png",
+      "image": "monsters/mimico_faminto.webp",
       "stats": {
         "hp": 3,
         "damage": 2,
@@ -125,7 +125,7 @@
       "name": "Orc Brutamontes",
       "level": 4,
       "unique": false,
-      "image": "monsters/orc_brutamontes.png",
+      "image": "monsters/orc_brutamontes.webp",
       "stats": {
         "hp": 4,
         "damage": 2,
@@ -145,7 +145,7 @@
       "name": "Gárgula de Pedra",
       "level": 4,
       "unique": false,
-      "image": "monsters/gargula_pedra.png",
+      "image": "monsters/gargula_pedra.webp",
       "stats": {
         "hp": 5,
         "damage": 1,
@@ -165,7 +165,7 @@
       "name": "Aranha Gigante",
       "level": 4,
       "unique": false,
-      "image": "monsters/aranha_gigante.png",
+      "image": "monsters/aranha_gigante.webp",
       "stats": {
         "hp": 4,
         "damage": 2,
@@ -185,7 +185,7 @@
       "name": "Cavaleiro Espectral",
       "level": 5,
       "unique": false,
-      "image": "monsters/cavaleiro_espectral.png",
+      "image": "monsters/cavaleiro_espectral.webp",
       "stats": {
         "hp": 5,
         "damage": 2,
@@ -205,7 +205,7 @@
       "name": "Ogro das Cavernas",
       "level": 5,
       "unique": false,
-      "image": "monsters/ogro_cavernas.png",
+      "image": "monsters/ogro_cavernas.webp",
       "stats": {
         "hp": 6,
         "damage": 2,
@@ -225,7 +225,7 @@
       "name": "Cultista Sombrio",
       "level": 5,
       "unique": false,
-      "image": "monsters/cultista_sombrio.png",
+      "image": "monsters/cultista_sombrio.webp",
       "stats": {
         "hp": 4,
         "damage": 2,
@@ -245,7 +245,7 @@
       "name": "Troll Regenerador",
       "level": 6,
       "unique": false,
-      "image": "monsters/troll_regenerador.png",
+      "image": "monsters/troll_regenerador.webp",
       "stats": {
         "hp": 6,
         "damage": 2,
@@ -265,7 +265,7 @@
       "name": "Serpente das Profundezas",
       "level": 6,
       "unique": false,
-      "image": "monsters/serpente_profundezas.png",
+      "image": "monsters/serpente_profundezas.webp",
       "stats": {
         "hp": 5,
         "damage": 3,
@@ -285,7 +285,7 @@
       "name": "Quimera Jovem",
       "level": 7,
       "unique": false,
-      "image": "monsters/quimera_jovem.png",
+      "image": "monsters/quimera_jovem.webp",
       "stats": {
         "hp": 6,
         "damage": 3,
@@ -305,7 +305,7 @@
       "name": "Necromante Caído",
       "level": 7,
       "unique": false,
-      "image": "monsters/necromante_caido.png",
+      "image": "monsters/necromante_caido.webp",
       "stats": {
         "hp": 5,
         "damage": 3,
@@ -325,7 +325,7 @@
       "name": "Gigante de Ferro",
       "level": 7,
       "unique": false,
-      "image": "monsters/gigante_ferro.png",
+      "image": "monsters/gigante_ferro.webp",
       "stats": {
         "hp": 7,
         "damage": 3,
@@ -345,7 +345,7 @@
       "name": "Guardião Ancestral",
       "level": 7,
       "unique": true,
-      "image": "monsters/guardiao_ancestral.png",
+      "image": "monsters/guardiao_ancestral.webp",
       "stats": {
         "hp": 7,
         "damage": 3,
@@ -366,7 +366,7 @@
       "name": "Dragão das Ruínas",
       "level": 9,
       "unique": true,
-      "image": "monsters/dragao_ruinas.png",
+      "image": "monsters/dragao_ruinas.webp",
       "stats": {
         "hp": 8,
         "damage": 4,
@@ -385,7 +385,7 @@
       "name": "Demônio Menor",
       "level": 8,
       "unique": false,
-      "image": "monsters/demonio_menor.png",
+      "image": "monsters/demonio_menor.webp",
       "stats": {
         "hp": 7,
         "damage": 4,
@@ -406,7 +406,7 @@
       "name": "Hidra Selvagem",
       "level": 9,
       "unique": true,
-      "image": "monsters/hidra_selvagem.png",
+      "image": "monsters/hidra_selvagem.webp",
       "stats": {
         "hp": 9,
         "damage": 4,
@@ -426,7 +426,7 @@
       "name": "Titã Adormecido",
       "level": 9,
       "unique": true,
-      "image": "monsters/tita_adormecido.png",
+      "image": "monsters/tita_adormecido.webp",
       "stats": {
         "hp": 10,
         "damage": 4,
@@ -446,7 +446,7 @@
       "name": "Lich Antigo",
       "level": 9,
       "unique": true,
-      "image": "monsters/lich_antigo.png",
+      "image": "monsters/lich_antigo.webp",
       "stats": {
         "hp": 8,
         "damage": 4,
@@ -466,7 +466,7 @@
       "name": "Behemoth Abissal",
       "level": 9,
       "unique": true,
-      "image": "monsters/behemoth_abissal.png",
+      "image": "monsters/behemoth_abissal.webp",
       "stats": {
         "hp": 10,
         "damage": 5,

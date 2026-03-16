@@ -8,7 +8,7 @@
       "category": "social",
       "effect": "Todos os jogadores compram 1 carta.",
       "flavor_text": "Entre risadas, histórias exageradas e canecas batendo, novos planos começam a surgir.",
-      "image": "events/taverna_barulhenta.png",
+      "image": "events/taverna_barulhenta.webp",
       "copies": 2
     },
     {
@@ -19,7 +19,7 @@
       "category": "treasure",
       "effect": "Compre 1 carta de equipamento ou item utilizável.",
       "flavor_text": "Um baú esquecido raramente significa boa sorte... mas às vezes significa.",
-      "image": "events/bau_abandonado.png",
+      "image": "events/bau_abandonado.webp",
       "copies": 2
     },
     {
@@ -30,7 +30,7 @@
       "category": "social",
       "effect": "Troque uma carta da sua mão por outra carta do baralho.",
       "flavor_text": "Tenho exatamente o que você precisa... provavelmente.",
-      "image": "events/mercador_errante.png",
+      "image": "events/mercador_errante.webp",
       "copies": 2
     },
     {
@@ -41,7 +41,7 @@
       "category": "danger",
       "effect": "Sofra 1 de dano ou descarte uma carta.",
       "flavor_text": "Pequenos, irritantes e aparentemente infinitos.",
-      "image": "events/emboscada_goblin.png",
+      "image": "events/emboscada_goblin.webp",
       "copies": 2
     },
     {
@@ -52,7 +52,7 @@
       "category": "exploration",
       "effect": "Revele as 2 próximas cartas do baralho e escolha uma para adicionar à sua mão.",
       "flavor_text": "Pedras antigas guardam histórias... e às vezes tesouros.",
-      "image": "events/ruinas_antigas.png",
+      "image": "events/ruinas_antigas.webp",
       "copies": 2
     },
     {
@@ -63,7 +63,7 @@
       "category": "danger",
       "effect": "O jogador ativo perde 1 turno.",
       "flavor_text": "Nem todo caminho leva ao destino... alguns levam ao problema.",
-      "image": "events/estrada_perigosa.png",
+      "image": "events/estrada_perigosa.webp",
       "copies": 2
     },
     {
@@ -74,7 +74,7 @@
       "category": "mystery",
       "effect": "Recupere 2 de vida ou compre 1 carta.",
       "flavor_text": "Mesmo deuses esquecidos às vezes escutam.",
-      "image": "events/santuario_esquecido.png",
+      "image": "events/santuario_esquecido.webp",
       "copies": 2
     },
     {
@@ -85,7 +85,7 @@
       "category": "exploration",
       "effect": "Veja as 3 próximas cartas do baralho e reorganize-as.",
       "flavor_text": "Um mapa incompleto é melhor que mapa nenhum.",
-      "image": "events/mapa_misterioso.png",
+      "image": "events/mapa_misterioso.webp",
       "copies": 2
     },
     {
@@ -96,7 +96,7 @@
       "category": "environment",
       "effect": "Todos os jogadores recebem -1 de velocidade até o próximo turno.",
       "flavor_text": "A estrada vira lama e cada passo pesa mais.",
-      "image": "events/chuva_torrencial.png",
+      "image": "events/chuva_torrencial.webp",
       "copies": 2
     },
     {
@@ -107,7 +107,7 @@
       "category": "social",
       "effect": "Escolha: compre 2 cartas ou dê 1 carta a outro jogador para recuperar 2 de vida.",
       "flavor_text": "Alguns encontros mudam o destino... outros apenas o complicam.",
-      "image": "events/viajante_misterioso.png",
+      "image": "events/viajante_misterioso.webp",
       "copies": 2
     },
     {
@@ -118,7 +118,7 @@
       "category": "mystery",
       "effect": "Descarte uma chave ou perca a próxima compra de carta.",
       "flavor_text": "Atrás de algumas portas há tesouros. Atrás de outras... problemas.",
-      "image": "events/porta_selada.png",
+      "image": "events/porta_selada.webp",
       "copies": 2
     },
     {
@@ -129,7 +129,7 @@
       "category": "social",
       "effect": "Todos os jogadores recuperam 1 de vida e compram 1 carta.",
       "flavor_text": "Música, comida e histórias — um raro momento de paz.",
-      "image": "events/festival_da_vila.png",
+      "image": "events/festival_da_vila.webp",
       "copies": 2
     }
   ]

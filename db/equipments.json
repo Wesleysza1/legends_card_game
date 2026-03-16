@@ -5,7 +5,7 @@
       "name": "Espada Longa",
       "type": "Arma",
       "rarity": "common",
-      "image": "equipments/espada_longa.png",
+      "image": "equipments/espada_longa.webp",
       "stat_bonus": {
         "power": 2
       },
@@ -20,7 +20,7 @@
       "name": "Machado de Guerra",
       "type": "Arma",
       "rarity": "common",
-      "image": "equipments/machado_guerra.png",
+      "image": "equipments/machado_guerra.webp",
       "stat_bonus": {
         "power": 3,
         "speed": -1
@@ -36,7 +36,7 @@
       "name": "Adaga Sombria",
       "type": "Arma",
       "rarity": "rare",
-      "image": "equipments/adaga_sombria.png",
+      "image": "equipments/adaga_sombria.webp",
       "stat_bonus": {
         "speed": 2
       },
@@ -50,7 +50,7 @@
       "name": "Arco Longo",
       "type": "Arma",
       "rarity": "common",
-      "image": "equipments/arco_longo.png",
+      "image": "equipments/arco_longo.webp",
       "stat_bonus": {
         "power": 1,
         "speed": 1
@@ -65,7 +65,7 @@
       "name": "Cajado Arcano",
       "type": "Arma",
       "rarity": "rare",
-      "image": "equipments/cajado_arcano.png",
+      "image": "equipments/cajado_arcano.webp",
       "stat_bonus": {
         "power": 2
       },
@@ -79,7 +79,7 @@
       "name": "Martelo Sagrado",
       "type": "Arma",
       "rarity": "rare",
-      "image": "equipments/martelo_sagrado.png",
+      "image": "equipments/martelo_sagrado.webp",
       "stat_bonus": {
         "power": 2,
         "defense": 1
@@ -94,7 +94,7 @@
       "name": "Lança de Caça",
       "type": "Arma",
       "rarity": "common",
-      "image": "equipments/lanca_caca.png",
+      "image": "equipments/lanca_caca.webp",
       "stat_bonus": {
         "power": 1,
         "speed": 1
@@ -109,7 +109,7 @@
       "name": "Lâmina Rúnica",
       "type": "Arma",
       "rarity": "epic",
-      "image": "equipments/lamina_runica.png",
+      "image": "equipments/lamina_runica.webp",
       "stat_bonus": {
         "power": 3
       },
@@ -124,7 +124,7 @@
       "name": "Armadura de Ferro",
       "type": "Armadura",
       "rarity": "common",
-      "image": "equipments/armadura_ferro.png",
+      "image": "equipments/armadura_ferro.webp",
       "stat_bonus": {
         "defense": 2
       },
@@ -135,7 +135,7 @@
       "name": "Armadura de Placas",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "equipments/armadura_placas.png",
+      "image": "equipments/armadura_placas.webp",
       "stat_bonus": {
         "defense": 3,
         "speed": -1
@@ -147,7 +147,7 @@
       "name": "Capa Sombria",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "equipments/capa_sombria.png",
+      "image": "equipments/capa_sombria.webp",
       "stat_bonus": {
         "speed": 2
       },
@@ -158,7 +158,7 @@
       "name": "Couraça do Guardião",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "equipments/couraca_guardiao.png",
+      "image": "equipments/couraca_guardiao.webp",
       "stat_bonus": {
         "defense": 3
       },
@@ -169,7 +169,7 @@
       "name": "Armadura de Escamas",
       "type": "Armadura",
       "rarity": "common",
-      "image": "equipments/armadura_escamas.png",
+      "image": "equipments/armadura_escamas.webp",
       "stat_bonus": {
         "defense": 2,
         "speed": 1
@@ -181,7 +181,7 @@
       "name": "Manto Arcano",
       "type": "Armadura",
       "rarity": "rare",
-      "image": "equipments/manto_arcano.png",
+      "image": "equipments/manto_arcano.webp",
       "stat_bonus": {
         "power": 1
       },
@@ -192,7 +192,7 @@
       "name": "Escudo de Ferro",
       "type": "Escudo",
       "rarity": "common",
-      "image": "equipments/escudo_ferro.png",
+      "image": "equipments/escudo_ferro.webp",
       "stat_bonus": {
         "defense": 2
       },
@@ -203,7 +203,7 @@
       "name": "Escudo Torre",
       "type": "Escudo",
       "rarity": "rare",
-      "image": "equipments/escudo_torre.png",
+      "image": "equipments/escudo_torre.webp",
       "stat_bonus": {
         "defense": 3,
         "speed": -1
@@ -215,7 +215,7 @@
       "name": "Escudo Rúnico",
       "type": "Escudo",
       "rarity": "epic",
-      "image": "equipments/escudo_runico.png",
+      "image": "equipments/escudo_runico.webp",
       "stat_bonus": {
         "defense": 2
       },
@@ -226,7 +226,7 @@
       "name": "Anel de Força",
       "type": "Acessório",
       "rarity": "common",
-      "image": "equipments/anel_forca.png",
+      "image": "equipments/anel_forca.webp",
       "stat_bonus": {
         "power": 1
       },
@@ -237,7 +237,7 @@
       "name": "Anel Arcano",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "equipments/anel_arcano.png",
+      "image": "equipments/anel_arcano.webp",
       "stat_bonus": {
         "power": 1
       },
@@ -248,7 +248,7 @@
       "name": "Amuleto de Proteção",
       "type": "Acessório",
       "rarity": "common",
-      "image": "equipments/amuleto_protecao.png",
+      "image": "equipments/amuleto_protecao.webp",
       "stat_bonus": {
         "defense": 1
       },
@@ -259,7 +259,7 @@
       "name": "Colar do Caçador",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "equipments/colar_cacador.png",
+      "image": "equipments/colar_cacador.webp",
       "stat_bonus": {
         "speed": 1
       },
@@ -270,7 +270,7 @@
       "name": "Luvas do Duelista",
       "type": "Acessório",
       "rarity": "rare",
-      "image": "equipments/luvas_duelista.png",
+      "image": "equipments/luvas_duelista.webp",
       "stat_bonus": {
         "speed": 2
       },
@@ -281,7 +281,7 @@
       "name": "Botas da Agilidade",
       "type": "Acessório",
       "rarity": "common",
-      "image": "equipments/botas_agilidade.png",
+      "image": "equipments/botas_agilidade.webp",
       "stat_bonus": {
         "speed": 2
       },
@@ -292,7 +292,7 @@
       "name": "Cinto do Gigante",
       "type": "Acessório",
       "rarity": "epic",
-      "image": "equipments/cinto_gigante.png",
+      "image": "equipments/cinto_gigante.webp",
       "stat_bonus": {
         "power": 2,
         "hp": 2

@@ -9,7 +9,7 @@
       "target": "player",
       "effect": "Troque um equipamento seu por um equipamento de outro jogador.",
       "flavor_text": "Negócios são negócios... mesmo quando ninguém concorda.",
-      "image": "intrigue/troca_astuta.png",
+      "image": "intrigue/troca_astuta.webp",
       "copies": 2
     },
     {
@@ -21,7 +21,7 @@
       "target": "player",
       "effect": "Roube uma carta aleatória da mão de outro jogador.",
       "flavor_text": "Quando perceberem que sumiu, eu já estarei longe.",
-      "image": "intrigue/roubo_nas_sombras.png",
+      "image": "intrigue/roubo_nas_sombras.webp",
       "copies": 2
     },
     {
@@ -33,7 +33,7 @@
       "target": "enemy",
       "effect": "Cause 2 de dano ao inimigo que estiver lutando contra um jogador.",
       "flavor_text": "Ops. Acho que alguém pisou onde não devia.",
-      "image": "intrigue/armadilha_improvisada.png",
+      "image": "intrigue/armadilha_improvisada.webp",
       "copies": 2
     },
     {
@@ -45,7 +45,7 @@
       "target": "self",
       "effect": "Compre 2 cartas adicionais.",
       "flavor_text": "Tudo está exatamente como eu previ.",
-      "image": "intrigue/plano_perfeito.png",
+      "image": "intrigue/plano_perfeito.webp",
       "copies": 2
     },
     {
@@ -57,7 +57,7 @@
       "target": "player",
       "effect": "Escolha um jogador. Ele descarta 1 carta da mão.",
       "flavor_text": "Não tenho provas... mas tenho certeza!",
-      "image": "intrigue/acusacao_falsa.png",
+      "image": "intrigue/acusacao_falsa.webp",
       "copies": 2
     },
     {
@@ -69,7 +69,7 @@
       "target": "player",
       "effect": "Um jogador recebe +2 de poder neste combate.",
       "flavor_text": "Relaxe... eu definitivamente não tenho segundas intenções.",
-      "image": "intrigue/ajuda_suspeita.png",
+      "image": "intrigue/ajuda_suspeita.webp",
       "copies": 2
     },
     {
@@ -81,7 +81,7 @@
       "target": "player",
       "effect": "Um jogador recebe -2 de poder neste combate.",
       "flavor_text": "Foi só um pequeno 'acidente'.",
-      "image": "intrigue/sabotagem.png",
+      "image": "intrigue/sabotagem.webp",
       "copies": 2
     },
     {
@@ -93,7 +93,7 @@
       "target": "player",
       "effect": "Veja a mão de outro jogador e escolha uma carta para ele descartar.",
       "flavor_text": "Interessante... eu não contaria isso para ninguém.",
-      "image": "intrigue/segredo_revelado.png",
+      "image": "intrigue/segredo_revelado.webp",
       "copies": 2
     },
     {
@@ -105,7 +105,7 @@
       "target": "player",
       "effect": "Dois jogadores recebem +1 de poder neste combate.",
       "flavor_text": "Hoje lutamos juntos. Amanhã... veremos.",
-      "image": "intrigue/alianca_temporaria.png",
+      "image": "intrigue/alianca_temporaria.webp",
       "copies": 2
     },
     {
@@ -117,7 +117,7 @@
       "target": "all_players",
       "effect": "Todos os jogadores embaralham suas mãos e compram o mesmo número de cartas novamente.",
       "flavor_text": "Às vezes a melhor estratégia é bagunçar tudo.",
-      "image": "intrigue/caos_calculado.png",
+      "image": "intrigue/caos_calculado.webp",
       "copies": 2
     }
   ]
