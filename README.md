@@ -4,9 +4,9 @@
 
 Legends é um jogo de cartas autoral focado em **aventura, exploração de monstros e progressão de heróis**. O jogo foi projetado para ser **impresso em casa**, jogado com amigos ou família e expandido com novas cartas.
 
-Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criaturas perigosas. Ao derrotar monstros, o herói ganha **glória, troféus e níveis**, tornando-se cada vez mais poderoso.
+Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criaturas perigosas. Ao derrotar monstros, o herói ganha **glória, equipamentos e relíquias**, tornando-se cada vez mais poderoso.
 
-**O primeiro jogador a alcançar o nível máximo se torna uma lenda.**
+**O primeiro jogador a equipar 3 relíquias se torna uma lenda.**
 
 ---
 
@@ -192,7 +192,8 @@ legends_card_game/
 │   ├── items.json           # Dados dos itens utilizáveis
 │   ├── intrigue.json        # Dados das cartas de intriga
 │   ├── events.json          # Dados dos eventos
-│   └── relics.json          # Dados das relíquias
+│   ├── relics.json          # Dados das relíquias
+│   └── progression.json     # Progressão de nível por classe
 ├── css/                     # Estilos
 │   ├── cards.css            # Estilos dos cards
 │   ├── generator.css        # Estilos do gerador
@@ -204,6 +205,9 @@ legends_card_game/
 ├── fonts/                   # Fontes customizadas
 │   └── warrior.ttf          # Fonte do título
 ├── index.html               # Página principal (gerador)
+├── guide.html               # Guia imprimível do jogo
+├── board.html               # Board do jogador (por classe)
+├── tokens.html              # Tokens de nível e glória
 ├── monsters.html            # Preview de monstros
 ├── heroes.html              # Preview de heróis
 ├── classes.html             # Preview de classes

@@ -19,16 +19,39 @@ This project is **non-commercial** and intended for personal use and experimenta
 Legends is an **adventure card game** where players explore dangerous locations and fight monsters.
 
 Players gain:
-* Glory
-* Trophies
-* Levels
-* Equipment
+* Glory (currency for leveling up)
+* Equipment and Relics
+* Level-up bonuses (class-specific)
 
 The main goal is:
 
-**Reach Level 10 before other players.**
+**Be the first player to equip 3 Relics on your board.**
 
-Monsters are the core element of gameplay and define progression difficulty.
+### Two Piles System
+
+The game uses two separate draw piles:
+
+**Monster Pile (24 cards):** Mandatory draw every turn. Monsters always return to the bottom after combat.
+
+**Loot Pile:** Contains equipment, usable items, intrigue cards, events, and relics. Drawn as reward for defeating monsters (1 card normal, 2 cards vs bosses).
+
+### Board & Hand
+
+Each player has a **board** (themed per hero) with slots for: Hero, Class, Subclass, 5 equipment slots (Weapon, Armor, Shield, 2 Accessories), 1 Trophy, and Level Tokens.
+
+**Hand limit: 5 cards.** Excess cards return to the bottom of the loot pile.
+
+### Glory & Levels
+
+Monsters grant glory when defeated. Accumulated glory triggers level-ups with class-specific stat bonuses. Levels determine which monsters can be fought (monster level ≤ player level × 2).
+
+### Defeat
+
+Losing to a monster: no loot, skip next turn recovering (HP fully restored). Monster returns to bottom of monster pile.
+
+### Victory Condition
+
+First player to equip **3 relics** on their board wins.
 
 Monster difficulty progresses approximately like this:
 
@@ -39,7 +62,7 @@ Monster difficulty progresses approximately like this:
 | 6–7   | Advanced monsters           |
 | 8–9   | Legendary monsters / bosses |
 
-Some monsters are **bosses** and grant larger rewards.
+Some monsters are **bosses** and grant 2 loot cards instead of 1.
 
 ---
 
@@ -150,7 +173,8 @@ legends_card_game/
 │   ├── items.json           # Usable items data (12 unique, 36 with copies)
 │   ├── intrigue.json        # Intrigue cards data (10 unique, 20 with copies)
 │   ├── events.json          # Event data (12 unique, 24 with copies)
-│   └── relics.json          # Relic data (20 cards)
+│   ├── relics.json          # Relic data (20 cards)
+│   └── progression.json     # Level progression per class
 ├── css/                     # Stylesheets
 │   ├── cards.css            # Card layouts
 │   ├── generator.css        # Generator UI
@@ -162,6 +186,9 @@ legends_card_game/
 ├── fonts/                   # Custom fonts
 │   └── warrior.ttf          # Title font
 ├── index.html               # Main generator page
+├── guide.html               # Printable game guide
+├── board.html               # Player board (per class)
+├── tokens.html              # Glory and level tokens
 ├── monsters.html            # Monster preview
 ├── heroes.html              # Hero preview
 ├── classes.html             # Class preview
@@ -234,6 +261,7 @@ All use the same rendering engine (`js/cards.js`).
 - `unique` - Only one copy in deck
 - `boss` - Special boss indicator
 - `copies` - Number of copies to print
+- `glory` - Glory points awarded when defeated (used for leveling)
 
 ### Heroes
 
@@ -272,6 +300,29 @@ All use the same rendering engine (`js/cards.js`).
   "synergy": ["Guerreiro", "Paladino"]
 }
 ```
+
+---
+
+## Printable Components
+
+The game requires the following printable components:
+
+### Cards (standard size)
+- Heroes, Classes, Subclasses, Monsters, Equipment, Items, Intrigue, Events, Relics
+
+### Player Boards
+- 1 board per hero, themed with the character's visual identity
+- Contains visual slots for all board cards
+- Includes class-specific level progression table
+
+### Glory Tokens
+- Coin-shaped printable tokens
+- Represent accumulated glory
+
+### Level Tokens
+- 1 set per class (6 sets total)
+- Each token shows: level, stat bonus gained, glory required
+- Styled with the class theme
 
 ---
 
@@ -379,36 +430,58 @@ When modifying code, always respect:
 
 ---
 
-## Recent Updates (2026-03-13)
+## Recent Updates (2026-03-20)
 
-### Assets Architecture
+### Game Rules Overhaul
+- ✅ Victory condition changed to **3 relics equipped**
+- ✅ Two-pile system: Monster Pile + Loot Pile
+- ✅ Board system with defined slots (Hero, Class, Subclass, 5 equipment, 1 trophy)
+- ✅ Hand limit of 5 cards
+- ✅ Glory-based leveling system with class-specific progression
+- ✅ Level restriction rule (monster level ≤ player level × 2)
+- ✅ Defeat rule: skip next turn, full HP recovery
+- ✅ Trophy slot: 1 max, last defeated monster
+- ✅ Relics can be hidden in hand until equipped
+- ✅ Events activate immediately, never go to hand
+- ✅ All discards return to bottom of loot pile
+- ✅ Loot: 1 card per victory, 2 vs bosses
+- ✅ Starting hand: 3 cards from loot pile
+
+### Planned Printable Components
+- ⬜ Player boards (1 per hero, themed)
+- ⬜ Glory tokens (coin format)
+- ⬜ Level tokens (1 set per class)
+
+### Previous Updates (2026-03-13)
+
+#### Assets Architecture
 - ✅ Separated images to `assets` branch
 - ✅ Configured GitHub Pages on `assets` branch
 - ✅ Updated all JSONs to use relative paths
 - ✅ Created `getImageUrl()` helper function
 - ✅ Built automatic gallery generator with pre-commit hook
 
-### Game Mechanics
+#### Game Mechanics
 - ✅ Added `speed` attribute to all monsters
 - ✅ Speed determines turn order in combat
 - ✅ Values range from 1 (slow) to 4 (fast)
 
-### Equipment System
+#### Equipment System
 - ✅ Added `image` field to all 24 equipments
 - ✅ Updated card renderer to display equipment images
 - ✅ Equipment images now load from GitHub Pages
 
-### Performance
+#### Performance
 - ✅ Implemented image preloading in generator
 - ✅ All images load in background on page load
 - ✅ Instant switching between card types after preload
 
-### UI/UX
+#### UI/UX
 - ✅ Renamed `generator.html` to `index.html`
 - ✅ Fixed DOCTYPE issue in generator
 - ✅ Created visual assets gallery at `/images/`
 
-### New Card Types
+#### New Card Types
 - ✅ Added Usable Items (12 unique, 36 total with copies)
 - ✅ Added Intrigue Cards (10 unique, 20 total with copies)
 - ✅ Added Events (12 unique, 24 total with copies)
@@ -424,10 +497,10 @@ The game was designed to support additional card types:
 - ~~Items / Consumables~~ ✅ Implemented
 - ~~Events~~ ✅ Implemented
 - Traps
-- Spells
 - ~~Relics~~ ✅ Implemented
 - ~~Intrigue cards~~ ✅ Implemented
 - PvP duel mechanics
+- Cooperative campaigns
 
 The JSON-based system allows easy expansion.
 

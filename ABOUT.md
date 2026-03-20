@@ -5,9 +5,9 @@
 Legends é um jogo de cartas autoral focado em **aventura, exploração de monstros e progressão de heróis**.
 O jogo foi projetado para ser **impresso em casa**, jogado com amigos ou família e expandido com novas cartas.
 
-Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criaturas perigosas. Ao derrotar monstros, o herói ganha **glória, itens e relíquias**, tornando-se cada vez mais poderoso.
+Cada jogador assume o papel de um aventureiro explorando um mundo cheio de criaturas perigosas. Ao derrotar monstros, o herói ganha **glória, equipamentos e relíquias**, tornando-se cada vez mais poderoso.
 
-O primeiro jogador a alcançar o **Nível 10** se torna uma lenda.
+**O primeiro jogador a equipar 3 relíquias no board vence a partida e se torna uma lenda.**
 
 ---
 
@@ -21,7 +21,7 @@ Cada carta revelada pode trazer **perigo, recompensa ou surpresa**.
 
 ### Progressão
 
-Jogadores evoluem de aventureiros iniciantes para **heróis lendários** através de combates, equipamentos e relíquias.
+Jogadores evoluem de aventureiros iniciantes para **heróis lendários** através de combates, glória, equipamentos e relíquias.
 
 ### Interação entre jogadores
 
@@ -37,11 +37,19 @@ O jogo foi projetado para ser:
 
 # OBJETIVO DO JOGO
 
-O objetivo é ser o primeiro jogador a alcançar **Nível 10**.
+O objetivo é ser o primeiro jogador a **equipar 3 relíquias** no seu board.
 
-Jogadores sobem de nível principalmente ao **derrotar monstros**.
+Jogadores ficam mais fortes ao **derrotar monstros e acumular glória**, subindo de nível e ganhando bônus de atributos.
 
-Chefes concedem níveis extras e representam os maiores desafios do jogo.
+Relíquias aparecem na **pilha de compra (espólio)** e podem ser guardadas na mão em segredo até o momento de equipar.
+
+---
+
+# CONDIÇÃO DE VITÓRIA
+
+O primeiro jogador a ter **3 relíquias equipadas** no seu board vence a partida.
+
+Relíquias ocupam os mesmos slots dos equipamentos. Ao equipar uma relíquia, ela substitui o equipamento do slot correspondente.
 
 ---
 
@@ -61,7 +69,184 @@ O jogo possui atualmente **178 cartas** (contando cópias), divididas em diferen
 | Eventos           | 12     | 2      | 24    |
 | Relíquias         | 20     | 1      | 20    |
 
-Essa estrutura permite **grande variedade de partidas** e facilita a criação de expansões futuras.
+---
+
+# PILHAS DE CARTAS
+
+O jogo utiliza **duas pilhas** separadas durante a partida.
+
+### Pilha de Monstros
+
+Contém apenas as **24 cartas de monstro**.
+
+* Uma carta é revelada obrigatoriamente a cada turno (fase de exploração)
+* Monstros derrotados voltam para o **fundo da pilha de monstros**
+* Monstros que vencem o jogador também voltam para o **fundo da pilha**
+* A pilha nunca se esgota
+
+### Pilha de Compra (Espólio)
+
+Contém todas as demais cartas jogáveis:
+
+* Equipamentos
+* Itens utilizáveis
+* Cartas de intriga
+* Eventos
+* Relíquias
+
+Cartas são compradas como **recompensa por derrotar monstros**.
+
+* Vitória normal → compra **1 carta**
+* Vitória contra chefe → compra **2 cartas**
+
+**Eventos** são ativados imediatamente ao serem comprados e nunca vão para a mão. Após ativação, voltam para o **fundo da pilha de compra**.
+
+Cartas descartadas por qualquer motivo voltam para o **fundo da pilha de compra**.
+
+---
+
+# BOARD DO JOGADOR
+
+Cada jogador possui um **board individual** estilizado com o tema do seu herói.
+
+O board contém os seguintes slots:
+
+| Slot | Máx | Descrição |
+|---|---|---|
+| Herói | 1 | Carta de herói (permanente) |
+| Classe | 1 | Carta de classe (permanente) |
+| Subclasse | 1 | Carta de subclasse (permanente) |
+| Arma | 1 | Equipamento ou Relíquia de weapon |
+| Armadura | 1 | Equipamento ou Relíquia de armor |
+| Escudo | 1 | Equipamento ou Relíquia de shield |
+| Acessório 1 | 1 | Equipamento ou Relíquia (ring, head, etc) |
+| Acessório 2 | 1 | Equipamento ou Relíquia (ring, head, etc) |
+| Troféu | 1 | Carta do último monstro derrotado |
+| Tokens de Nível | — | Tokens acumulados de progressão |
+
+### Equipamentos no Board
+
+* Cada slot aceita **1 equipamento ou 1 relíquia**
+* Ao equipar um novo item no mesmo slot, o anterior volta para o **fundo da pilha de compra**
+* Relíquias substituem equipamentos do mesmo slot
+* Equipamento substituído por relíquia volta para o **fundo da pilha de compra**
+
+### Troféu
+
+* Apenas **1 troféu** no board por vez
+* O troféu é a carta do último monstro derrotado
+* Ao ganhar um novo troféu, o anterior volta para o **fundo da pilha de monstros**
+* O efeito do troféu fica visível para todos os jogadores
+
+---
+
+# MÃO DO JOGADOR
+
+A mão do jogador pode conter no máximo **5 cartas**.
+
+Cartas que podem ficar na mão:
+
+* Equipamentos não equipados
+* Itens utilizáveis
+* Cartas de intriga
+* Relíquias não reveladas (escondidas, sem efeito até equipar)
+
+Se a mão exceder 5 cartas, o jogador deve **imediatamente** escolher qual carta devolver para o fundo da pilha de compra.
+
+---
+
+# PREPARAÇÃO DO JOGO
+
+1. Separe as cartas de **Herói, Classe e Subclasse** — cada jogador escolhe uma de cada
+2. Monte a **pilha de monstros** com as 24 cartas de monstro embaralhadas
+3. Monte a **pilha de compra** com todas as demais cartas embaralhadas (equipamentos, itens, intrigas, eventos, relíquias)
+4. Cada jogador compra **3 cartas** da pilha de compra como mão inicial
+5. Se um **evento** for comprado na mão inicial, ele é ativado na **primeira rodada** do jogador
+6. Se mais de um evento for comprado na mão inicial, apenas **1 é ativado** — os outros são descartados sem compensação
+7. Coloque o Herói, Classe e Subclasse no board
+8. Todos começam no **Nível 1**
+
+---
+
+# TURNO DO JOGADOR
+
+Cada turno possui três fases.
+
+### 1 — Exploração
+
+O jogador revela a carta do topo da **pilha de monstros**.
+
+**Regra de restrição de nível:** Se o nível do monstro for maior que o **dobro do nível do jogador**, o monstro não pode ser enfrentado. O jogador devolve o monstro para o fundo da pilha de monstros e **perde o turno**.
+
+Exemplo: jogador nível 2 pode enfrentar monstros até nível 4. Monstro nível 5+ é devolvido.
+
+### 2 — Combate
+
+Se o monstro puder ser enfrentado, inicia-se o combate.
+
+O resultado depende da comparação entre:
+
+**Poder do jogador** (nível + equipamentos + habilidades + troféu + efeitos ativos)
+versus
+**Força do monstro** (stats + habilidade especial)
+
+Durante o combate, o jogador pode usar:
+
+* Habilidades de classe e subclasse
+* Itens utilizáveis da mão
+* Cartas de intriga (próprias ou de outros jogadores)
+
+### 3 — Resultado
+
+**Se o jogador vencer:**
+
+* Ganha a **glória** do monstro (acumula para subir de nível)
+* Compra cartas da pilha de compra (**1 carta** normal, **2 cartas** contra chefes)
+* Pode colocar o monstro como **troféu** no board (substituindo o anterior)
+* O monstro volta para o **fundo da pilha de monstros**
+
+**Se o jogador perder:**
+
+* Não compra espólio
+* Perde a **próxima rodada** recuperando vida (vida volta ao máximo)
+* O monstro volta para o **fundo da pilha de monstros**
+
+---
+
+# SISTEMA DE GLÓRIA E NÍVEIS
+
+### Glória
+
+Cada monstro derrotado concede **glória** (valor de 1 a 5, definido na carta do monstro).
+
+A glória acumula ao longo da partida. Ao atingir determinados limiares, o jogador **sobe de nível**.
+
+### Progressão de Nível
+
+| Nível | Glória Acumulada | Bônus |
+|---|---|---|
+| 1 | 0 (início) | — |
+| 2 | 3 | +1 HP |
+| 3 | 7 | +1 Poder |
+| 4 | 12 | +1 Defesa |
+| 5 | 18 | +1 Poder |
+| 6 | 25 | +1 HP |
+| 7 | 33 | +1 Poder |
+
+Os bônus de nível são **específicos por classe** — cada classe possui sua própria tabela de progressão, trazendo maior imersão e diferenciação entre os estilos de jogo.
+
+### Tokens de Nível
+
+* Cada classe possui seus próprios **tokens de nível** imprimíveis
+* Tokens são colocados no board ao lado do herói
+* Cada token mostra: nível, bônus ganho, glória necessária
+* O board do jogador inclui a tabela de progressão da classe
+
+### Tokens de Glória
+
+* Tokens imprimíveis em formato de moeda
+* Representam a glória acumulada pelo jogador
+* Colocados no board para controle visual
 
 ---
 
@@ -84,7 +269,7 @@ Heróis disponíveis:
 
 # CLASSES
 
-Classes definem o **estilo base de combate**.
+Classes definem o **estilo base de combate** e a **progressão de nível** do jogador.
 
 Classes disponíveis:
 
@@ -103,39 +288,27 @@ Cada classe possui **três especializações**, permitindo estilos únicos de jo
 
 ### Guerreiro
 
-Campeão
-Guardião
-Duelista
+Campeão · Guardião · Duelista
 
 ### Mago
 
-Piromante
-Arcanista
-Cronomante
+Piromante · Arcanista · Cronomante
 
 ### Ladino
 
-Assassino
-Trapaceiro
-Espião
+Assassino · Trapaceiro · Espião
 
 ### Caçador
 
-Atirador
-Domador de Feras
-Explorador
+Atirador · Domador de Feras · Explorador
 
 ### Paladino
 
-Templário
-Exorcista
-Arauto da Luz
+Templário · Exorcista · Arauto da Luz
 
 ### Bárbaro
 
-Berserker
-Xamã de Guerra
-Senhor da Tempestade
+Berserker · Xamã de Guerra · Senhor da Tempestade
 
 Total: **18 subclasses**
 
@@ -151,11 +324,12 @@ Cada monstro possui:
 * Nível
 * Vida
 * Dano
+* Velocidade
 * Glória
 * Habilidade especial
-* Recompensa
+* Recompensa (troféu)
 
-Alguns monstros também concedem **itens ou relíquias**.
+Monstros derrotados sempre voltam para o **fundo da pilha de monstros**.
 
 ---
 
@@ -163,43 +337,23 @@ Alguns monstros também concedem **itens ou relíquias**.
 
 O jogo possui **24 monstros**.
 
-### Criaturas Iniciais
+### Criaturas Iniciais (Nível 2–3)
 
-Goblin das Ruínas
-Esqueleto Antigo
-Lobo Sombrio
-Slime Abissal
-Aranha Gigante
-Bandido da Estrada
+Goblin das Ruínas · Lobo Sombrio · Esqueleto Guardião · Slime Ácido · Bandido das Estradas · Mímico Faminto
 
-### Criaturas Intermediárias
+### Criaturas Intermediárias (Nível 4–5)
 
-Cultista Profano
-Espírito Errante
-Golem de Pedra
-Troll das Cavernas
-Serpente das Dunas
-Orc Guerreiro
+Orc Brutamontes · Gárgula de Pedra · Aranha Gigante · Cavaleiro Espectral · Ogro das Cavernas · Cultista Sombrio
 
-### Criaturas Avançadas
+### Criaturas Avançadas (Nível 6–7)
 
-Necromante Corrompido
-Cavaleiro Espectral
-Demônio Menor
-Guardião da Cripta
-Hidra Jovem
-Dragão Vermelho Jovem
+Troll Regenerador · Serpente das Profundezas · Quimera Jovem · Necromante Caído · Gigante de Ferro · Guardião Ancestral
 
-### Criaturas Lendárias
+### Chefes (Nível 8–9)
 
-Dragão Negro Antigo
-Senhor dos Mortos
-Titã de Ferro
-Rainha Aracnídea
-Lich Imortal
-Devorador do Abismo
+Demônio Menor · Dragão das Ruínas · Hidra Selvagem · Titã Adormecido · Lich Antigo · Behemoth Abissal
 
-Os últimos monstros geralmente atuam como **chefes do jogo**.
+Chefes concedem **2 cartas de espólio** ao serem derrotados.
 
 ---
 
@@ -209,41 +363,23 @@ Equipamentos são cartas permanentes que fortalecem o herói.
 
 Total: **24 cartas**
 
-### Armas
+### Armas (8)
 
-Espada Longa
-Machado de Guerra
-Adaga Sombria
-Arco Longo
-Cajado Arcano
-Martelo Sagrado
-Lança de Caça
-Lâmina Rúnica
+Espada Longa · Machado de Guerra · Adaga Sombria · Arco Longo · Cajado Arcano · Martelo Sagrado · Lança de Caça · Lâmina Rúnica
 
-### Armaduras
+### Armaduras (6)
 
-Armadura de Ferro
-Armadura de Placas
-Capa Sombria
-Couraça do Guardião
-Armadura de Escamas
-Manto Arcano
+Armadura de Ferro · Armadura de Placas · Capa Sombria · Couraça do Guardião · Armadura de Escamas · Manto Arcano
 
-### Escudos
+### Escudos (3)
 
-Escudo de Ferro
-Escudo Torre
-Escudo Rúnico
+Escudo de Ferro · Escudo Torre · Escudo Rúnico
 
-### Acessórios
+### Acessórios (7)
 
-Anel de Força
-Anel Arcano
-Amuleto de Proteção
-Colar do Caçador
-Luvas do Duelista
-Botas da Agilidade
-Cinto do Gigante
+Anel de Força · Anel Arcano · Amuleto de Proteção · Colar do Caçador · Luvas do Duelista · Botas da Agilidade · Cinto do Gigante
+
+Equipamentos ficam na **mão** até serem equipados no board. Ao equipar, ocupam o slot correspondente.
 
 ---
 
@@ -253,18 +389,9 @@ Itens utilizáveis são consumidos após o uso.
 
 Total: **12 cartas únicas (36 com cópias)**
 
-Poção de Cura
-Poção de Força
-Poção de Velocidade
-Poção de Mana
-Bomba Alquímica
-Veneno Mortal
-Pergaminho de Fogo
-Pergaminho de Gelo
-Pergaminho de Teleporte
-Kit de Armadilhas
-Tocha Encantada
-Chave Antiga
+Poção de Cura · Poção de Força · Poção de Velocidade · Poção de Mana · Bomba Alquímica · Veneno Mortal · Pergaminho de Fogo · Pergaminho de Gelo · Pergaminho de Teleporte · Kit de Armadilhas · Tocha Encantada · Chave Antiga
+
+Após o uso, voltam para o **fundo da pilha de compra**.
 
 ---
 
@@ -274,16 +401,9 @@ Cartas de intriga permitem interação direta entre jogadores e criam momentos i
 
 Total: **10 cartas únicas (20 com cópias)**
 
-Troca Astuta
-Roubo nas Sombras
-Armadilha Improvisada
-Plano Perfeito
-Acusação Falsa
-Ajuda Suspeita
-Sabotagem
-Segredo Revelado
-Aliança Temporária
-Caos Calculado
+Troca Astuta · Roubo nas Sombras · Armadilha Improvisada · Plano Perfeito · Acusação Falsa · Ajuda Suspeita · Sabotagem · Segredo Revelado · Aliança Temporária · Caos Calculado
+
+Ficam na **mão** até serem jogadas. Após o uso, voltam para o **fundo da pilha de compra**.
 
 ---
 
@@ -293,18 +413,9 @@ Eventos alteram o estado do jogo ou criam situações inesperadas.
 
 Total: **12 cartas únicas (24 com cópias)**
 
-Taverna Barulhenta
-Baú Abandonado
-Mercador Errante
-Emboscada Goblin
-Ruínas Antigas
-Estrada Perigosa
-Santuário Esquecido
-Mapa Misterioso
-Chuva Torrencial
-Viajante Misterioso
-Porta Selada
-Festival da Vila
+Taverna Barulhenta · Baú Abandonado · Mercador Errante · Emboscada Goblin · Ruínas Antigas · Estrada Perigosa · Santuário Esquecido · Mapa Misterioso · Chuva Torrencial · Viajante Misterioso · Porta Selada · Festival da Vila
+
+Eventos são **ativados imediatamente** ao serem comprados e **nunca vão para a mão**. Após ativação, voltam para o **fundo da pilha de compra**.
 
 ---
 
@@ -314,85 +425,11 @@ Relíquias são artefatos lendários extremamente poderosos.
 
 Total: **20 cartas**
 
-Coroa dos Reis Antigos
-Orbe do Infinito
-Espada do Último Herói
-Cálice da Vida Eterna
-Lâmina do Eclipse
-Ampulheta do Destino
-Escudo do Guardião Eterno
-Livro dos Mil Segredos
-Coração de Dragão
-Anel do Viajante Eterno
-Martelo do Titã Adormecido
-Máscara das Mil Faces
-Lanterna das Almas Perdidas
-Tridente das Marés Eternas
-Olho do Arquimago
-Capa do Andarilho Dimensional
-Chave do Portal Antigo
-Cetro da Tempestade
-Relicário do Guardião Antigo
-Pedra do Caos Primordial
+Coroa dos Reis Antigos · Orbe do Infinito · Espada do Último Herói · Cálice da Vida Eterna · Lâmina do Eclipse · Ampulheta do Destino · Escudo do Guardião Eterno · Livro dos Mil Segredos · Coração de Dragão · Anel do Viajante Eterno · Martelo do Titã Adormecido · Máscara das Mil Faces · Lanterna das Almas Perdidas · Tridente das Marés Eternas · Olho do Arquimago · Capa do Andarilho Dimensional · Chave do Portal Antigo · Cetro da Tempestade · Relicário do Guardião Antigo · Pedra do Caos Primordial
 
----
+Relíquias podem ser **guardadas na mão em segredo** (sem efeito) ou **equipadas no board** (substituindo o equipamento do slot correspondente).
 
-# PREPARAÇÃO DO JOGO
-
-1. Embaralhe o baralho principal.
-2. Cada jogador escolhe um **Herói**, uma **Classe** e uma **Subclasse**.
-3. Todos começam com:
-
-* **Nível 1**
-* vida inicial definida pelo grupo (recomendado: 10)
-
-4. Distribua cartas iniciais conforme o modo de jogo.
-
----
-
-# TURNO DO JOGADOR
-
-Cada turno possui três fases.
-
-### 1 — Exploração
-
-O jogador revela a carta do topo do baralho.
-
-Dependendo da carta revelada, um combate, evento ou interação pode ocorrer.
-
----
-
-### 2 — Combate
-
-Se um monstro aparecer, inicia-se um combate.
-
-O resultado depende da comparação entre:
-
-**Poder do jogador**
-versus
-**Força do monstro**
-
-O poder do jogador é determinado por:
-
-* nível
-* equipamentos
-* habilidades
-* efeitos ativos
-
----
-
-### 3 — Resultado
-
-Se o jogador vencer:
-
-* ganha glória
-* recebe recompensas
-* pode subir de nível
-
-Se perder:
-
-* sofre dano
-* habilidades do monstro podem ser ativadas
+**3 relíquias equipadas no board = vitória.**
 
 ---
 
@@ -410,6 +447,31 @@ Características visuais:
 * monstro centralizado na arte
 
 O objetivo visual é transmitir **aventura divertida**, não terror pesado.
+
+---
+
+# COMPONENTES IMPRIMÍVEIS
+
+### Cartas (tamanho padrão)
+
+* Heróis, Classes, Subclasses, Monstros, Equipamentos, Itens, Intrigas, Eventos, Relíquias
+
+### Boards de Jogador
+
+* 1 board por herói, estilizado com o tema do personagem
+* Contém slots visuais para todas as cartas do board
+* Inclui tabela de progressão de nível da classe
+
+### Tokens de Glória
+
+* Formato de moeda, imprimíveis
+* Representam glória acumulada
+
+### Tokens de Nível
+
+* 1 conjunto por classe (6 conjuntos no total)
+* Cada token mostra: nível, bônus ganho, glória necessária
+* Estilizados com o tema da classe
 
 ---
 
@@ -443,8 +505,9 @@ Expansões futuras podem incluir:
 * novos monstros
 * novos equipamentos
 * novos eventos
+* armadilhas
 * modos cooperativos
 * campanhas narrativas
-* novos tipos de cartas
+* duelos entre jogadores
 
 O sistema modular permite expandir o jogo sem alterar suas regras principais.

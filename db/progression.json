@@ -1,0 +1,55 @@
+{
+  "level_progression": {
+    "glory_thresholds": [0, 3, 7, 12, 18, 25, 33],
+    "classes": {
+      "Guerreiro": [
+        { "level": 2, "glory": 3, "bonus": { "hp": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "defense": 1 } }
+      ],
+      "Mago": [
+        { "level": 2, "glory": 3, "bonus": { "power": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "speed": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "power": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "speed": 1 } }
+      ],
+      "Ladino": [
+        { "level": 2, "glory": 3, "bonus": { "speed": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "speed": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "speed": 1 } }
+      ],
+      "Caçador": [
+        { "level": 2, "glory": 3, "bonus": { "speed": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "speed": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "power": 1 } }
+      ],
+      "Paladino": [
+        { "level": 2, "glory": 3, "bonus": { "defense": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "hp": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "defense": 1 } }
+      ],
+      "Bárbaro": [
+        { "level": 2, "glory": 3, "bonus": { "power": 1 } },
+        { "level": 3, "glory": 7, "bonus": { "hp": 1 } },
+        { "level": 4, "glory": 12, "bonus": { "power": 1 } },
+        { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+        { "level": 6, "glory": 25, "bonus": { "defense": 1 } },
+        { "level": 7, "glory": 33, "bonus": { "power": 1 } }
+      ]
+    }
+  }
+}

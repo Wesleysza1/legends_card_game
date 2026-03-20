@@ -153,6 +153,21 @@ Do not hardcode monster data inside JavaScript.
 
 Always read data from the JSON file.
 
+All JSON files in `db/` follow the same principle — they are the source of truth:
+
+```
+db/monsters.json       # Monster data
+db/heroes.json         # Hero data
+db/classes.json        # Class data
+db/subclasses.json     # Subclass data
+db/equipments.json     # Equipment data
+db/items.json          # Usable items data
+db/intrigue.json       # Intrigue cards data
+db/events.json         # Event data
+db/relics.json         # Relic data
+db/progression.json    # Level progression per class
+```
+
 Expected structure:
 
 ```
@@ -255,6 +270,9 @@ Examples:
 ```
 monsters.html
 backs.html
+guide.html
+board.html
+tokens.html
 ```
 
 These pages load their respective scripts.
@@ -342,10 +360,9 @@ The goal of this repository is to maintain a **simple, expandable system for pri
 
 Future card types may include:
 
-* items
-* heroes
-* spells
-* events
 * traps
+* spells
+* cooperative campaigns
+* PvP duel mechanics
 
 The architecture should remain **data-driven via JSON**.
