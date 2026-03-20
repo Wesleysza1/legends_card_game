@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends - Board do Jogador</title>
+  <style>
+    @page { size: A4 landscape; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lucida Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+    }
+
+    .board {
+      width: 297mm;
+      height: 210mm;
+      padding: 6mm;
+      page-break-after: always;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 3mm;
+    }
+
+    .board-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #222;
+      padding-bottom: 2mm;
+    }
+
+    .board-title { font-size: 16pt; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+    .board-class-name { font-size: 10pt; color: #666; font-weight: 600; }
+    .board-subtitle { font-size: 7.5pt; color: #888; }
+
+    .board-main {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr 1fr;
+      gap: 4mm;
+    }
+
+    .slot-group { display: flex; flex-direction: column; gap: 2mm; }
+
+    .group-label {
+      font-size: 6.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1mm;
+    }
+
+    .card-slot {
+      border: 1.5px dashed #bbb;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1mm;
+    }
+
+    .slot-icon { font-size: 18pt; opacity: 0.3; }
+    .slot-label { font-size: 6.5pt; color: #aaa; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .slot-identity { border-color: #d4aa33; }
+    .slot-identity .slot-label { color: #c9a020; }
+    .slot-equip { border-color: #4a90d9; }
+    .slot-equip .slot-label { color: #4a90d9; }
+    .slot-trophy { border-color: #c44; }
+    .slot-trophy .slot-label { color: #c44; }
+
+    /* Right panel */
+    .right-panel { display: flex; flex-direction: column; gap: 2mm; }
+
+    .glory-area {
+      border: 1.5px dashed #5a5;
+      border-radius: 5px;
+      padding: 2mm;
+      height: 28mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .glory-label {
+      font-size: 6.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a5;
+      text-align: center;
+      margin-bottom: 1mm;
+    }
+
+    /* Level table */
+    .level-section { flex: 1; display: flex; flex-direction: column; gap: 1mm; }
+
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7pt;
+    }
+
+    .level-table th {
+      background: #f5f5f5;
+      font-size: 6pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 1.5mm 1mm;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .level-table td {
+      padding: 1.5mm 1mm;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .level-table tr.current-level td { background: #f9f9f9; }
+
+    .level-bonus { font-weight: 700; }
+    .bonus-hp { color: #c44; }
+    .bonus-power { color: #b8941f; }
+    .bonus-defense { color: #4a90d9; }
+    .bonus-speed { color: #5a5; }
+
+    .board-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3mm;
+      border-top: 1px solid #ddd;
+      padding-top: 2mm;
+      font-size: 6.5pt;
+      color: #777;
+    }
+
+    .footer-section strong {
+      display: block;
+      font-size: 6pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin-bottom: 0.5mm;
+    }
+
+    @media print { .no-print { display: none !important; } }
+
+    @media screen {
+      body { background: #e8e8e8; padding: 10mm 0; }
+      .board { margin: 0 auto 10mm; box-shadow: 0 2px 10px rgba(0,0,0,0.15); background: white; }
+    }
+
+    .controls {
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .controls button {
+      border: 1px solid #333;
+      background: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .controls button.active {
+      background: #222;
+      color: white;
+      border-color: #222;
+    }
+
+    .controls button.print-btn {
+      background: #d4aa33;
+      border-color: #d4aa33;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="controls no-print">
+    <button class="class-btn active" data-class="Guerreiro">⚔️ Guerreiro</button>
+    <button class="class-btn" data-class="Mago">🔮 Mago</button>
+    <button class="class-btn" data-class="Ladino">🗡️ Ladino</button>
+    <button class="class-btn" data-class="Caçador">🏹 Caçador</button>
+    <button class="class-btn" data-class="Paladino">✨ Paladino</button>
+    <button class="class-btn" data-class="Bárbaro">🪓 Bárbaro</button>
+    <button class="print-btn" onclick="window.print()">🖨️ Imprimir</button>
+  </div>
+
+  <div id="board-container"></div>
+
+  <script>
+    const STAT_LABELS = { hp: '❤️ HP', power: '⚔️ Poder', defense: '🛡️ Defesa', speed: '⚡ Veloc.' }
+    const BONUS_CLASS = { hp: 'bonus-hp', power: 'bonus-power', defense: 'bonus-defense', speed: 'bonus-speed' }
+
+    let progressionData = null
+
+    const FALLBACK_DATA = {
+      "level_progression": {
+        "classes": {
+          "Guerreiro": [
+            { "level": 2, "glory": 3, "bonus": { "hp": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "defense": 1 } }
+          ],
+          "Mago": [
+            { "level": 2, "glory": 3, "bonus": { "power": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "speed": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "power": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "speed": 1 } }
+          ],
+          "Ladino": [
+            { "level": 2, "glory": 3, "bonus": { "speed": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "speed": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "speed": 1 } }
+          ],
+          "Caçador": [
+            { "level": 2, "glory": 3, "bonus": { "speed": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "power": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "speed": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "power": 1 } }
+          ],
+          "Paladino": [
+            { "level": 2, "glory": 3, "bonus": { "defense": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "hp": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "defense": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "power": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "hp": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "defense": 1 } }
+          ],
+          "Bárbaro": [
+            { "level": 2, "glory": 3, "bonus": { "power": 1 } },
+            { "level": 3, "glory": 7, "bonus": { "hp": 1 } },
+            { "level": 4, "glory": 12, "bonus": { "power": 1 } },
+            { "level": 5, "glory": 18, "bonus": { "hp": 1 } },
+            { "level": 6, "glory": 25, "bonus": { "defense": 1 } },
+            { "level": 7, "glory": 33, "bonus": { "power": 1 } }
+          ]
+        }
+      }
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch('db/progression.json')
+        progressionData = await res.json()
+      } catch (e) {
+        console.warn('Fetch falhou, usando dados embutidos:', e)
+        progressionData = FALLBACK_DATA
+      }
+      renderBoard('Guerreiro')
+    }
+
+    function buildLevelTable(className) {
+      const levels = progressionData.level_progression.classes[className]
+      let rows = levels.map(entry => {
+        const [stat, val] = Object.entries(entry.bonus)[0]
+        return `<tr>
+          <td>${entry.level}</td>
+          <td>${entry.glory}</td>
+          <td class="level-bonus ${BONUS_CLASS[stat]}">+${val} ${STAT_LABELS[stat]}</td>
+        </tr>`
+      }).join('')
+
+      return `<table class="level-table">
+        <tr><th>Nível</th><th>Glória</th><th>Bônus</th></tr>
+        <tr><td>1</td><td>0</td><td class="level-bonus">— Início</td></tr>
+        ${rows}
+      </table>`
+    }
+
+    function renderBoard(className) {
+      document.getElementById('board-container').innerHTML = `
+      <div class="board">
+        <div class="board-header">
+          <div>
+            <div class="board-title">Legends</div>
+            <div class="board-class-name">${className}</div>
+          </div>
+          <div class="board-subtitle">Mão: máx 5 cartas · Vitória: 3 relíquias equipadas</div>
+        </div>
+
+        <div class="board-main">
+          <div class="slot-group">
+            <div class="group-label">Identidade</div>
+            <div class="card-slot slot-identity" style="height:90mm">
+              <span class="slot-icon">🧙</span>
+              <span class="slot-label">Herói</span>
+            </div>
+            <div style="display:flex;gap:2mm;flex:1">
+              <div class="card-slot slot-identity" style="flex:1">
+                <span class="slot-label">Classe</span>
+              </div>
+              <div class="card-slot slot-identity" style="flex:1">
+                <span class="slot-label">Subclasse</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slot-group">
+            <div class="group-label">Equipamentos / Relíquias</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2mm;flex:1">
+              <div class="card-slot slot-equip">
+                <span class="slot-icon">⚔️</span>
+                <span class="slot-label">Arma</span>
+              </div>
+              <div class="card-slot slot-equip">
+                <span class="slot-icon">🪖</span>
+                <span class="slot-label">Armadura</span>
+              </div>
+              <div class="card-slot slot-equip">
+                <span class="slot-icon">🛡️</span>
+                <span class="slot-label">Escudo</span>
+              </div>
+              <div class="card-slot slot-equip">
+                <span class="slot-icon">💍</span>
+                <span class="slot-label">Acessório 1</span>
+              </div>
+              <div class="card-slot slot-equip">
+                <span class="slot-icon">💍</span>
+                <span class="slot-label">Acessório 2</span>
+              </div>
+              <div class="card-slot slot-trophy">
+                <span class="slot-icon">🏆</span>
+                <span class="slot-label">Troféu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-panel">
+            <div class="group-label">Progressão</div>
+            <div class="glory-area">
+              <div class="glory-label">⭐ Glória (empilhe tokens aqui)</div>
+            </div>
+            <div class="level-section">
+              <div class="group-label">📈 Nível — ${className}</div>
+              ${buildLevelTable(className)}
+            </div>
+          </div>
+        </div>
+
+        <div class="board-footer">
+          <div class="footer-section">
+            <strong>Turno</strong>
+            1. Revele monstro · 2. Combate · 3. Resultado
+          </div>
+          <div class="footer-section">
+            <strong>Vitória</strong>
+            1 carta de espólio (2 vs chefe) · Troféu · Glória
+          </div>
+          <div class="footer-section">
+            <strong>Derrota</strong>
+            Sem espólio · Perde próxima rodada · Vida restaurada
+          </div>
+        </div>
+      </div>`
+    }
+
+    document.querySelectorAll('.class-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.class-btn').forEach(b => b.classList.remove('active'))
+        btn.classList.add('active')
+        renderBoard(btn.dataset.class)
+      })
+    })
+
+    loadData()
+  </script>
+</body>
+</html>

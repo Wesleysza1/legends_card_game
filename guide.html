@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Legends - Guia do Jogo</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lucida Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 9.5pt;
+      color: #222;
+      line-height: 1.45;
+      background: white;
+    }
+
+    .page {
+      width: 186mm;
+      min-height: 273mm;
+      margin: 0 auto;
+      page-break-after: always;
+      padding: 0;
+    }
+
+    .page:last-child { page-break-after: avoid; }
+
+    /* Header */
+    .guide-header {
+      text-align: center;
+      border-bottom: 2px solid #222;
+      padding-bottom: 4mm;
+      margin-bottom: 5mm;
+    }
+
+    .guide-header h1 {
+      font-size: 22pt;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1mm;
+    }
+
+    .guide-header p {
+      font-size: 9pt;
+      color: #666;
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 11pt;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1.5mm;
+      margin: 5mm 0 3mm;
+    }
+
+    h3 {
+      font-size: 9.5pt;
+      margin: 3mm 0 1.5mm;
+    }
+
+    p, li { font-size: 9pt; }
+
+    ul, ol {
+      padding-left: 5mm;
+      margin: 1.5mm 0;
+    }
+
+    li { margin-bottom: 1mm; }
+
+    strong { color: #111; }
+
+    /* Two column layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4mm;
+    }
+
+    .col { break-inside: avoid; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2mm 0;
+      font-size: 8.5pt;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 1.5mm 2.5mm;
+      text-align: left;
+    }
+
+    th {
+      background: #f5f5f5;
+      font-weight: 700;
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Info boxes */
+    .info-box {
+      border: 1px solid #d4aa33;
+      background: #fffdf5;
+      border-radius: 3px;
+      padding: 2.5mm 3mm;
+      margin: 2.5mm 0;
+      font-size: 8.5pt;
+    }
+
+    .info-box strong { color: #b8941f; }
+
+    .warning-box {
+      border: 1px solid #c44;
+      background: #fff5f5;
+      border-radius: 3px;
+      padding: 2.5mm 3mm;
+      margin: 2.5mm 0;
+      font-size: 8.5pt;
+    }
+
+    /* Board diagram */
+    .board-diagram {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2mm;
+      margin: 3mm 0;
+    }
+
+    .board-slot {
+      border: 1.5px dashed #999;
+      border-radius: 3px;
+      padding: 2mm;
+      text-align: center;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #555;
+      min-height: 12mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .board-slot.identity { border-color: #d4aa33; background: #fffdf5; color: #b8941f; }
+    .board-slot.equip { border-color: #4a90d9; background: #f5f9ff; color: #3a7bc8; }
+    .board-slot.trophy { border-color: #c44; background: #fff5f5; color: #a33; }
+    .board-slot.tokens { border-color: #5a5; background: #f5fff5; color: #484; }
+
+    .divider {
+      border: none;
+      border-top: 1px dashed #ccc;
+      margin: 4mm 0;
+    }
+
+    /* Print */
+    @media print {
+      body { background: white; }
+      .no-print { display: none; }
+    }
+
+    /* Screen only */
+    @media screen {
+      body { background: #f0f0f0; padding: 10mm 0; }
+      .page {
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        padding: 12mm;
+        margin-bottom: 10mm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==================== PÁGINA 1 ==================== -->
+<div class="page">
+
+  <div class="guide-header">
+    <h1>Legends</h1>
+    <p>Guia de Jogo — Um Jogo de Cartas de Aventura para 2–4 Jogadores</p>
+  </div>
+
+  <h2>🎯 Objetivo</h2>
+  <p>Seja o primeiro jogador a <strong>equipar 3 relíquias</strong> no seu board. Explore, lute contra monstros, fique mais forte e conquiste artefatos lendários.</p>
+
+  <h2>📦 Componentes</h2>
+  <div class="two-col">
+    <div class="col">
+      <table>
+        <tr><th>Componente</th><th>Qtd</th></tr>
+        <tr><td>Cartas de Herói</td><td>6</td></tr>
+        <tr><td>Cartas de Classe</td><td>6</td></tr>
+        <tr><td>Cartas de Subclasse</td><td>18</td></tr>
+        <tr><td>Cartas de Monstro</td><td>24</td></tr>
+        <tr><td>Cartas de Equipamento</td><td>24</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <table>
+        <tr><th>Componente</th><th>Qtd</th></tr>
+        <tr><td>Itens Utilizáveis</td><td>36</td></tr>
+        <tr><td>Cartas de Intriga</td><td>20</td></tr>
+        <tr><td>Cartas de Evento</td><td>24</td></tr>
+        <tr><td>Relíquias</td><td>20</td></tr>
+        <tr><td>Tokens (Glória/Nível)</td><td>vários</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h2>⚙️ Preparação</h2>
+  <ol>
+    <li>Cada jogador escolhe <strong>1 Herói</strong>, <strong>1 Classe</strong> e <strong>1 Subclasse</strong> compatível e coloca no board.</li>
+    <li>Separe as <strong>24 cartas de monstro</strong> e embaralhe — esta é a <strong>Pilha de Monstros</strong>.</li>
+    <li>Embaralhe todas as demais cartas juntas (equipamentos, itens, intrigas, eventos, relíquias) — esta é a <strong>Pilha de Compra</strong>.</li>
+    <li>Cada jogador compra <strong>3 cartas</strong> da Pilha de Compra como mão inicial.</li>
+    <li>Se comprar <strong>evento(s)</strong> na mão inicial: apenas <strong>1 evento</strong> é ativado na sua primeira rodada. Os demais são descartados sem compensação. Coloque o evento a ser ativado na mesa e descarte o restante na sua primeira jogada.</li>
+    <li>Todos começam no <strong>Nível 1</strong> com vida cheia (definida pelo Herói + Classe).</li>
+  </ol>
+
+  <h2>🗂️ As Duas Pilhas</h2>
+  <div class="two-col">
+    <div class="col">
+      <h3>⚔️ Pilha de Monstros</h3>
+      <ul>
+        <li>Contém apenas monstros (24 cartas)</li>
+        <li>Compra <strong>obrigatória</strong> todo turno</li>
+        <li>Monstros <strong>sempre voltam</strong> pro fundo da pilha (vitória ou derrota)</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>🎁 Pilha de Compra (Espólio)</h3>
+      <ul>
+        <li>Equipamentos, itens, intrigas, eventos, relíquias</li>
+        <li>Comprada como <strong>recompensa</strong> por vitória</li>
+        <li>Tudo descartado volta pro <strong>fundo</strong> desta pilha</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>🎮 Board do Jogador</h2>
+  <p>Cada jogador possui um board com os seguintes slots:</p>
+
+  <div class="board-diagram">
+    <div class="board-slot identity">Herói</div>
+    <div class="board-slot identity">Classe</div>
+    <div class="board-slot identity">Subclasse</div>
+    <div class="board-slot trophy">Troféu</div>
+    <div class="board-slot tokens">Glória / Nível</div>
+  </div>
+  <div class="board-diagram">
+    <div class="board-slot equip">Arma</div>
+    <div class="board-slot equip">Armadura</div>
+    <div class="board-slot equip">Escudo</div>
+    <div class="board-slot equip">Acessório 1</div>
+    <div class="board-slot equip">Acessório 2</div>
+  </div>
+
+  <div class="info-box">
+    <strong>Relíquias</strong> ocupam os mesmos slots dos equipamentos. Ao equipar uma relíquia, ela substitui o equipamento do slot. O equipamento substituído volta pro fundo da Pilha de Compra.
+  </div>
+
+  <h2>✋ Mão do Jogador</h2>
+  <p>Máximo de <strong>5 cartas</strong> na mão. Excedeu? Escolha qual devolver pro fundo da Pilha de Compra.</p>
+  <table>
+    <tr><th>Pode ficar na mão</th><th>Nunca vai pra mão</th></tr>
+    <tr>
+      <td>Equipamentos não equipados, Itens, Intrigas, Relíquias escondidas</td>
+      <td>Eventos (ativados imediatamente)</td>
+    </tr>
+  </table>
+
+  <div class="info-box">
+    <strong>Relíquias na mão</strong> ficam escondidas dos outros jogadores e <strong>não têm efeito</strong> até serem equipadas no board.
+  </div>
+
+</div>
+
+<!-- ==================== PÁGINA 2 ==================== -->
+<div class="page">
+
+  <h2>🔄 Turno do Jogador</h2>
+
+  <h3>Fase 1 — Exploração</h3>
+  <p>Revele a carta do topo da <strong>Pilha de Monstros</strong>.</p>
+
+  <div class="warning-box">
+    <strong>⚠️ Restrição de Nível:</strong> Se o nível do monstro for <strong>maior que o dobro do seu nível</strong>, você não pode enfrentá-lo. Devolva o monstro pro fundo da pilha e <strong>perde o turno</strong>.<br>
+    <em>Exemplo: Nível 2 enfrenta até monstro nível 4. Nível 3 enfrenta até nível 6.</em>
+  </div>
+
+  <h3>Fase 2 — Combate</h3>
+  <p>Se puder enfrentar o monstro, o combate começa.</p>
+  <ul>
+    <li>Compare seu <strong>poder total</strong> (nível + equipamentos + habilidades + troféu + efeitos) contra a <strong>força do monstro</strong></li>
+    <li>A <strong>velocidade</strong> determina quem ataca primeiro</li>
+    <li>Durante o combate você pode usar: habilidades de classe/subclasse, itens da mão, cartas de intriga</li>
+    <li>Outros jogadores também podem jogar cartas de intriga durante seu combate</li>
+  </ul>
+
+  <h3>Fase 3 — Resultado</h3>
+  <div class="two-col">
+    <div class="col">
+      <h3>✅ Vitória</h3>
+      <ul>
+        <li>Ganhe a <strong>glória</strong> do monstro</li>
+        <li>Compre da Pilha de Compra:<br><strong>1 carta</strong> (normal) ou <strong>2 cartas</strong> (chefe)</li>
+        <li>Pode colocar o monstro como <strong>troféu</strong> no board</li>
+        <li>Monstro volta pro fundo da pilha</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>❌ Derrota</h3>
+      <ul>
+        <li><strong>Sem espólio</strong></li>
+        <li>Perde a <strong>próxima rodada</strong> recuperando</li>
+        <li>Vida volta ao <strong>máximo</strong></li>
+        <li>Monstro volta pro fundo da pilha</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2>🏆 Troféu</h2>
+  <ul>
+    <li>Apenas <strong>1 troféu</strong> no board por vez</li>
+    <li>É a carta do último monstro derrotado</li>
+    <li>Ao ganhar novo troféu, o anterior volta pro fundo da <strong>Pilha de Monstros</strong></li>
+    <li>O efeito do troféu fica <strong>visível para todos</strong></li>
+  </ul>
+
+  <h2>⭐ Sistema de Glória e Níveis</h2>
+  <p>Cada monstro derrotado concede <strong>glória</strong> (1 a 5 pontos). A glória acumula e ao atingir os limiares, o jogador <strong>sobe de nível</strong>.</p>
+
+  <table>
+    <tr><th>Nível</th><th>Glória Necessária</th><th>Bônus (varia por classe)</th></tr>
+    <tr><td>1</td><td>0 (início)</td><td>—</td></tr>
+    <tr><td>2</td><td>3</td><td>+1 atributo</td></tr>
+    <tr><td>3</td><td>7</td><td>+1 atributo</td></tr>
+    <tr><td>4</td><td>12</td><td>+1 atributo</td></tr>
+    <tr><td>5</td><td>18</td><td>+1 atributo</td></tr>
+    <tr><td>6</td><td>25</td><td>+1 atributo</td></tr>
+    <tr><td>7</td><td>33</td><td>+1 atributo</td></tr>
+  </table>
+
+  <div class="info-box">
+    <strong>Bônus por classe:</strong> Cada classe possui sua própria tabela de bônus por nível. Consulte o token de nível da sua classe para ver o atributo ganho em cada nível.
+  </div>
+
+  <hr class="divider">
+
+  <h2>📋 Tipos de Carta — Referência Rápida</h2>
+
+  <table>
+    <tr><th>Tipo</th><th>Onde fica</th><th>Quando usar</th><th>Após uso</th></tr>
+    <tr><td><strong>Herói</strong></td><td>Board</td><td>Permanente</td><td>—</td></tr>
+    <tr><td><strong>Classe</strong></td><td>Board</td><td>Permanente</td><td>—</td></tr>
+    <tr><td><strong>Subclasse</strong></td><td>Board</td><td>Permanente</td><td>—</td></tr>
+    <tr><td><strong>Equipamento</strong></td><td>Board (equipado) ou Mão</td><td>Equipar no slot</td><td>Substituído → fundo da Pilha de Compra</td></tr>
+    <tr><td><strong>Relíquia</strong></td><td>Board (equipada) ou Mão (escondida)</td><td>Equipar no slot</td><td>Substitui equipamento do slot</td></tr>
+    <tr><td><strong>Item</strong></td><td>Mão</td><td>Conforme timing da carta</td><td>Fundo da Pilha de Compra</td></tr>
+    <tr><td><strong>Intriga</strong></td><td>Mão</td><td>Conforme timing da carta</td><td>Fundo da Pilha de Compra</td></tr>
+    <tr><td><strong>Evento</strong></td><td>Nunca na mão</td><td>Imediatamente ao comprar</td><td>Fundo da Pilha de Compra</td></tr>
+    <tr><td><strong>Monstro</strong></td><td>Pilha de Monstros</td><td>Revelado na exploração</td><td>Fundo da Pilha de Monstros</td></tr>
+  </table>
+
+  <hr class="divider">
+
+  <h2>🏅 Condição de Vitória</h2>
+  <p style="font-size: 11pt; text-align: center; padding: 3mm 0; font-weight: bold;">
+    O primeiro jogador a ter 3 RELÍQUIAS EQUIPADAS no board vence a partida!
+  </p>
+
+  <hr class="divider">
+
+  <h2>💡 Dicas Rápidas</h2>
+  <div class="two-col">
+    <div class="col">
+      <ul>
+        <li>Foque em subir de nível antes de enfrentar chefes</li>
+        <li>Guarde relíquias na mão para surpreender</li>
+        <li>Troféus dão bônus passivos — escolha bem qual manter</li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <li>Cartas de intriga podem virar o jogo</li>
+        <li>Itens são descartáveis — use no momento certo</li>
+        <li>Equipamentos com sinergia de classe são mais fortes</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 5mm; font-size: 8pt; color: #999;">
+    LEGENDS — Um Jogo de Cartas de Aventura — wesleysza1.github.io/legends_card_game
+  </div>
+
+</div>
+
+</body>
+</html>
