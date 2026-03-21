@@ -291,7 +291,8 @@ Legends foi projetado para crescer. Expansões planejadas incluem:
 - Armadilhas
 - ~~Cartas de intriga~~ ✅
 - ~~Relíquias lendárias~~ ✅
-- Duelos entre jogadores
+- ~~Sistema de combate por turnos~~ ✅
+- ~~Duelos entre jogadores~~ ✅
 - Campanhas cooperativas
 
 O sistema modular permite adicionar novos conteúdos facilmente.
@@ -300,7 +301,7 @@ O sistema modular permite adicionar novos conteúdos facilmente.
 
 ## 📊 Estatísticas do Projeto
 
-- **Total de Cartas:** 178 (contando cópias)
+- **Total de Cartas:** 190 (contando cópias e referências)
 - **Monstros:** 24 (incluindo 6 chefes)
 - **Heróis:** 6
 - **Classes:** 6
@@ -310,6 +311,9 @@ O sistema modular permite adicionar novos conteúdos facilmente.
 - **Cartas de Intriga:** 20 (10 únicas × 2 cópias)
 - **Eventos:** 24 (12 únicos × 2 cópias)
 - **Relíquias:** 20
+- **Moves de Combate:** 6 (1 por classe, referência)
+- **Referência de Combate:** 4 (1 por jogador)
+- **Total de Moves:** 90 (18 classe + 18 subclasse + 54 monstro)
 
 ---
 

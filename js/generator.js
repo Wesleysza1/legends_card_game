@@ -59,6 +59,18 @@ const MODELS = {
     load: () => Promise.resolve(9),
     render: (totalCards, container) => renderBackPages(totalCards, container),
   },
+  moves: {
+    label: 'Moves de Combate',
+    description: 'Cards de referência com os moves de cada classe para o combate por turnos.',
+    load: fetchMoves,
+    render: renderMovePages,
+  },
+  combatRef: {
+    label: 'Referência de Combate',
+    description: 'Card resumo com as regras de combate por turnos. Imprima 1 por jogador.',
+    load: () => Promise.resolve(4),
+    render: (count, container) => renderCombatRefPages(count, container),
+  },
 }
 
 const pagesContainer = document.getElementById('pages-container')

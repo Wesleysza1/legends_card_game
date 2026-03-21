@@ -1,0 +1,184 @@
+{
+  "moves": [
+    {
+      "id": 1,
+      "class": "Guerreiro",
+      "name": "Corte Rápido",
+      "type": "attack",
+      "power": 0,
+      "hit": 2,
+      "effect": null,
+      "description": "Um corte direto e confiável."
+    },
+    {
+      "id": 2,
+      "class": "Guerreiro",
+      "name": "Golpe Pesado",
+      "type": "attack",
+      "power": 2,
+      "hit": 4,
+      "effect": null,
+      "description": "Um golpe devastador que exige precisão."
+    },
+    {
+      "id": 3,
+      "class": "Guerreiro",
+      "name": "Postura Defensiva",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "+2 defesa nesta rodada",
+      "description": "Assume posição de guarda, reduzindo dano recebido."
+    },
+    {
+      "id": 4,
+      "class": "Mago",
+      "name": "Míssil Arcano",
+      "type": "attack",
+      "power": 0,
+      "hit": 2,
+      "effect": null,
+      "description": "Um projétil de energia mágica certeiro."
+    },
+    {
+      "id": 5,
+      "class": "Mago",
+      "name": "Explosão Mágica",
+      "type": "attack",
+      "power": 2,
+      "hit": 4,
+      "effect": "Ignora defesa do alvo",
+      "description": "Uma explosão arcana que atravessa qualquer proteção."
+    },
+    {
+      "id": 6,
+      "class": "Mago",
+      "name": "Barreira Mágica",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "+2 defesa nesta rodada",
+      "description": "Conjura um escudo de energia protetora."
+    },
+    {
+      "id": 7,
+      "class": "Ladino",
+      "name": "Punhalada",
+      "type": "attack",
+      "power": 0,
+      "hit": 2,
+      "effect": null,
+      "description": "Um golpe rápido e preciso com lâmina curta."
+    },
+    {
+      "id": 8,
+      "class": "Ladino",
+      "name": "Golpe nas Costas",
+      "type": "attack",
+      "power": 2,
+      "hit": 4,
+      "effect": "Se tiver mais speed que o alvo, acerta com 3+",
+      "description": "Ataque traiçoeiro que explora a distração do inimigo."
+    },
+    {
+      "id": 9,
+      "class": "Ladino",
+      "name": "Esquiva",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "Evita o próximo ataque inimigo nesta rodada",
+      "description": "Movimentação ágil que desvia do perigo."
+    },
+    {
+      "id": 10,
+      "class": "Caçador",
+      "name": "Tiro Rápido",
+      "type": "attack",
+      "power": 0,
+      "hit": 2,
+      "effect": null,
+      "description": "Uma flecha disparada com velocidade."
+    },
+    {
+      "id": 11,
+      "class": "Caçador",
+      "name": "Tiro Perfurante",
+      "type": "attack",
+      "power": 2,
+      "hit": 4,
+      "effect": "Ignora 1 ponto de defesa do alvo",
+      "description": "Flecha pesada que penetra armaduras."
+    },
+    {
+      "id": 12,
+      "class": "Caçador",
+      "name": "Recuar",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "+2 defesa nesta rodada",
+      "description": "Recua para uma posição segura e se protege."
+    },
+    {
+      "id": 13,
+      "class": "Paladino",
+      "name": "Golpe Sagrado",
+      "type": "attack",
+      "power": 0,
+      "hit": 2,
+      "effect": null,
+      "description": "Um golpe imbuído de energia sagrada."
+    },
+    {
+      "id": 14,
+      "class": "Paladino",
+      "name": "Martelo da Luz",
+      "type": "attack",
+      "power": 2,
+      "hit": 4,
+      "effect": "+1 dano extra contra mortos-vivos e demônios",
+      "description": "Golpe sagrado devastador contra criaturas sombrias."
+    },
+    {
+      "id": 15,
+      "class": "Paladino",
+      "name": "Escudo da Fé",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "+3 defesa nesta rodada",
+      "description": "Invoca proteção divina que absorve o impacto."
+    },
+    {
+      "id": 16,
+      "class": "Bárbaro",
+      "name": "Pancada Bruta",
+      "type": "attack",
+      "power": 1,
+      "hit": 2,
+      "effect": null,
+      "description": "Um golpe selvagem cheio de força bruta."
+    },
+    {
+      "id": 17,
+      "class": "Bárbaro",
+      "name": "Fúria Selvagem",
+      "type": "attack",
+      "power": 3,
+      "hit": 5,
+      "effect": "Recebe 1 de dano após o ataque",
+      "description": "Ataque devastador que consome a própria vitalidade."
+    },
+    {
+      "id": 18,
+      "class": "Bárbaro",
+      "name": "Grito de Guerra",
+      "type": "defense",
+      "power": 0,
+      "hit": 2,
+      "effect": "+1 poder na próxima rodada e +1 defesa nesta rodada",
+      "description": "Um grito feroz que intimida o inimigo e fortalece o espírito."
+    }
+  ]
+}

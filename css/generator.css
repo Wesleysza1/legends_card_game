@@ -52,8 +52,9 @@ body {
   color: var(--highlight);
 }
 
-.hero-actions {
+.hero-nav {
   display: flex;
+  gap: 0.5rem;
 }
 
 .hero-action {
@@ -64,6 +65,8 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 0.85rem;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
@@ -115,12 +118,13 @@ body {
 
 .menu-button {
   flex: 1;
-  min-width: 180px;
+  min-width: 120px;
   border: 1px solid var(--border-light);
   background: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1rem;
   border-radius: 0.75rem;
   font-weight: 600;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }

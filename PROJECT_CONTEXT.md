@@ -430,9 +430,60 @@ When modifying code, always respect:
 
 ---
 
-## Recent Updates (2026-03-20)
+## Recent Updates (2026-03-21)
 
-### Game Rules Overhaul
+### Turn-Based Combat System
+- ✅ Combat now uses **turn-based rounds** with moves and d6 dice
+- ✅ Created `db/moves.json` — 3 moves per class (18 total)
+- ✅ Updated `db/subclasses.json` — added `power` and `hit` to abilities
+- ✅ Updated `db/monsters.json` — added `moves` field (2 per normal, 3 per boss)
+- ✅ **Speed** determines initiative (who attacks first each round)
+- ✅ **d6 hit system**: roll ≥ hit value = attack lands (2+ easy to 6 critical)
+- ✅ Monster moves selected by d6 roll (dice ranges on card)
+- ✅ Monsters can miss attacks (roll d6 for accuracy)
+- ✅ New card type: **Move cards** (1 per class = 6 cards, reference during combat)
+- ✅ New card type: **Combat Reference** (rules summary, 1 per player)
+- ✅ Monster cards updated with attacks section
+- ✅ Updated `guide.html` with full combat rules and "How to read monster attacks"
+- ✅ Total moves: 90 (18 class + 18 subclass + 36 normal monster + 18 boss monster)
+
+### Duels & Third-Party Intervention
+- ✅ Players can **duel** instead of exploring (target must have 2+ relics)
+- ✅ Same turn-based combat system (moves, d6, speed initiative)
+- ✅ Loser with relic: discards 1 relic to bottom of loot pile
+- ✅ Loser without relic: winner chooses 1 board card to discard
+- ✅ Both recover full HP after duel, no glory/loot
+- ✅ Protection: each player can only be challenged 1× per full round
+- ✅ Third-party intervention: any player can use items/intrigue/abilities during any combat
+- ✅ Enables cooperation (help vs bosses) and sabotage (hinder rivals)
+
+### Move Card JSON Structure
+
+```json
+{
+  "id": 1,
+  "class": "Guerreiro",
+  "name": "Corte Rápido",
+  "type": "attack",
+  "power": 0,
+  "hit": 2,
+  "effect": null,
+  "description": "Um corte direto e confiável."
+}
+```
+
+### Monster Move Structure
+
+```json
+"moves": [
+  { "name": "Mordida", "damage": 1, "hit": 2, "dice": "1-4" },
+  { "name": "Investida Feroz", "damage": 3, "hit": 4, "dice": "5-6" }
+]
+```
+
+### Previous Updates (2026-03-20)
+
+#### Game Rules Overhaul
 - ✅ Victory condition changed to **3 relics equipped**
 - ✅ Two-pile system: Monster Pile + Loot Pile
 - ✅ Board system with defined slots (Hero, Class, Subclass, 5 equipment, 1 trophy)
