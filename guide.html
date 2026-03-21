@@ -211,6 +211,7 @@
         <tr><td>Cartas de Evento</td><td>24</td></tr>
         <tr><td>Relíquias</td><td>20</td></tr>
         <tr><td>Tokens (Glória/Nível)</td><td>vários</td></tr>
+        <tr><td>Cards de Moves (referência)</td><td>6</td></tr>
       </table>
     </div>
   </div>
@@ -288,22 +289,67 @@
 
   <h2>🔄 Turno do Jogador</h2>
 
-  <h3>Fase 1 — Exploração</h3>
-  <p>Revele a carta do topo da <strong>Pilha de Monstros</strong>.</p>
+  <h3>Fase 1 — Exploração ou Duelo</h3>
+  <p>O jogador escolhe uma das duas opções:</p>
+  <ul>
+    <li><strong>Explorar:</strong> Revele a carta do topo da Pilha de Monstros.</li>
+    <li><strong>Duelar:</strong> Declare um duelo contra um jogador que tenha <strong>2+ relíquias equipadas</strong>.</li>
+  </ul>
 
   <div class="warning-box">
-    <strong>⚠️ Restrição de Nível:</strong> Se o nível do monstro for <strong>maior que o dobro do seu nível</strong>, você não pode enfrentá-lo. Devolva o monstro pro fundo da pilha e <strong>perde o turno</strong>.<br>
+    <strong>⚠️ Restrição de Nível:</strong> Se o nível do monstro for <strong>maior que o dobro do seu nível</strong>, você decide se vai ou não enfrenta-lo. Se a escolha for não enfrentar, devolva o monstro pro fundo da pilha e <strong>perde o turno</strong>.<br>
     <em>Exemplo: Nível 2 enfrenta até monstro nível 4. Nível 3 enfrenta até nível 6.</em>
   </div>
 
-  <h3>Fase 2 — Combate</h3>
-  <p>Se puder enfrentar o monstro, o combate começa.</p>
-  <ul>
-    <li>Compare seu <strong>poder total</strong> (nível + equipamentos + habilidades + troféu + efeitos) contra a <strong>força do monstro</strong></li>
-    <li>A <strong>velocidade</strong> determina quem ataca primeiro</li>
-    <li>Durante o combate você pode usar: habilidades de classe/subclasse, itens da mão, cartas de intriga</li>
-    <li>Outros jogadores também podem jogar cartas de intriga durante seu combate</li>
-  </ul>
+  <h3>Fase 2 — Combate por Turnos</h3>
+  <p>Se puder enfrentar o monstro, o combate começa em <strong>rodadas</strong>.</p>
+
+  <div class="info-box">
+    <strong>Iniciativa:</strong> Compare a <strong>speed</strong> do jogador vs monstro. Quem tem mais ataca primeiro na rodada. Empate: jogador ataca primeiro.
+  </div>
+
+  <p><strong>Cada rodada:</strong></p>
+  <ol>
+    <li><strong>Jogador</strong> escolhe 1 move do seu card de classe → rola 🎲d6 pra acerto</li>
+    <li><strong>Monstro</strong> → rola 🎲d6 pra definir qual move usa (ver card do monstro) → rola 🎲d6 pra acerto</li>
+    <li>Aplica dano: <strong>dano do move − (defesa ÷ 2 ↓)</strong> (mínimo 0)</li>
+    <li>Repete até alguém chegar a <strong>0 HP</strong></li>
+  </ol>
+
+  <div class="info-box">
+    <strong>Cálculo de defesa:</strong> Divida a defesa total por 2 e arredonde pra baixo.<br>
+    Defesa 1 → reduz 0 | Defesa 3 → reduz 1 | Defesa 5 → reduz 2 | Defesa 7 → reduz 3.
+  </div>
+
+  <table>
+    <tr><th>🎲 Resultado</th><th>Acerta com</th><th>Chance</th></tr>
+    <tr><td>Fácil</td><td>2+</td><td>83%</td></tr>
+    <tr><td>Normal</td><td>3+</td><td>67%</td></tr>
+    <tr><td>Moderado</td><td>4+</td><td>50%</td></tr>
+    <tr><td>Difícil</td><td>5+</td><td>33%</td></tr>
+    <tr><td>Crítico</td><td>6</td><td>17%</td></tr>
+  </table>
+
+  <div class="info-box">
+    <strong>Moves especiais</strong> (classe e subclasse) podem ser usados <strong>1× por combate</strong>. Itens e intrigas podem ser usados entre rodadas.
+  </div>
+
+  <h3>📖 Como Ler os Ataques do Monstro</h3>
+  <p>Cada card de monstro possui uma seção <strong>⚔️ Ataques</strong> com a seguinte estrutura:</p>
+
+  <table>
+    <tr><th>Elemento</th><th>Significado</th><th>Exemplo</th></tr>
+    <tr><td><strong>🎲 1-4</strong></td><td>Range do dado que ativa este move. Role 1d6: se cair nesse range, o monstro usa este golpe.</td><td>🎲 1-4 = resultado 1, 2, 3 ou 4</td></tr>
+    <tr><td><strong>Nome</strong></td><td>Nome do golpe do monstro.</td><td>Mordida</td></tr>
+    <tr><td><strong>2⚔</strong></td><td>Dano que o golpe causa se acertar.</td><td>2⚔ = 2 pontos de dano</td></tr>
+    <tr><td><strong>2+</strong></td><td>Valor mínimo no d6 para o golpe <strong>acertar</strong>. Role outro d6: se o resultado for ≥ este valor, o golpe acerta. Senão, erra.</td><td>2+ = acerta com 2 ou mais (83%)</td></tr>
+  </table>
+
+  <div class="warning-box">
+    <strong>⚠️ São duas rolagens por ataque do monstro:</strong><br>
+    1ª rolagem → <strong>qual golpe</strong> o monstro usa (consulte o range 🎲)<br>
+    2ª rolagem → <strong>se acerta</strong> (resultado ≥ valor de acerto)
+  </div>
 
   <h3>Fase 3 — Resultado</h3>
   <div class="two-col">
@@ -336,6 +382,37 @@
     <li>Ao ganhar novo troféu, o anterior volta pro fundo da <strong>Pilha de Monstros</strong></li>
     <li>O efeito do troféu fica <strong>visível para todos</strong></li>
   </ul>
+
+  <h2>⚔️ Duelos entre Jogadores</h2>
+  <p>Na fase de exploração, em vez de revelar um monstro, o jogador pode <strong>declarar duelo</strong> contra um oponente.</p>
+
+  <table>
+    <tr><th>Regra</th><th>Detalhe</th></tr>
+    <tr><td><strong>Alvo</strong></td><td>Apenas jogadores com <strong>2+ relíquias equipadas</strong></td></tr>
+    <tr><td><strong>Combate</strong></td><td>Mesmo sistema de turnos (moves, d6, iniciativa por speed)</td></tr>
+    <tr><td><strong>Perdedor com relíquia</strong></td><td>Descarta <strong>1 relíquia</strong> à sua escolha pro fundo da Pilha de Compra</td></tr>
+    <tr><td><strong>Perdedor sem relíquia</strong></td><td>O vencedor escolhe <strong>1 carta do board</strong> do perdedor para descartar</td></tr>
+    <tr><td><strong>Após o duelo</strong></td><td>Ambos recuperam <strong>HP total</strong>. Sem glória, sem espólio</td></tr>
+    <tr><td><strong>Proteção</strong></td><td>Cada jogador só pode ser desafiado <strong>1× por rodada completa</strong></td></tr>
+  </table>
+
+  <div class="warning-box">
+    <strong>⚠️ Risco do desafiante:</strong> Se o desafiante perder, ele também sofre as consequências. Pense bem antes de duelar!
+  </div>
+
+  <h2>🤝 Intervenção de Terceiros</h2>
+  <p>Jogadores que <strong>não estão em combate</strong> podem intervir durante qualquer luta (contra monstros ou duelos):</p>
+  <ul>
+    <li>Usar <strong>itens</strong> da própria mão em qualquer jogador (curar um aliado, prejudicar um rival)</li>
+    <li>Jogar <strong>cartas de intriga</strong> para alterar o combate</li>
+    <li>Usar <strong>habilidades</strong> que permitam interação (conforme texto da carta)</li>
+  </ul>
+
+  <div class="info-box">
+    <strong>Espírito de equipe ou destruição:</strong> Ajude um aliado contra um boss difícil ou sabote um rival prestes a vencer. A escolha é sua!
+  </div>
+
+  <hr class="divider">
 
   <h2>⭐ Sistema de Glória e Níveis</h2>
   <p>Cada monstro derrotado concede <strong>glória</strong> (1 a 5 pontos). A glória acumula e ao atingir os limiares, o jogador <strong>sobe de nível</strong>.</p>
@@ -370,6 +447,7 @@
     <tr><td><strong>Intriga</strong></td><td>Mão</td><td>Conforme timing da carta</td><td>Fundo da Pilha de Compra</td></tr>
     <tr><td><strong>Evento</strong></td><td>Nunca na mão</td><td>Imediatamente ao comprar</td><td>Fundo da Pilha de Compra</td></tr>
     <tr><td><strong>Monstro</strong></td><td>Pilha de Monstros</td><td>Revelado na exploração</td><td>Fundo da Pilha de Monstros</td></tr>
+    <tr><td><strong>Moves</strong></td><td>Ao lado do board</td><td>Referência durante combate</td><td>—</td></tr>
   </table>
 
   <hr class="divider">
@@ -393,8 +471,8 @@
     <div class="col">
       <ul>
         <li>Cartas de intriga podem virar o jogo</li>
-        <li>Itens são descartáveis — use no momento certo</li>
-        <li>Equipamentos com sinergia de classe são mais fortes</li>
+        <li>Moves fortes erram mais — use no momento certo</li>
+        <li>Moves defensivos salvam contra golpes pesados</li>
       </ul>
     </div>
   </div>

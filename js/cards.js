@@ -11,6 +11,14 @@ async function fetchMonsters() {
     return data.monsters ?? []
 }
 
+function buildMonsterMovesHtml(moves) {
+    if (!moves || !moves.length) return ''
+    return moves.map(move => {
+        const effectHtml = move.effect ? ' <span class="move-effect-hint" title="' + move.effect + '">✦</span>' : ''
+        return `<div class="move-row"><span class="move-dice">🎲${move.dice}</span><span class="move-name">${move.name}${effectHtml}</span><span class="move-damage">${move.damage}⚔</span><span class="move-hit">${move.hit}+</span></div>`
+    }).join('')
+}
+
 function buildMonsterCardHtml(monster) {
     const trophy = monster.reward?.trophy || '-'
     const rewardEffect = monster.reward?.effect || '-'
@@ -18,6 +26,7 @@ function buildMonsterCardHtml(monster) {
 
     const headerIcon = monster.boss ? '👑 ' : ''
     const uniqueIcon = monster.unique && !monster.boss ? '⭐ ' : ''
+    const movesHtml = buildMonsterMovesHtml(monster.moves)
 
     return `
         <div class="card-header">
@@ -40,6 +49,10 @@ function buildMonsterCardHtml(monster) {
         <div class="card-text">
             <b>✨ Habilidade</b><br>
             ${ability}
+        </div>
+        <div class="card-moves">
+            <b>⚔️ Ataques</b>
+            ${movesHtml}
         </div>
         <div class="card-trophy">
             ${monster.unique
@@ -833,3 +846,162 @@ async function loadRelics() {
 window.fetchRelics = fetchRelics
 window.renderRelicPages = renderRelicPages
 window.loadRelics = loadRelics
+
+const MOVE_TYPE_LABELS = {
+    attack: '⚔ Ataque',
+    defense: '🛡 Defesa',
+    special: '⭐ Especial',
+}
+
+async function fetchMoves() {
+    const [movesRes, classesRes, subclassesRes] = await Promise.all([
+        fetch('db/moves.json').then(r => r.json()),
+        fetch('db/classes.json').then(r => r.json()),
+        fetch('db/subclasses.json').then(r => r.json()),
+    ])
+    return {
+        moves: movesRes.moves ?? [],
+        classes: classesRes.classes ?? [],
+        subclasses: subclassesRes.subclasses ?? [],
+    }
+}
+
+function buildMoveCardHtml(className, classMoves, classAbility, subclasses) {
+    const movesHtml = classMoves.map(move => {
+        const typeLabel = MOVE_TYPE_LABELS[move.type] || move.type
+        const effectHtml = move.effect ? `<div class="move-card-effect">${move.effect}</div>` : ''
+        return `<div class="move-card-row">
+            <div class="move-card-row-header">
+                <span class="move-card-type">${typeLabel}</span>
+                <span class="move-card-hit">Acerta ${move.hit}+</span>
+            </div>
+            <div class="move-card-name">${move.name}</div>
+            <div class="move-card-power">${move.type === 'defense' ? 'Defesa' : `+${move.power} poder`}</div>
+            ${effectHtml}
+        </div>`
+    }).join('')
+
+    const classAbilityHtml = classAbility
+        ? `<div class="move-card-row move-card-special">
+            <div class="move-card-row-header">
+                <span class="move-card-type">⭐ Classe</span>
+                <span class="move-card-hit">${classAbility.usage || ''}</span>
+            </div>
+            <div class="move-card-name">${classAbility.name}</div>
+            <div class="move-card-power">${classAbility.effect}</div>
+        </div>`
+        : ''
+
+    const subclassHtml = subclasses.map(sc => {
+        const ab = sc.subclass_ability
+        return `<div class="move-card-row move-card-special">
+            <div class="move-card-row-header">
+                <span class="move-card-type">⭐ ${sc.name}</span>
+                <span class="move-card-hit">${ab.hit}+ | ${ab.usage || ''}</span>
+            </div>
+            <div class="move-card-name">${ab.name}</div>
+            <div class="move-card-power">${ab.power > 0 ? `+${ab.power} poder` : ''}${ab.effect ? (ab.power > 0 ? ' · ' : '') + ab.effect : ''}</div>
+        </div>`
+    }).join('')
+
+    return `
+        <div class="card-header">
+            <div class="card-name">${className}</div>
+            <div class="card-level">Moves</div>
+        </div>
+        <div class="move-card-body">
+            ${movesHtml}
+            ${classAbilityHtml}
+            ${subclassHtml}
+        </div>
+    `
+}
+
+function renderMovePages(data, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) return 0
+    container.innerHTML = ''
+    let renderedCount = 0
+
+    const classNames = [...new Set(data.moves.map(m => m.class))]
+
+    classNames.forEach(className => {
+        const classMoves = data.moves.filter(m => m.class === className)
+        const classData = data.classes.find(c => c.name === className)
+        const classAbility = classData?.class_ability || null
+        const subclasses = data.subclasses.filter(sc => sc.class === className)
+
+        if (renderedCount % cardsPerPage === 0) {
+            const page = document.createElement('div')
+            page.classList.add('page')
+            container.appendChild(page)
+        }
+
+        const currentPage = container.lastElementChild
+        const card = document.createElement('div')
+        card.classList.add('card', 'move-card')
+        card.innerHTML = buildMoveCardHtml(className, classMoves, classAbility, subclasses)
+        currentPage.appendChild(card)
+        renderedCount += 1
+    })
+
+    return renderedCount
+}
+
+window.fetchMoves = fetchMoves
+window.renderMovePages = renderMovePages
+
+function renderCombatRefPages(_, container, cardsPerPage = CARDS_PER_PAGE) {
+    if (!container) return 0
+    container.innerHTML = ''
+
+    const page = document.createElement('div')
+    page.classList.add('page')
+    container.appendChild(page)
+
+    const cardHtml = `
+        <div class="card-header">
+            <div class="card-name">Referência de Combate</div>
+            <div class="card-level">Guia</div>
+        </div>
+        <div class="combat-ref-body">
+            <div class="combat-ref-section">
+                <b>⚡ Iniciativa</b>
+                <p>Maior speed ataca primeiro. Empate: jogador primeiro.</p>
+            </div>
+            <div class="combat-ref-section">
+                <b>🔄 Rodada</b>
+                <ol>
+                    <li>Jogador escolhe move → 🎲d6 ≥ hit = acerta</li>
+                    <li>Monstro: 🎲d6 define move → 🎲d6 ≥ hit = acerta</li>
+                    <li>Dano = poder do move − (defesa ÷ 2↓) mín 0</li>
+                </ol>
+            </div>
+            <div class="combat-ref-section">
+                <b>🎲 Tabela de Acerto</b>
+                <table class="combat-ref-table">
+                    <tr><td>2+</td><td>83%</td><td>4+</td><td>50%</td><td>6</td><td>17%</td></tr>
+                    <tr><td>3+</td><td>67%</td><td>5+</td><td>33%</td><td></td><td></td></tr>
+                </table>
+            </div>
+            <div class="combat-ref-section">
+                <b>⭐ Specials</b>
+                <p>Moves de classe e subclasse: 1× por combate.</p>
+            </div>
+            <div class="combat-ref-section">
+                <b>🏁 Fim do Combate</b>
+                <p>HP do jogador ou monstro chega a 0.</p>
+            </div>
+        </div>
+    `
+
+    for (let i = 0; i < 4; i++) {
+        const card = document.createElement('div')
+        card.classList.add('card', 'combat-ref-card')
+        card.innerHTML = cardHtml
+        page.appendChild(card)
+    }
+
+    return 4
+}
+
+window.renderCombatRefPages = renderCombatRefPages

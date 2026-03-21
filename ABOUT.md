@@ -172,28 +172,62 @@ Se a mão exceder 5 cartas, o jogador deve **imediatamente** escolher qual carta
 
 Cada turno possui três fases.
 
-### 1 — Exploração
+### 1 — Exploração ou Duelo
 
-O jogador revela a carta do topo da **pilha de monstros**.
+O jogador escolhe uma das duas opções:
 
-**Regra de restrição de nível:** Se o nível do monstro for maior que o **dobro do nível do jogador**, o monstro não pode ser enfrentado. O jogador devolve o monstro para o fundo da pilha de monstros e **perde o turno**.
+* **Explorar:** Revela a carta do topo da **pilha de monstros**
+* **Duelar:** Declara um duelo contra um jogador que tenha **2 ou mais relíquias equipadas**
+
+**Regra de restrição de nível (exploração):** Se o nível do monstro for maior que o **dobro do nível do jogador**, o monstro não pode ser enfrentado. O jogador devolve o monstro para o fundo da pilha de monstros e **perde o turno**.
 
 Exemplo: jogador nível 2 pode enfrentar monstros até nível 4. Monstro nível 5+ é devolvido.
 
 ### 2 — Combate
 
-Se o monstro puder ser enfrentado, inicia-se o combate.
+Se o monstro puder ser enfrentado, inicia-se o **combate por turnos**.
 
-O resultado depende da comparação entre:
+O combate acontece em **rodadas** até que o jogador ou o monstro chegue a **0 HP**.
 
-**Poder do jogador** (nível + equipamentos + habilidades + troféu + efeitos ativos)
-versus
-**Força do monstro** (stats + habilidade especial)
+#### Iniciativa
+
+Compare a **speed** do jogador com a do monstro. Quem tem mais ataca primeiro na rodada. Em caso de empate, o jogador ataca primeiro.
+
+#### Rodada de Combate
+
+1. **Atacante** (quem tem iniciativa) escolhe um move e rola **1d6** para acerto
+2. **Defensor** usa seu move e rola **1d6** para acerto
+3. Aplica dano: **poder do move − (defesa ÷ 2, arredondado pra baixo)** (mínimo 0)
+
+Exemplos de redução de defesa: defesa 1 → reduz 0 | defesa 3 → reduz 1 | defesa 5 → reduz 2 | defesa 7 → reduz 3.
+4. Repete até alguém chegar a 0 HP
+
+#### Moves do Jogador
+
+Cada classe possui **3 moves base** (ataque básico, ataque forte e defesa/utilitário). Cada subclasse possui **1 move especial** (1× por combate). O jogador escolhe qual move usar a cada rodada.
+
+#### Moves do Monstro
+
+Cada monstro possui **2 moves** (bosses possuem **3 moves**). O move é definido aleatoriamente: role **1d6** e consulte o range no card do monstro. Depois role **outro d6** para ver se o golpe acerta.
+
+#### Sistema de Acerto (d6)
+
+Cada move possui um valor de **acerto mínimo**. Role 1d6: se o resultado for **≥ valor de acerto**, o golpe acerta. Caso contrário, erra.
+
+| Dificuldade | Acerta com | Chance |
+|---|---|---|
+| Fácil | 2+ | 83% |
+| Normal | 3+ | 67% |
+| Moderado | 4+ | 50% |
+| Difícil | 5+ | 33% |
+| Crítico | 6 | 17% |
+
+Moves fracos acertam fácil (2+), moves fortes são mais arriscados (4+, 5+). Isso cria decisões táticas a cada rodada.
 
 Durante o combate, o jogador pode usar:
 
-* Habilidades de classe e subclasse
-* Itens utilizáveis da mão
+* Habilidades de classe e subclasse (1× por combate)
+* Itens utilizáveis da mão (entre rodadas)
 * Cartas de intriga (próprias ou de outros jogadores)
 
 ### 3 — Resultado
@@ -210,6 +244,51 @@ Durante o combate, o jogador pode usar:
 * Não compra espólio
 * Perde a **próxima rodada** recuperando vida (vida volta ao máximo)
 * O monstro volta para o **fundo da pilha de monstros**
+
+---
+
+# DUELOS ENTRE JOGADORES
+
+Na fase de exploração, em vez de revelar um monstro, o jogador pode **declarar duelo** contra outro jogador.
+
+### Regras do Duelo
+
+* Só pode duelar contra um jogador que tenha **2 ou mais relíquias equipadas**
+* O combate usa o **mesmo sistema de turnos** (moves, d6, iniciativa por speed)
+* Ambos os jogadores usam seus moves de classe e subclasse
+* Itens e intrigas podem ser usados durante o duelo
+
+### Resultado do Duelo
+
+* O **perdedor com relíquia** descarta **1 relíquia** à sua escolha para o fundo da pilha de compra
+* O **perdedor sem relíquia** tem **1 carta do board** escolhida pelo vencedor para ser descartada
+* O **vencedor** não ganha espólio nem glória — o benefício é puramente estratégico
+* Ambos os jogadores **recuperam HP total** após o duelo
+* O desafiante **não revela monstro** nesse turno (o duelo substitui a exploração)
+
+### Proteção contra Abuso
+
+Cada jogador só pode ser **desafiado 1 vez por rodada completa** (evita que múltiplos jogadores duelem o mesmo alvo em sequência).
+
+### Risco do Desafiante
+
+O desafiante assume risco: se perder, ele também sofre as consequências. Isso impede duelos irresponsáveis.
+
+---
+
+# INTERVENÇÃO DE TERCEIROS
+
+Jogadores que **não estão em combate** podem intervir durante qualquer luta — seja contra monstros ou em duelos.
+
+### Formas de Intervenção
+
+* Usar **itens** da própria mão em qualquer jogador (curar um aliado, prejudicar um rival)
+* Jogar **cartas de intriga** para alterar o combate
+* Usar **habilidades** que permitam interação (conforme texto da carta)
+
+A intervenção pode ser feita **a qualquer momento entre rodadas** de combate.
+
+Isso cria dinâmicas de **cooperação** (ajudar um aliado contra um boss difícil) ou **sabotagem** (prejudicar um rival prestes a vencer).
 
 ---
 
@@ -311,6 +390,35 @@ Templário · Exorcista · Arauto da Luz
 Berserker · Xamã de Guerra · Senhor da Tempestade
 
 Total: **18 subclasses**
+
+---
+
+# MOVES DE COMBATE
+
+Moves são as ações disponíveis durante o combate por turnos.
+
+### Moves de Classe (18 cartas)
+
+Cada classe possui **3 moves base** impressos em um card de referência separado:
+
+* **Ataque Básico** — Dano baixo, acerta fácil (2+)
+* **Ataque Forte** — Dano alto, mais difícil de acertar (4+ ou 5+)
+* **Defesa/Utilitário** — Reduz dano recebido ou concede bônus
+
+O card de moves fica ao lado do board durante a partida (não ocupa slot na mão).
+
+### Moves de Subclasse (18 moves)
+
+Cada subclasse possui **1 move especial** (1× por combate), definido no card de subclasse.
+
+### Moves de Monstro
+
+Cada monstro possui moves impressos no próprio card:
+
+* **Monstros normais** — 2 moves
+* **Bosses** — 3 moves
+
+O move do monstro é definido por **1d6** (consulte o range no card). O acerto é definido por **outro d6**.
 
 ---
 

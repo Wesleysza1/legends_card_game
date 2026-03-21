@@ -8,9 +8,11 @@
       "image": "subclasses/campeao.webp",
       "subclass_ability": {
         "name": "Golpe Heroico",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "+3 de dano em um ataque."
+        "power": 3,
+        "hit": 3,
+        "effect": null
       }
     },
     {
@@ -21,9 +23,11 @@
       "image": "subclasses/guardiao.webp",
       "subclass_ability": {
         "name": "Muralha de Aço",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Reduza em 2 o dano recebido neste combate."
+        "power": 0,
+        "hit": 2,
+        "effect": "+4 defesa nesta rodada"
       }
     },
     {
@@ -34,9 +38,11 @@
       "image": "subclasses/duelista.webp",
       "subclass_ability": {
         "name": "Estocada Rápida",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Cause 2 de dano no começo do combate."
+        "power": 2,
+        "hit": 2,
+        "effect": "Ataca antes da iniciativa nesta rodada"
       }
     },
     {
@@ -47,9 +53,11 @@
       "image": "subclasses/piromante.webp",
       "subclass_ability": {
         "name": "Chamas Devastadoras",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Cause 3 de dano mágico em um inimigo."
+        "power": 3,
+        "hit": 3,
+        "effect": "Ignora defesa do alvo"
       }
     },
     {
@@ -60,9 +68,11 @@
       "image": "subclasses/arcanista.webp",
       "subclass_ability": {
         "name": "Surto Arcano",
-        "type": "utility",
-        "usage": "1 vez por turno",
-        "effect": "Compre 1 carta adicional."
+        "type": "special",
+        "usage": "1 vez por combate",
+        "power": 1,
+        "hit": 2,
+        "effect": "Compre 1 carta adicional da pilha de compra"
       }
     },
     {
@@ -73,9 +83,11 @@
       "image": "subclasses/cronomante.webp",
       "subclass_ability": {
         "name": "Controle do Tempo",
-        "type": "utility",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Ataque duas vezes no primeiro turno do combate."
+        "power": 0,
+        "hit": 3,
+        "effect": "Ataque duas vezes nesta rodada"
       }
     },
     {
@@ -86,9 +98,11 @@
       "image": "subclasses/assassino.webp",
       "subclass_ability": {
         "name": "Golpe Mortal",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "+3 no primeiro ataque."
+        "power": 3,
+        "hit": 4,
+        "effect": "Se matar o alvo com este golpe, compre 1 carta extra"
       }
     },
     {
@@ -99,9 +113,11 @@
       "image": "subclasses/trapaceiro.webp",
       "subclass_ability": {
         "name": "Truque Sujo",
-        "type": "intrigue",
-        "usage": "1 vez por turno",
-        "effect": "Force um jogador a descartar 1 carta."
+        "type": "special",
+        "usage": "1 vez por combate",
+        "power": 1,
+        "hit": 2,
+        "effect": "O monstro erra o próximo ataque automaticamente"
       }
     },
     {
@@ -112,9 +128,11 @@
       "image": "subclasses/espiao.webp",
       "subclass_ability": {
         "name": "Informante",
-        "type": "exploration",
-        "usage": "1 vez por turno",
-        "effect": "Olhe as 2 próximas cartas do baralho."
+        "type": "special",
+        "usage": "1 vez por combate",
+        "power": 0,
+        "hit": 2,
+        "effect": "Veja o próximo move do monstro e escolha seu move depois"
       }
     },
     {
@@ -125,9 +143,11 @@
       "image": "subclasses/atirador.webp",
       "subclass_ability": {
         "name": "Disparo Perfeito",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Cause +2 dano ignorando defesa."
+        "power": 2,
+        "hit": 3,
+        "effect": "Ignora defesa do alvo"
       }
     },
     {
@@ -138,9 +158,11 @@
       "image": "subclasses/domador_feras.webp",
       "subclass_ability": {
         "name": "Companheiro Selvagem",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Após vencer um monstro de nível 1-3, dome-o e o use em combate"
+        "power": 2,
+        "hit": 2,
+        "effect": "Invoca um companheiro que causa dano adicional"
       }
     },
     {
@@ -151,9 +173,11 @@
       "image": "subclasses/explorador.webp",
       "subclass_ability": {
         "name": "Caminhos Secretos",
-        "type": "exploration",
-        "usage": "1 vez a cada dois turnos",
-        "effect": "Ignore o efeito negativo de uma carta de exploração."
+        "type": "special",
+        "usage": "1 vez por combate",
+        "power": 0,
+        "hit": 2,
+        "effect": "Fuja do combate sem penalidade. Monstro volta pro fundo da pilha"
       }
     },
     {
@@ -164,9 +188,11 @@
       "image": "subclasses/templario.webp",
       "subclass_ability": {
         "name": "Escudo Sagrado",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Bloqueie completamente um ataque."
+        "power": 0,
+        "hit": 2,
+        "effect": "Bloqueia completamente um ataque inimigo"
       }
     },
     {
@@ -177,9 +203,11 @@
       "image": "subclasses/exorcista.webp",
       "subclass_ability": {
         "name": "Banimento",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "+3 dano contra mortos-vivos ou demônios."
+        "power": 3,
+        "hit": 3,
+        "effect": "+2 dano extra contra mortos-vivos ou demônios"
       }
     },
     {
@@ -190,9 +218,11 @@
       "image": "subclasses/arauto_luz.webp",
       "subclass_ability": {
         "name": "Luz Restauradora",
-        "type": "utility",
-        "usage": "1 vez por turno",
-        "effect": "Cure 2 HP de um aliado."
+        "type": "special",
+        "usage": "1 vez por combate",
+        "power": 0,
+        "hit": 2,
+        "effect": "Cure 4 HP"
       }
     },
     {
@@ -203,9 +233,11 @@
       "image": "subclasses/berserker.webp",
       "subclass_ability": {
         "name": "Frenesi",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "+3 poder neste turno."
+        "power": 4,
+        "hit": 4,
+        "effect": "Recebe 2 de dano após o ataque"
       }
     },
     {
@@ -216,9 +248,11 @@
       "image": "subclasses/xama_guerra.webp",
       "subclass_ability": {
         "name": "Totem Espiritual",
-        "type": "utility",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Em caso de dano fatal, fique com 1 de vida."
+        "power": 0,
+        "hit": 2,
+        "effect": "Se receber dano fatal, sobrevive com 1 HP"
       }
     },
     {
@@ -229,9 +263,11 @@
       "image": "subclasses/senhor_tempestade.webp",
       "subclass_ability": {
         "name": "Golpe do Trovão",
-        "type": "combat",
+        "type": "special",
         "usage": "1 vez por combate",
-        "effect": "Cause 2 dano a todos os aliados."
+        "power": 2,
+        "hit": 3,
+        "effect": "O monstro perde 1 de speed pelo resto do combate"
       }
     }
   ]

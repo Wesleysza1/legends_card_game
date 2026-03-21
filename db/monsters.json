@@ -13,6 +13,10 @@
         "speed": 3
       },
       "ability": "Ao ser revelado, o jogador descarta 1 carta da mão.",
+      "moves": [
+        { "name": "Facada Suja", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Emboscada", "damage": 2, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Orelhas de Goblin",
         "effect": "+1 poder em duelos"
@@ -33,6 +37,10 @@
         "speed": 4
       },
       "ability": "Ao ser derrotado, morde o jogador causando 1 de dano.",
+      "moves": [
+        { "name": "Mordida", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Salto Feroz", "damage": 2, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Presa Sombria",
         "effect": "+1 poder contra monstros"
@@ -53,6 +61,10 @@
         "speed": 2
       },
       "ability": "Recebe +1 vida neste combate.",
+      "moves": [
+        { "name": "Corte Ósseo", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Investida Esquelética", "damage": 2, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Elmo Antigo",
         "effect": "+1 defesa"
@@ -73,6 +85,10 @@
         "speed": 1
       },
       "ability": "O jogador perde 1 item equipado se perder o combate.",
+      "moves": [
+        { "name": "Cuspe Ácido", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Explosão Corrosiva", "damage": 2, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Núcleo Ácido",
         "effect": "+1 dano contra monstros"
@@ -93,6 +109,10 @@
         "speed": 3
       },
       "ability": "Rouba 1 carta aleatória da mão do jogador.",
+      "moves": [
+        { "name": "Punhalada", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Golpe Traiçoeiro", "damage": 2, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Adaga Roubada",
         "effect": "+1 poder em duelos"
@@ -113,6 +133,10 @@
         "speed": 2
       },
       "ability": "Ao ser revelado, o jogador perde 1 item equipado.",
+      "moves": [
+        { "name": "Mandíbula Afiada", "damage": 1, "hit": 2, "dice": "1-4" },
+        { "name": "Devorar", "damage": 3, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Dente de Mímico",
         "effect": "+1 poder ao explorar"
@@ -133,6 +157,10 @@
         "speed": 2
       },
       "ability": "Causa +1 dano neste combate.",
+      "moves": [
+        { "name": "Porrada", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Esmagar", "damage": 3, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Machado Orc",
         "effect": "+2 poder contra monstros"
@@ -153,6 +181,10 @@
         "speed": 1
       },
       "ability": "-1 dano recebido.",
+      "moves": [
+        { "name": "Garras de Pedra", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Mergulho Rochoso", "damage": 3, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Fragmento de Pedra",
         "effect": "+1 defesa"
@@ -173,6 +205,10 @@
         "speed": 4
       },
       "ability": "O jogador descarta 1 carta ao iniciar o combate.",
+      "moves": [
+        { "name": "Picada Venenosa", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Teia Paralisante", "damage": 1, "hit": 3, "dice": "5-6", "effect": "Jogador perde a iniciativa na próxima rodada" }
+      ],
       "reward": {
         "trophy": "Veneno de Aranha",
         "effect": "+1 dano extra"
@@ -193,6 +229,10 @@
         "speed": 3
       },
       "ability": "Ignora bônus de troféus.",
+      "moves": [
+        { "name": "Lâmina Fantasma", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Golpe Espectral", "damage": 3, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Espada Fantasma",
         "effect": "+2 poder em duelos"
@@ -213,6 +253,10 @@
         "speed": 1
       },
       "ability": "Rouba 1 equipamento se vencer.",
+      "moves": [
+        { "name": "Clavada", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Arremesso de Pedra", "damage": 4, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Clava Ogra",
         "effect": "+2 poder contra monstros"
@@ -233,6 +277,10 @@
         "speed": 2
       },
       "ability": "O jogador descarta 2 cartas.",
+      "moves": [
+        { "name": "Raio Sombrio", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Maldição Profana", "damage": 3, "hit": 4, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Símbolo Profano",
         "effect": "+1 poder mágico"
@@ -253,6 +301,10 @@
         "speed": 1
       },
       "ability": "Recupera 1 vida por rodada.",
+      "moves": [
+        { "name": "Soco Brutal", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Dilacerar", "damage": 4, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Pele de Troll",
         "effect": "+2 defesa"
@@ -273,6 +325,10 @@
         "speed": 4
       },
       "ability": "Causa +1 dano se atacar primeiro.",
+      "moves": [
+        { "name": "Bote Venenoso", "damage": 2, "hit": 2, "dice": "1-4" },
+        { "name": "Constrição Mortal", "damage": 4, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Escama Abissal",
         "effect": "+1 poder contra chefes"
@@ -293,6 +349,10 @@
         "speed": 3
       },
       "ability": "Pode causar dano duas vezes. O segundo ataque causa 1 de dano.",
+      "moves": [
+        { "name": "Garras Triplas", "damage": 2, "hit": 2, "dice": "1-3" },
+        { "name": "Sopro de Fogo", "damage": 4, "hit": 4, "dice": "4-6" }
+      ],
       "reward": {
         "trophy": "Garra de Quimera",
         "effect": "+2 poder"
@@ -313,6 +373,10 @@
         "speed": 2
       },
       "ability": "Invoca um Esqueleto Guardião.",
+      "moves": [
+        { "name": "Toque da Morte", "damage": 2, "hit": 2, "dice": "1-3" },
+        { "name": "Explosão Necrótica", "damage": 5, "hit": 5, "dice": "4-6" }
+      ],
       "reward": {
         "trophy": "Grimório Negro",
         "effect": "+1 poder mágico"
@@ -333,6 +397,10 @@
         "speed": 1
       },
       "ability": "Recebe -1 de dano.",
+      "moves": [
+        { "name": "Punho de Ferro", "damage": 3, "hit": 2, "dice": "1-4" },
+        { "name": "Pisão Sísmico", "damage": 5, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": "Núcleo de Ferro",
         "effect": "+2 defesa"
@@ -353,6 +421,10 @@
         "speed": 2
       },
       "ability": "Ignora todos os troféus do jogador.",
+      "moves": [
+        { "name": "Lâmina Ancestral", "damage": 3, "hit": 2, "dice": "1-4" },
+        { "name": "Julgamento Antigo", "damage": 5, "hit": 5, "dice": "5-6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +1 nível"
@@ -374,6 +446,11 @@
         "speed": 3
       },
       "ability": "Causa 2 dano imediato ao ser revelado.",
+      "moves": [
+        { "name": "Garras Dracônicas", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Cauda Devastadora", "damage": 4, "hit": 3, "dice": "4-5" },
+        { "name": "Sopro Infernal", "damage": 6, "hit": 5, "dice": "6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +2 níveis"
@@ -393,6 +470,10 @@
         "speed": 3
       },
       "ability": "O jogador descarta toda a mão.",
+      "moves": [
+        { "name": "Garras Infernais", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Chama Demoníaca", "damage": 5, "hit": 4, "dice": "4-6" }
+      ],
       "reward": {
         "trophy": "Chifre Demoníaco",
         "effect": "+2 poder"
@@ -414,6 +495,11 @@
         "speed": 2
       },
       "ability": "Recupera 2 vida por rodada.",
+      "moves": [
+        { "name": "Mordida Tripla", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Investida Brutal", "damage": 5, "hit": 3, "dice": "4-5" },
+        { "name": "Fúria das Cabeças", "damage": 7, "hit": 5, "dice": "6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +2 níveis"
@@ -434,6 +520,11 @@
         "speed": 1
       },
       "ability": "Ignora todo dano menor que 2.",
+      "moves": [
+        { "name": "Punho Colossal", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Terremoto", "damage": 5, "hit": 3, "dice": "4-5" },
+        { "name": "Despertar Titânico", "damage": 8, "hit": 6, "dice": "6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +2 níveis"
@@ -454,6 +545,11 @@
         "speed": 2
       },
       "ability": "Quando derrotado, revive uma vez com metade da vida.",
+      "moves": [
+        { "name": "Raio Necrótico", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Drenar Vida", "damage": 4, "hit": 3, "dice": "4-5" },
+        { "name": "Apocalipse Sombrio", "damage": 6, "hit": 5, "dice": "6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +2 níveis"
@@ -474,6 +570,11 @@
         "speed": 2
       },
       "ability": "Recebe -2 de dano",
+      "moves": [
+        { "name": "Mandíbula Abissal", "damage": 3, "hit": 2, "dice": "1-3" },
+        { "name": "Onda de Choque", "damage": 5, "hit": 3, "dice": "4-5" },
+        { "name": "Devastação Total", "damage": 7, "hit": 5, "dice": "6" }
+      ],
       "reward": {
         "trophy": null,
         "effect": "Ganhe +3 níveis"

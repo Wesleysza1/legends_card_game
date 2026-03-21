@@ -14,15 +14,14 @@
   <header class="hero">
     <div class="hero-content">
       <p class="eyebrow">Legends</p>
-      <h1 class="hero-title">Gerador de Cards</h1>
-      <p class="hero-subtitle">Escolha um modelo, carregue os dados e imprima cada página com nove cartas por folha A4.</p>
+      <h1 class="hero-title">Card Generator</h1>
+      <p class="hero-subtitle">Gere, visualize e imprima suas cartas. Nove cards por folha A4.</p>
     </div>
-    <div class="hero-actions">
-      <button class="hero-action" onclick="document.getElementById('model-menu').scrollIntoView({ behavior: 'smooth' })">Ver modelos</button>
-      <a href="guide.html" class="hero-action" style="text-decoration:none;margin-left:0.5rem">📖 Guia do Jogo</a>
-      <a href="tokens.html" class="hero-action" style="text-decoration:none;margin-left:0.5rem">🪙 Tokens</a>
-      <a href="board.html" class="hero-action" style="text-decoration:none;margin-left:0.5rem">🎲 Board</a>
-    </div>
+    <nav class="hero-nav">
+      <a href="guide.html" class="hero-action">📖 Guia</a>
+      <a href="board.html" class="hero-action">🎲 Board</a>
+      <a href="tokens.html" class="hero-action">🪙 Tokens</a>
+    </nav>
   </header>
 
   <div class="set-tabs">
@@ -31,17 +30,19 @@
   </div>
 
   <div class="menu-wrapper">
-      <nav class="generator-menu" data-set="official">
-      <button class="menu-button active" data-model="monsters" data-set="official">Cards de monstros</button>
-      <button class="menu-button" data-model="heroes" data-set="official">Cards de heróis</button>
-      <button class="menu-button" data-model="classes" data-set="official">Cards de classes</button>
-      <button class="menu-button" data-model="subclasses" data-set="official">Cards de subclasses</button>
-      <button class="menu-button" data-model="equipments" data-set="official">Cards de equipamentos</button>
-      <button class="menu-button" data-model="items" data-set="official">Cards de itens</button>
-      <button class="menu-button" data-model="intrigue" data-set="official">Cards de intriga</button>
-      <button class="menu-button" data-model="events" data-set="official">Cards de eventos</button>
-      <button class="menu-button" data-model="relics" data-set="official">Cards de relíquias</button>
-      <button class="menu-button" data-model="backs" data-set="official">Versos dos Cards</button>
+    <nav class="generator-menu" data-set="official">
+      <button class="menu-button active" data-model="monsters" data-set="official">Monstros</button>
+      <button class="menu-button" data-model="heroes" data-set="official">Heróis</button>
+      <button class="menu-button" data-model="classes" data-set="official">Classes</button>
+      <button class="menu-button" data-model="subclasses" data-set="official">Subclasses</button>
+      <button class="menu-button" data-model="equipments" data-set="official">Equipamentos</button>
+      <button class="menu-button" data-model="items" data-set="official">Itens</button>
+      <button class="menu-button" data-model="intrigue" data-set="official">Intriga</button>
+      <button class="menu-button" data-model="events" data-set="official">Eventos</button>
+      <button class="menu-button" data-model="relics" data-set="official">Relíquias</button>
+      <button class="menu-button" data-model="backs" data-set="official">Versos</button>
+      <button class="menu-button" data-model="moves" data-set="official">Moves</button>
+      <button class="menu-button" data-model="combatRef" data-set="official">Ref. Combate</button>
     </nav>
     <nav class="generator-menu hidden" data-set="expansion">
       <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Reinos Celestiais</button>
@@ -49,7 +50,7 @@
       <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Dark Souls</button>
       <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Chinesa</button>
       <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Grega</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Nordica</button>
+      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Nórdica</button>
     </nav>
   </div>
 
