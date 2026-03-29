@@ -53,7 +53,7 @@
         "name": "Roubo Rápido",
         "type": "intrigue",
         "usage": "1 vez por rodada, antes de comprar.",
-        "effect": "Roube 1 carta aleatória da mão de um jogador ou compre 1 carta extra do baralho."
+        "effect": "Roube 1 carta aleatória da mão de um jogador."
       },
       "playstyle": "Agilidade e táticas oportunistas"
     },

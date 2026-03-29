@@ -118,7 +118,7 @@
       "effect": "Todos os jogadores embaralham suas mãos e compram o mesmo número de cartas novamente.",
       "flavor_text": "Às vezes a melhor estratégia é bagunçar tudo.",
       "image": "intrigue/caos_calculado.webp",
-      "copies": 3
+      "copies": 2
     }
   ]
 }

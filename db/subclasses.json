@@ -102,7 +102,7 @@
         "usage": "1 vez por combate",
         "power": 3,
         "hit": 4,
-        "effect": "Se matar o alvo com este golpe, compre 1 carta extra"
+        "effect": "Se matar o alvo, compre 1 carta extra"
       }
     },
     {
@@ -117,7 +117,7 @@
         "usage": "1 vez por combate",
         "power": 1,
         "hit": 2,
-        "effect": "O monstro erra o próximo ataque automaticamente"
+        "effect": "Desvia do próximo ataque inimigo"
       }
     },
     {
@@ -177,7 +177,7 @@
         "usage": "1 vez por combate",
         "power": 0,
         "hit": 2,
-        "effect": "Fuja do combate sem penalidade. Monstro volta pro fundo da pilha"
+        "effect": "Fuja do combate sem penalidade."
       }
     },
     {
