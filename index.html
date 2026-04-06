@@ -1,86 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Legends Card Generator</title>
-  <link rel="stylesheet" href="css/generator.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/backs.css">
-  <script src="js/auth.js"></script>
-</head>
-
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">Legends</p>
-      <h1 class="hero-title">Card Generator</h1>
-      <p class="hero-subtitle">Gere, visualize e imprima suas cartas. Nove cards por folha A4.</p>
-    </div>
-    <nav class="hero-nav">
-      <a href="guide.html" class="hero-action">📖 Guia</a>
-      <a href="board.html" class="hero-action">🎲 Board</a>
-      <a href="tokens.html" class="hero-action">🪙 Tokens</a>
-    </nav>
-  </header>
-
-  <div class="set-tabs">
-    <button class="set-tab active" data-set="official">Jogo Base</button>
-    <button class="set-tab" data-set="expansion">Expansões</button>
-  </div>
-
-  <div class="menu-wrapper">
-    <nav class="generator-menu" data-set="official">
-      <button class="menu-button active" data-model="monsters" data-set="official">Monstros</button>
-      <button class="menu-button" data-model="heroes" data-set="official">Heróis</button>
-      <button class="menu-button" data-model="classes" data-set="official">Classes</button>
-      <button class="menu-button" data-model="subclasses" data-set="official">Subclasses</button>
-      <button class="menu-button" data-model="equipments" data-set="official">Equipamentos</button>
-      <button class="menu-button" data-model="items" data-set="official">Itens</button>
-      <button class="menu-button" data-model="intrigue" data-set="official">Intriga</button>
-      <button class="menu-button" data-model="events" data-set="official">Eventos</button>
-      <button class="menu-button" data-model="relics" data-set="official">Relíquias</button>
-      <button class="menu-button" data-model="backs" data-set="official">Versos</button>
-      <button class="menu-button" data-model="moves" data-set="official">Moves</button>
-      <button class="menu-button" data-model="combatRef" data-set="official">Ref. Combate</button>
-    </nav>
-    <nav class="generator-menu hidden" data-set="expansion">
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Reinos Celestiais</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Diablo</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Dark Souls</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Chinesa</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Grega</button>
-      <button class="menu-button" data-model="reinos" data-set="expansion" disabled>Mitologia Nórdica</button>
-    </nav>
-  </div>
-
-  <main class="generator-main">
-    <div class="structure-toggle" id="structure-toggle">
-      <button id="structure-toggle-button">Estrutura do Deck</button>
-      <div class="structure-options" id="structure-options">
-        <a href="structure-official.html">Jogo Base</a>
-        <a href="structure-reinos.html">Reinos Celestiais</a>
-      </div>
-    </div>
-
-    <section class="generator-panel">
-      <div class="panel-header">
-        <div>
-          <p class="panel-label">Modelo ativo</p>
-          <h2 id="model-title">Monstros</h2>
-          <p id="model-description" class="panel-description">Cards de monstros com level, habilidades e troféus.</p>
-        </div>
-        <div class="panel-actions">
-          <button id="preview-button" class="primary-solid">Visualizar impressão</button>
-        </div>
-      </div>
-      <p id="status-message" class="status-message">Selecione um modelo para carregar os cards.</p>
-      <div id="pages-container"></div>
-    </section>
-  </main>
-
-  <script src="js/cards.js"></script>
-  <script src="js/backs.js"></script>
-  <script src="js/generator.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Legends Card Game - Um RPG de aventura baseado em cartas" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Legends Card Game</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
